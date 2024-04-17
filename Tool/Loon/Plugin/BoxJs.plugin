@@ -10,7 +10,7 @@
 DOMAIN-SUFFIX, jsdelivr.net, PROXY
 
 [Script]
-http-request ^https?:\/\/(.+\.)?boxjs\.(com|net) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/BoxJS/BoxJS.js, requires-body =  true, tag = BoxJS, timeout = 120
+http-request ^https?:\/\/(.+\.)?boxjs\.(com|net) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/BoxJs/BoxJs.js, requires-body =  true, tag = BoxJS, timeout = 120
 
 [Mitm]
 hostname = boxjs.com, boxjs.net, *.boxjs.com, *.boxjs.net
