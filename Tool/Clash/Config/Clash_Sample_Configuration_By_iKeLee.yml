@@ -49,7 +49,7 @@ proxy-providers:
     interval: 10800
     health-check:
       enable: true
-      url: https://cp.cloudflare.com/generate_204
+      url: http://1.0.0.1
       interval: 6
 
   台湾节点:
@@ -59,7 +59,7 @@ proxy-providers:
     interval: 10800
     health-check:
       enable: true
-      url: https://cp.cloudflare.com/generate_204
+      url: http://1.0.0.1
       interval: 6
 
   日本节点:
@@ -69,7 +69,7 @@ proxy-providers:
     interval: 10800
     health-check:
       enable: true
-      url: https://cp.cloudflare.com/generate_204
+      url: http://1.0.0.1
       interval: 6
 
   韩国节点:
@@ -79,7 +79,7 @@ proxy-providers:
     interval: 10800
     health-check:
       enable: true
-      url: https://cp.cloudflare.com/generate_204
+      url: http://1.0.0.1
       interval: 6
 
   美国节点:
@@ -89,7 +89,7 @@ proxy-providers:
     interval: 10800
     health-check:
       enable: true
-      url: https://cp.cloudflare.com/generate_204
+      url: http://1.0.0.1
       interval: 6
 
   新加坡节点:
@@ -99,7 +99,7 @@ proxy-providers:
     interval: 10800
     health-check:
       enable: true
-      url: https://cp.cloudflare.com/generate_204
+      url: http://1.0.0.1
       interval: 6
 
   全球节点:
@@ -109,7 +109,7 @@ proxy-providers:
     interval: 10800
     health-check:
       enable: true
-      url: https://cp.cloudflare.com/generate_204
+      url: http://1.0.0.1
       interval: 6
 
 proxy-groups:
