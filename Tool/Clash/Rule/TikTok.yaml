@@ -1,6 +1,6 @@
 payload:
 # TikTok by 可莉
-# 2024-04-19 22:08:41
+# 2024-04-19 23:12:49
   - DOMAIN,api.snapkit.com
   - DOMAIN,api2-16-h2.musical.ly.edgekey.net
   - DOMAIN,bytedance.map.fastly.net
@@ -10,7 +10,6 @@ payload:
   - DOMAIN,cocacola.co.jp
   - DOMAIN,courses.snapsolve.com
   - DOMAIN,engagements.appsflyer.com
-  - DOMAIN,lf0-cdn-tos.tiktok-usts.net
   - DOMAIN,lf1-ttcdn-tos.pstatp.com
   - DOMAIN,lf16-campaign.ttlstatic.com
   - DOMAIN,lf16-csp.oecstatic.com
@@ -19,7 +18,6 @@ payload:
   - DOMAIN,lf19-csp.oecstatic.com
   - DOMAIN,lf19-pkgcdn.pitaya-clientai.com
   - DOMAIN,lf19-scmcdn.oecstatic.com
-  - DOMAIN,mobile.ttadsmanager.com
   - DOMAIN,musically-alternate.app.link
   - DOMAIN,musically.app.link
   - DOMAIN,p1-tt-ipv6.byteimg.com
@@ -28,16 +26,10 @@ payload:
   - DOMAIN,p26-tt.byteimg.com
   - DOMAIN,p3-tt-ipv6.byteimg.com
   - DOMAIN,p9-tt.byteimg.com
-  - DOMAIN,pull-cmaf-f16-gcp01.ttlivecdn.com
-  - DOMAIN,pull-cmaf-f16-sg01.ttlivecdn.com
-  - DOMAIN,pull-cmaf-f16-va01.ttlivecdn.com
   - DOMAIN,pull-f3-hs.pstatp.com
-  - DOMAIN,pull-f5-gcp01.ttlivecdn.com
   - DOMAIN,pull-f5-hs.flive.pstatp.com
   - DOMAIN,pull-f5-hs.pstatp.com
   - DOMAIN,pull-f5-mus.pstatp.com
-  - DOMAIN,pull-f5-sg01.ttlivecdn.com
-  - DOMAIN,pull-f5-va01.ttlivecdn.com
   - DOMAIN,pull-flv-f1-hs.pstatp.com
   - DOMAIN,pull-flv-f6-hs.pstatp.com
   - DOMAIN,pull-flv-l1-hs.pstatp.com
@@ -45,37 +37,24 @@ payload:
   - DOMAIN,pull-flv-l6-hs.pstatp.com
   - DOMAIN,pull-hls-l1-mus.pstatp.com
   - DOMAIN,pull-l3-hs.pstatp.com
-  - DOMAIN,pull-q5-sg01.ttlivecdn.com
-  - DOMAIN,pull-q5-va01.ttlivecdn.com
   - DOMAIN,pull-rtmp-f1-hs.pstatp.com
   - DOMAIN,pull-rtmp-f6-hs.pstatp.com
   - DOMAIN,pull-rtmp-l1-hs.pstatp.com
   - DOMAIN,pull-rtmp-l1-mus.pstatp.com
   - DOMAIN,pull-rtmp-l6-hs.pstatp.com
-  - DOMAIN,pull-w5-sg01.ttlivecdn.com
-  - DOMAIN,pull-w5-va01.ttlivecdn.com
   - DOMAIN,roovza-launches.appsflyersdk.com
-  - DOMAIN,s0.ipstatp.com
-  - DOMAIN,s1.ipstatp.com
   - DOMAIN,sessions.bugsnag.com
   - DOMAIN,sf1-ttcdn-tos.pstatp.com
-  - DOMAIN,sf16-ttcdn-tos.ipstatp.com
   - DOMAIN,sf6-ttcdn-tos.pstatp.com
-  - DOMAIN,tiktok-lb-texas.useast5.byteoversea.net.byteigtm.com
   - DOMAIN,tiktokcdn-us.com.atomile.com
   - DOMAIN,tiktokcdn-us.com.c.worldfcdn2.com
   - DOMAIN,tiktokcdn.com.atomile.com
-  - DOMAIN,tiktokcdn.com.c.bytefcdn-oversea.com
   - DOMAIN,tiktokcdn.com.c.bytefcdn-ttpeu.com
-  - DOMAIN,tiktokcdn.com.c.bytetcdn.com
   - DOMAIN,tiktokcdn.com.c.worldfcdn.com
-  - DOMAIN,tiktokcdn.com.qlivecdn.com
   - DOMAIN,tiktokcdn.com.rocket-cdn.com
   - DOMAIN,tiktokcdn.com.tlivepush.com
-  - DOMAIN,tiktokv.com.c.bytefcdn-oversea.com
   - DOMAIN,tiktokv.com.c.worldfcdn.com
   - DOMAIN,tiktokv.com.c.worldfcdn2.com
-  - DOMAIN,ttlivecdn.com.c.bytefcdn-oversea.com
   - DOMAIN,ttlivecdn.com.c.worldfcdn.com
   - DOMAIN,video.h1.bytedance.map.fastly.net
   - DOMAIN-SUFFIX,bytedance.com
@@ -88,6 +67,7 @@ payload:
   - DOMAIN-SUFFIX,byteicdn.com
   - DOMAIN-SUFFIX,byteigtm.com
   - DOMAIN-SUFFIX,byteintl.com
+  - DOMAIN-SUFFIX,byteintl.net
   - DOMAIN-SUFFIX,byteoversea.com
   - DOMAIN-SUFFIX,byteoversea.net
   - DOMAIN-SUFFIX,bytetcdn.com
@@ -101,9 +81,8 @@ payload:
   - DOMAIN-SUFFIX,musical.ly
   - DOMAIN-SUFFIX,sgpstatp.com
   - DOMAIN-SUFFIX,sgsnssdk.com
-  # - DOMAIN-SUFFIX,snssdk.com
-  # - DOMAIN-SUFFIX,surveymonkey.com
   - DOMAIN-SUFFIX,tik-tokapi.com
+  - DOMAIN-SUFFIX,tiktok-usts.net
   - DOMAIN-SUFFIX,tiktok.com
   - DOMAIN-SUFFIX,tiktok.in
   - DOMAIN-SUFFIX,tiktokcdn-eu.com
@@ -123,6 +102,8 @@ payload:
   - DOMAIN-SUFFIX,tiktokv.us
   - DOMAIN-SUFFIX,tiktokw.us
   - DOMAIN-SUFFIX,tlivecdn.com
+  - DOMAIN-SUFFIX,tlivepush.com
+  - DOMAIN-SUFFIX,ttadsmanager.com
   - DOMAIN-SUFFIX,ttapis.com
   - DOMAIN-SUFFIX,ttdns2.com
   - DOMAIN-SUFFIX,ttlivecdn.com
