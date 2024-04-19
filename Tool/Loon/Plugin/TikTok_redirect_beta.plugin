@@ -8,8 +8,8 @@
 #!date = 2024-04-20 00:59:37
 
 [Rule]
-AND, ((NOT, (GEOIP, CN)), (DOMAIN, libra-sg.tiktokv.com)), PROXY // 此为抖音和TikTok共用域名，仅国外解析结果走代理
-AND, ((NOT, (GEOIP, CN)), (DOMAIN, pitaya.bytedance.com)), PROXY // 此为抖音和TikTok共用域名，仅国外解析结果走代理
+AND, ((NOT, ((GEOIP, CN))), (DOMAIN, libra-sg.tiktokv.com)), PROXY // 此为抖音和TikTok共用域名，仅国外解析结果走代理
+AND, ((NOT, ((GEOIP, CN))), (DOMAIN, pitaya.bytedance.com)), PROXY // 此为抖音和TikTok共用域名，仅国外解析结果走代理
 DOMAIN, api.snapkit.com, PROXY
 DOMAIN, api2-16-h2.musical.ly.edgekey.net, PROXY
 DOMAIN, bytedance.map.fastly.net, PROXY
