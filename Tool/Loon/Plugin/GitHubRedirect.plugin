@@ -16,7 +16,7 @@ DOMAIN, raw.kkgithub.com, DIRECT
 ^https:\/\/raw\.githubusercontent\.com 302 https://fastraw.ixnic.net
 
 # 由某位热心网友提供服务
-^https:\/\/raw\.githubusercontent\.com 302 https://hub.incept.pw
+# ^https:\/\/raw\.githubusercontent\.com 302 https://hub.incept.pw
 
 # 需境内IP访问，有仓库黑名单关键词。
 # ^https:\/\/raw\.githubusercontent\.com 302 https://raw.kkgithub.com
