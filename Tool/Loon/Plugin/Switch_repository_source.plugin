@@ -1,0 +1,16 @@
+#!name = 可莉仓库源切换
+#!desc = 
+#!openUrl = 
+#!author = 可莉🅥
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Google.png
+#!select = 仓库源, Bitbucket, GitLab, GitHub
+#!date = 2024-04-21 01:00:15
+
+[Script]
+http-request ^https:\/\/raw\.githubusercontent\.com\/luestr\/ProxyResource\/main\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = GitHub重定向
+http-request ^https:\/\/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = GitLab重定向
+http-request ^https:\/\/bitbucket\.org\/luestr\/proxyresource\/raw\/main\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = Bitbucket重定向
+
+[MITM]
+host = gitlab.com, raw.githubusercontent.com, bitbucket.org
