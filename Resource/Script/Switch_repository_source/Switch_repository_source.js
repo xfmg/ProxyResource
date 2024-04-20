@@ -6,6 +6,7 @@ let githubPrefix = "https://raw.githubusercontent.com/luestr/ProxyResource/main"
 let gitlabPrefix = "https://gitlab.com/lodepuly/vpn_tool/-/raw/master"
 let gitbucketPrefix = "https://bitbucket.org/luestr/proxyresource/raw/main"
 
+//1: gitbucket 2.gitlab 3.github
 let changeTo = $persistentStore.read("仓库源")
 
 var url = $request.url
@@ -17,14 +18,8 @@ if (changeTo == "Bitbucket") {
     headers["host"] = "bitbucket.org"
 } else if (changeTo == "GitLab") {
     headers["host"] = "gitlab.com"
-} else {
+} else if (changeTo == "GitHub") {
     headers["host"] = "raw.githubusercontent.com"
-}
-
-if (headers["user-agent"]) {
-    headers["user-agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0"
-} else if (headers["User-Agent"]) {
-    headers["User-Agent"] = "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:126.0) Gecko/20100101 Firefox/126.0"
 }
 
 if (url.startsWith(githubPrefix)) {
