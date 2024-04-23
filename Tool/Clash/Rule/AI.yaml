@@ -1,4 +1,3 @@
-payload:
 # Author: 可莉🅥
 # ChatGPT 2024-04-15 10:00:44
   - DOMAIN,api.statsig.com
@@ -35,40 +34,10 @@ payload:
   - DOMAIN-SUFFIX,stripe.com
   - DOMAIN-KEYWORD,openaicom-api
 
-# Copilot 2024-04-18 19:57:16
-  - DOMAIN,api.githubcopilot.com
-  - DOMAIN,api.msn.com
-  - DOMAIN,bat.bing.com
-  - DOMAIN,browser.events.data.microsoft.com
-  - DOMAIN,cn.bing.com
-  - DOMAIN,copilot-proxy.githubusercontent.com
+# Copilot Date: 2024-04-18 19:57:16
   - DOMAIN,copilot.microsoft.com
-  - DOMAIN,dealczars.bing-shopping.microsoft-falcon.io
-  - DOMAIN,edge.microsoft.com
-  - DOMAIN,edgeservices.bing.com
-  - DOMAIN,functional.events.data.microsoft.com
-  - DOMAIN,gateway.bingviz.microsoftapp.net
-  - DOMAIN,in.appcenter.ms
-  - DOMAIN,location.microsoft.com
-  - DOMAIN,login.live.com
-  - DOMAIN,login.microsoftonline.com
-  - DOMAIN,nav-edge.smartscreen.microsoft.com
-  - DOMAIN,prod.rewardsplatform.microsoft.com
-  - DOMAIN,sapphire.api.microsoftapp.net
-  - DOMAIN,sapphire.bingviz.com
-  - DOMAIN,self.events.data.microsoft.com
-  - DOMAIN,services.bingapis.com
-  - DOMAIN,shopping.bing-shopping.microsoft-falcon.io
-  - DOMAIN,ssl.bing.com
-  - DOMAIN,storage.live.com
-  - DOMAIN,strict.bing.com
   - DOMAIN,sydney.bing.com
-  - DOMAIN,th.bing.com
   - DOMAIN,www.bing.com
-  - DOMAIN,www.bingapis.com
-  - DOMAIN,www.clarity.ms
-  - DOMAIN,www2.bing.com
-  - DOMAIN-SUFFIX,bing.net
 
 # Gemini 2024-03-31 15:02:45
   - DOMAIN,aistudio.google.com
@@ -76,8 +45,14 @@ payload:
   - DOMAIN,gemini.google.com
   - DOMAIN,generativelanguage.googleapis.com
 
-# Claude 2024-04-19 16:05:19
+# Claude 2024-04-19 16:03:21
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claude.ai
   - IP-CIDR,160.79.104.0/23,no-resolve
   - IP-CIDR6,2607:6bc0::/48,no-resolve
+
+# JetBrains AI 2024-04-23 09:17:25
+  - DOMAIN-SUFFIX,grazie.ai
+
+# Meta 2024-04-23 09:18:03
+  - DOMAIN,imagine.meta.com
