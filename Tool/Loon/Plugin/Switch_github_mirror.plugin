@@ -5,12 +5,12 @@
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/GitHub.png
 #!select = 镜像源, A镜像, B镜像
-#!date = 2024-04-24 16:11:00
+#!date = 2024-04-24 16:13:05
 
 [Rule]
-# DOMAIN, fastraw.ixnic.net, DIRECT
-# DOMAIN, hub.incept.pw, DIRECT
-# DOMAIN, raw.kkgithub.com, DIRECT
+DOMAIN, fastraw.ixnic.net, DIRECT
+DOMAIN, hub.incept.pw, DIRECT
+DOMAIN, raw.kkgithub.com, DIRECT
 
 [Script]
 http-request ^https:\/\/raw\.githubusercontent\.com\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/GitHub/Switch_github_mirror.js, tag = GitHub加速
