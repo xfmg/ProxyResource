@@ -1,10 +1,8 @@
 # TikTok by 可莉
-# 2024-04-25 20:50:51
+# 2024-04-25 21:08:24
 AND, ((NOT, ((GEOIP, CN, no-resolve))), (DOMAIN, libra-sg.tiktokv.com)) // 此为抖音和TikTok共用域名，仅国外解析结果走代理
 AND, ((NOT, ((GEOIP, CN, no-resolve))), (DOMAIN, pitaya.bytedance.com)) // 此为抖音和TikTok共用域名，仅国外解析结果走代理
 DOMAIN, api.snapkit.com
-DOMAIN, api2-16-h2.musical.ly.edgekey.net
-DOMAIN, bytedance.map.fastly.net
 DOMAIN, cocacola.co.jp
 DOMAIN, courses.snapsolve.com
 DOMAIN, engagements.appsflyer.com
@@ -19,7 +17,6 @@ DOMAIN, musically-alternate.app.link
 DOMAIN, musically.app.link
 DOMAIN, p1-tt-ipv6.byteimg.com
 DOMAIN, p1-tt.byteimg.com
-DOMAIN, p16-tiktokcdn-com.akamaized.net
 DOMAIN, p26-tt.byteimg.com
 DOMAIN, p3-tt-ipv6.byteimg.com
 DOMAIN, p9-tt.byteimg.com
@@ -41,7 +38,6 @@ DOMAIN, pull-rtmp-l1-mus.pstatp.com
 DOMAIN, pull-rtmp-l6-hs.pstatp.com
 DOMAIN, roovza-launches.appsflyersdk.com
 DOMAIN, sessions.bugsnag.com
-DOMAIN, video.h1.bytedance.map.fastly.net
 DOMAIN-SUFFIX, bytedance.com
 DOMAIN-SUFFIX, bytedance.net
 DOMAIN-SUFFIX, bytedapm.com
@@ -96,6 +92,8 @@ DOMAIN-SUFFIX, ttoversea.net
 DOMAIN-SUFFIX, ttoverseaus.net
 DOMAIN-SUFFIX, ttwstatic.com
 DOMAIN-SUFFIX, tzvbfs.com
+DOMAIN-KEYWORD, bytedance.map.
+DOMAIN-KEYWORD, musical.ly.
 DOMAIN-KEYWORD, tiktokcdn-
 DOMAIN-KEYWORD, tiktokcdn.com.
 DOMAIN-KEYWORD, tiktokv.com.
