@@ -1,27 +1,13 @@
 payload:
+# NAME: Proxy
+# AUTHOR: ArriettyQAQ
+# GITHUB: https://gitlab.com/lodepuly/vpn_tool/-/tree/main/tool/Loon
+# UPDATED: 2021-01-13 20:58:31
+# DOMAIN-KEYWORD: 0
+# DOMAIN-SUFFIX: 1
+# USER-AGENT: 0
+# DOMAIN: 0
+# TOTAL: 0
   - DOMAIN-SUFFIX,ibm.com
-#  - DOMAIN,relay.firefox.com
-#Emby公益服
-# ACA公益服
-  - DOMAIN,emby.aca.best
-  - DOMAIN,porn.aca.best
-# TreeDiagram
-  - DOMAIN,789.123456.al
-# 垃圾影音
-  - DOMAIN,free.xmsl.org
-  - DOMAIN,cf.xmsl.org
-# Misty
-  - DOMAIN,misty.ltd
-# Odyssey+
-  - DOMAIN-SUFFIX,odysseyplus.site
-# BDD
-  - DOMAIN,media.bddup.com
-# SYN
-  - DOMAIN-SUFFIX,811920.xyz
-# Lend
-#  - DOMAIN,emby.lcloud.wiki
-# PiliPili
-  - DOMAIN,emby.pilipiliultra.top
-  - DOMAIN,emby.pilipiliultra.com
-# NMEmby
-  - DOMAIN,film.ohhhh.org
+  - DOMAIN-SUFFIX,plex.tv
+  - DOMAIN,relay.firefox.com
