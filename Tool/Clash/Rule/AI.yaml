@@ -1,6 +1,6 @@
 payload:
-# 2024-04-23 13:21:12
-# ChatGPT
+  # 2024-04-23 13:21:12
+  # ChatGPT
   - DOMAIN-SUFFIX,chatgpt.com
   - DOMAIN-SUFFIX,oaistatic.com
   - DOMAIN-SUFFIX,oaiusercontent.com
@@ -13,26 +13,26 @@ payload:
   - DOMAIN,sfo3.turn.livekit.cloud
   - DOMAIN-KEYWORD,openaicom
 
-# Copilot
+  # Copilot
   - DOMAIN,api.githubcopilot.com
   - DOMAIN,copilot-proxy.githubusercontent.com
   - DOMAIN,copilot.microsoft.com
   - DOMAIN,sydney.bing.com
   - DOMAIN,www.bing.com
 
-# Gemini
+  # Gemini
   - DOMAIN,bard.google.com
   - DOMAIN,gemini.google.com
 
-# Claude
+  # Claude
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claude.ai
   - IP-CIDR,160.79.104.0/23,no-resolve
   - IP-CIDR6,2607:6bc0::/48,no-resolve
 
-# JetBrains AI
+  # JetBrains AI
   - DOMAIN-SUFFIX,grazie.ai
 
-# Meta
+  # Meta
   - DOMAIN,imagine.meta.com
   - DOMAIN-SUFFIX,meta.ai

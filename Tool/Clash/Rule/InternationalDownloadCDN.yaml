@@ -1,10 +1,10 @@
 payload:
-# Author: 可莉🅥
-# GitLab: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/tool/Loon
-# 引用: https://github.com/dogfight360/UsbEAm
-# 2023-12-18 16:00:40
+  # Author: 可莉🅥
+  # GitLab: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/tool/Loon
+  # 引用: https://github.com/dogfight360/UsbEAm
+  # 2023-12-18 16:00:40
 
-# EPIC游戏下载、更新[国际]
+  # EPIC游戏下载、更新[国际]
   - DOMAIN,download.epicgames.com
   - DOMAIN,download2.epicgames.com
   - DOMAIN,download3.epicgames.com
@@ -12,7 +12,7 @@ payload:
   - DOMAIN,epicgames-download1.akamaized.net
   - DOMAIN,fastly-download.epicgames.com
 
-# Battle.net战网游戏下载、更新[国际]
+  # Battle.net战网游戏下载、更新[国际]
   - DOMAIN,blzddist1-a.akamaihd.net
   - DOMAIN,blzddistkr1-a.akamaihd.net
   - DOMAIN,blizzard.gcdn.cloudn.co.kr
@@ -21,12 +21,12 @@ payload:
   - DOMAIN,level3.blizzard.com
   - DOMAIN,us.cdn.blizzard.com
 
-# GOG游戏下载、更新[国际]
+  # GOG游戏下载、更新[国际]
   - DOMAIN,gog-cdn-fastly-cp77.gog.com
   - DOMAIN,gog-cdn-fastly.gog.com
   - DOMAIN,gog-cdn-lumen.secure2.footprint.net
 
-# 微软游戏下载、更新[国际]
+  # 微软游戏下载、更新[国际]
   - DOMAIN,assets1.xboxlive.com
   - DOMAIN,assets2.xboxlive.com
   - DOMAIN,ak.tiles.virtualearth.net
@@ -34,7 +34,7 @@ payload:
   - DOMAIN,xvcf1.xboxlive.com
   - DOMAIN,xvcf2.xboxlive.com
 
-# 微软全家桶上传、下载、同步、在线安装[国际]
+  # 微软全家桶上传、下载、同步、在线安装[国际]
   - DOMAIN,azurestackhubuat.download.prss.microsoft.com
   - DOMAIN,azurestackreleases.download.prss.microsoft.com
   - DOMAIN,azuremigratetest.download.prss.microsoft.com
@@ -85,20 +85,20 @@ payload:
   - DOMAIN,windbg.download.prss.microsoft.com
   - DOMAIN-SUFFIX,storage.live.com
 
-# UBisoft Connect(Uplay)育碧游戏下载、更新[国际]
+  # UBisoft Connect(Uplay)育碧游戏下载、更新[国际]
   - DOMAIN,uplaypc-s-ubisoft.cdn.ubi.com
   - DOMAIN,uplaypc-s-ubisoft-ww.cdn.ubi.com
 
-# Origin艺电游戏平台[国际]
+  # Origin艺电游戏平台[国际]
   - DOMAIN,download.dm.origin.com
   - DOMAIN,origin-a.akamaihd.net
   - DOMAIN,ssl-lvlt.cdn.ea.com
 
-# EA Desktop游戏下载[国际]
+  # EA Desktop游戏下载[国际]
   - DOMAIN,origin-a.akamaihd.net
   - DOMAIN,ssl-lvlt.cdn.ea.com
 
-# Steam游戏下载、游戏更新、创意工坊下载、Steam.TV直播、社区实况直播[国际]
+  # Steam游戏下载、游戏更新、创意工坊下载、Steam.TV直播、社区实况直播[国际]
   - DOMAIN-SUFFIX,atl1.steamcontent.com
   - DOMAIN-SUFFIX,ams1.steamcontent.com
   - DOMAIN-SUFFIX,akl-tpwr.steamcontent.com
@@ -597,7 +597,7 @@ payload:
   - DOMAIN,steampipe-partner.akamaized.net
   - DOMAIN,upos-hz-mirrorakam.akamaized.net
 
-# Riot游戏下载、更新[国际]
+  # Riot游戏下载、更新[国际]
   - DOMAIN,bacon.secure.dyn.riotcdn.net
   - DOMAIN,bacon.dyn.riotcdn.net
   - DOMAIN,ks-foundation.secure.dyn.riotcdn.net
@@ -609,7 +609,7 @@ payload:
   - DOMAIN,valorant.secure.dyn.riotcdn.net
   - DOMAIN,valorant.dyn.riotcdn.net
 
-# FiveM游戏下载、更新[国际]
+  # FiveM游戏下载、更新[国际]
   - DOMAIN,changelogs-live.fivem.net
   - DOMAIN,c.fivem.net
   - DOMAIN,cnl-hb-live.fivem.net
@@ -646,21 +646,21 @@ payload:
   - DOMAIN,status.fivem.net
   - DOMAIN,wiki.fivem.net
 
-# Bethesda贝塞斯达客户端、游戏及mod的下载、更新[国际]
+  # Bethesda贝塞斯达客户端、游戏及mod的下载、更新[国际]
   - DOMAIN,content.cdp.bethesda.net
   - DOMAIN,download.cdp.bethesda.net
 
-# Hikari Field游戏下载及更新[国际]
+  # Hikari Field游戏下载及更新[国际]
   - DOMAIN,download.hikarifield.co.jp
 
-# Dlsite游戏下载[国际]
+  # Dlsite游戏下载[国际]
   - DOMAIN,download.dlsite.com
   - DOMAIN,file.chobit.cc
   - DOMAIN,img.dlsite.jp
   - DOMAIN,play.dl.dlsite.com
   - DOMAIN,trial.dlsite.com
 
-# Bandai Namco万代南梦宫[国际]
+  # Bandai Namco万代南梦宫[国际]
   - DOMAIN,account.bandainamcoid.com
   - DOMAIN,account-api.bandainamcoid.com
   - DOMAIN,clientpatch.aws.blue-protocol.com

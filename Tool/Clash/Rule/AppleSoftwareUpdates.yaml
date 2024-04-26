@@ -1,8 +1,8 @@
 payload:
-# Author: 可莉🅥
-# GitLab: https://gitlab.com/lodepuly/vpn_tool/-/tree/main/tool/Loon
-# 引用地址 https://support.apple.com/en-us/HT210060
-# 软件更新 - 在安装、恢复和更新 iOS、iPadOS、macOS、watchOS 及 Apple tvOS 时，Apple 设备需要访问以下主机。
+  # Author: 可莉🅥
+  # GitLab: https://gitlab.com/lodepuly/vpn_tool/-/tree/main/tool/Loon
+  # 引用地址 https://support.apple.com/en-us/HT210060
+  # 软件更新 - 在安装、恢复和更新 iOS、iPadOS、macOS、watchOS 及 Apple tvOS 时，Apple 设备需要访问以下主机。
   - DOMAIN,appldnld.apple.com //iOS、iPadOS 和 watchOS 更新
   - DOMAIN,configuration.apple.com //Rosetta 2 更新
   - DOMAIN,gdmf.apple.com //软件更新目录

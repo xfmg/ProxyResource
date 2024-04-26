@@ -1,7 +1,7 @@
 payload:
-# by 可莉
+  # by 可莉
 
-# 战地1
+  # 战地1
   - DOMAIN,sparta-gw.battlelog.com
   - DOMAIN,sparta-gw-bfv.battlelog.com
   - DOMAIN,sparta-gw.battlelog.com
@@ -20,7 +20,7 @@ payload:
   - DOMAIN,app-images.ea.com
   - DOMAIN,cdn.mcr.ea.com
   - DOMAIN,pc.ea.com
-# 原始
+  # 原始
   - DOMAIN,eaasserts-a.akamaihd.net
   - DOMAIN,originasserts.akamaized.net
   - DOMAIN,dlgarenanow-a.akamaihd.net
