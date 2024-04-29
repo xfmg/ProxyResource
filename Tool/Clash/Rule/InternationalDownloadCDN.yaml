@@ -2,7 +2,7 @@ payload:
   # Author: 可莉🅥
   # GitLab: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/tool/Loon
   # 引用: https://github.com/dogfight360/UsbEAm
-  # 2024-04-27 19:51:55
+  # 2024-04-29 15:34:28
 
   # EPIC游戏下载、更新[国际]
   - DOMAIN,download.epicgames.com
@@ -710,3 +710,6 @@ payload:
   - DOMAIN,object-web.blue-protocol.com
   - DOMAIN,object.gundamevolution.jp
   - DOMAIN,object-web.gundamevolution.jp
+
+  # Cloudflare云存储
+  - DOMAIN-SUFFIX,cloudflarestorage.com
