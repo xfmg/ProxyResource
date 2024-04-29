@@ -8,8 +8,12 @@
 #!date = 2024-04-29 23:31:09
 
 [Rule]
-# 2024-04-29 23:31:09
-AND, ((NOT, ((GEOIP, CN))), (DOMAIN, pitaya.bytedance.com)), PROXY // 此为抖音和TikTok共用域名，仅国外解析结果走代理
+#!date = 2024-04-30 00:38:05
+
+[Rule]
+# 2024-04-30 00:38:01
+AND, ((GEOIP, CN), (DOMAIN, pitaya.bytedance.com)), DIRECT // 此为抖音和TikTok共用域名，仅国外解析结果走代理
+DOMAIN, pitaya.bytedance.com, PROXY
 DOMAIN, api.snapkit.com, PROXY
 DOMAIN, cocacola.co.jp, PROXY
 DOMAIN, courses.snapsolve.com, PROXY
