@@ -8,3 +8,4 @@ payload:
   - DOMAIN,cf.emby.ml # 垃圾影音 - CF线路
   - DOMAIN,emby.pilipiliultra.top # PiliPili - 主线路
   - DOMAIN,emby.pilipiliultra.com # PiliPili - CF路
+  - DOMAIN,stream1.misakaf.org # MisakaF
