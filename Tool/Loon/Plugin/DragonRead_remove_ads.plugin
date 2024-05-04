@@ -4,10 +4,10 @@
 #!author = EAlyce
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DragonRead.png
-#!date = 2024-05-04 16:45:57
+#!date = 2024-05-04 19:24:37
 
 [Rule]
-DOMAIN, p3-ad-sign.byteimg.com
+DOMAIN, p3-ad-sign.byteimg.com, REJECT
 DOMAIN-SUFFIX, bwlcpr.xyz, REJECT
 DOMAIN-SUFFIX, app-measurement.com, REJECT
 DOMAIN-SUFFIX, bdurl.net, REJECT
