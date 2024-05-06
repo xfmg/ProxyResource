@@ -1,7 +1,7 @@
 # Author: 可莉🅥
 # GitLab: https://gitlab.com/lodepuly/vpn_tool/-/tree/master/tool/Loon
 # 引用: https://github.com/dogfight360/UsbEAm
-# 2024-04-29 15:34:28
+# 2024-05-06 23:13:25
 
 # EPIC游戏下载、更新[国际]
 DOMAIN, download.epicgames.com
@@ -10,6 +10,9 @@ DOMAIN, download3.epicgames.com
 DOMAIN, download4.epicgames.com
 DOMAIN, epicgames-download1.akamaized.net
 DOMAIN, fastly-download.epicgames.com
+DOMAIN, ipv4.egdownload.fastly-edge.com
+DOMAIN-KEYWORD, epicgames-download
+AND, ((DOMAIN-KEYWORD, cdn), (DOMAIN-KEYWORD, -epicgames-))
 
 # Battle.net战网游戏下载、更新[国际]
 DOMAIN, blzddist1-a.akamaihd.net
@@ -98,107 +101,109 @@ DOMAIN, origin-a.akamaihd.net
 DOMAIN, ssl-lvlt.cdn.ea.com
 
 # Steam游戏下载、游戏更新、创意工坊下载、Steam.TV直播、社区实况直播[国际]
-DOMAIN-KEYWORD, -akl-tpwr.steamcontent.com
-DOMAIN-KEYWORD, -akl-vgnz.steamcontent.com
-DOMAIN-KEYWORD, -ala-kzkt.steamcontent.com
-DOMAIN-KEYWORD, -ams1.steamcontent.com
-DOMAIN-KEYWORD, -atl1.steamcontent.com
-DOMAIN-KEYWORD, -bkk-jast.steamcontent.com
-DOMAIN-KEYWORD, -bkk-true.steamcontent.com
-DOMAIN-KEYWORD, -bne-aubb.steamcontent.com
-DOMAIN-KEYWORD, -bom1.steamcontent.com
-DOMAIN-KEYWORD, -bud-retn.steamcontent.com
-DOMAIN-KEYWORD, -cfc-acol.steamcontent.com
-DOMAIN-KEYWORD, -dfw1.steamcontent.com
-DOMAIN-KEYWORD, -dsa-ask4.steamcontent.com
-DOMAIN-KEYWORD, -dxb1.steamcontent.com
-DOMAIN-KEYWORD, -eze1.steamcontent.com
-DOMAIN-KEYWORD, -fra1.steamcontent.com
-DOMAIN-KEYWORD, -fra2.steamcontent.com
-DOMAIN-KEYWORD, -got-cmhm.steamcontent.com
-DOMAIN-KEYWORD, -gru1.steamcontent.com
-DOMAIN-KEYWORD, -gsv-retn.steamcontent.com
-DOMAIN-KEYWORD, -hel-retn.steamcontent.com
-DOMAIN-KEYWORD, -hkg1.steamcontent.com
-DOMAIN-KEYWORD, -hrk-retn.steamcontent.com
-DOMAIN-KEYWORD, -iad1.steamcontent.com
-DOMAIN-KEYWORD, -iev-datl.steamcontent.com
-DOMAIN-KEYWORD, -jnb1.steamcontent.com
-DOMAIN-KEYWORD, -lax1.steamcontent.com
-DOMAIN-KEYWORD, -lhr1.steamcontent.com
-DOMAIN-KEYWORD, -lim1.steamcontent.com
-DOMAIN-KEYWORD, -maa1.steamcontent.com
-DOMAIN-KEYWORD, -mad1.steamcontent.com
-DOMAIN-KEYWORD, -man1.steamcontent.com
-DOMAIN-KEYWORD, -mel-aubb.steamcontent.com
-DOMAIN-KEYWORD, -mel-edgx.steamcontent.com
-DOMAIN-KEYWORD, -mfm-cdtm.steamcontent.com
-DOMAIN-KEYWORD, -mmx-cmhm.steamcontent.com
-DOMAIN-KEYWORD, -ods-retn.steamcontent.com
-DOMAIN-KEYWORD, -okc1.steamcontent.com
-DOMAIN-KEYWORD, -ord1.steamcontent.com
-DOMAIN-KEYWORD, -par1.steamcontent.com
-DOMAIN-KEYWORD, -per-edgx.steamcontent.com
-DOMAIN-KEYWORD, -per-nxhp.steamcontent.com
-DOMAIN-KEYWORD, -rix-retn.steamcontent.com
-DOMAIN-KEYWORD, -scl1.steamcontent.com
-DOMAIN-KEYWORD, -sea1.steamcontent.com
-DOMAIN-KEYWORD, -seo-hwng.steamcontent.com
-DOMAIN-KEYWORD, -seo1.steamcontent.com
-DOMAIN-KEYWORD, -sgp1.steamcontent.com
-DOMAIN-KEYWORD, -sof-retn.steamcontent.com
-DOMAIN-KEYWORD, -sto1.steamcontent.com
-DOMAIN-KEYWORD, -sto2.steamcontent.com
-DOMAIN-KEYWORD, -svo-retn.steamcontent.com
-DOMAIN-KEYWORD, -syd1.steamcontent.com
-DOMAIN-KEYWORD, -tyo1.steamcontent.com
-DOMAIN-KEYWORD, -tyo2.steamcontent.com
-DOMAIN-KEYWORD, -uln-untl.steamcontent.com
-DOMAIN-KEYWORD, -vie1.steamcontent.com
-DOMAIN-KEYWORD, -vno-bite.steamcontent.com
-DOMAIN-KEYWORD, -waw-extl.steamcontent.com
-DOMAIN-KEYWORD, -waw1.steamcontent.com
-DOMAIN-KEYWORD, -ymo-bell.steamcontent.com
-DOMAIN-KEYWORD, -yvr-shaw.steamcontent.com
-DOMAIN-KEYWORD, -ywg-shaw.steamcontent.com
-DOMAIN-KEYWORD, -yyc-shaw.steamcontent.com
-DOMAIN-KEYWORD, -yyc-tsvy.steamcontent.com
-DOMAIN-KEYWORD, -yyz-bell.steamcontent.com
-DOMAIN-KEYWORD, -yyz-tsvy.steamcontent.com
-DOMAIN-KEYWORD, akl-tpwr.steamcontent.com
-DOMAIN-KEYWORD, akl-vgnz.steamcontent.com
-DOMAIN-KEYWORD, ala-kzkt.steamcontent.com
-DOMAIN-KEYWORD, bkk-jast.steamcontent.com
-DOMAIN-KEYWORD, bkk-true.steamcontent.com
-DOMAIN-KEYWORD, bne-aubb.steamcontent.com
-DOMAIN-KEYWORD, bud-retn.steamcontent.com
-DOMAIN-KEYWORD, cfc-acol.steamcontent.com
-DOMAIN-KEYWORD, got-cmhm.steamcontent.com
-DOMAIN-KEYWORD, gsv-retn.steamcontent.com
-DOMAIN-KEYWORD, hel-retn.steamcontent.com
-DOMAIN-KEYWORD, hrk-retn.steamcontent.com
-DOMAIN-KEYWORD, iev-datl.steamcontent.com
-DOMAIN-KEYWORD, mel-aubb.steamcontent.com
-DOMAIN-KEYWORD, mel-edgx.steamcontent.com
-DOMAIN-KEYWORD, mfm-cdtm.steamcontent.com
-DOMAIN-KEYWORD, mmx-cmhm.steamcontent.com
-DOMAIN-KEYWORD, ods-retn.steamcontent.com
-DOMAIN-KEYWORD, per-edgx.steamcontent.com
-DOMAIN-KEYWORD, per-nxhp.steamcontent.com
-DOMAIN-KEYWORD, rix-retn.steamcontent.com
-DOMAIN-KEYWORD, seo-hwng.steamcontent.com
-DOMAIN-KEYWORD, sof-retn.steamcontent.com
-DOMAIN-KEYWORD, svo-retn.steamcontent.com
-DOMAIN-KEYWORD, uln-untl.steamcontent.com
-DOMAIN-KEYWORD, vno-bite.steamcontent.com
-DOMAIN-KEYWORD, waw-extl.steamcontent.com
-DOMAIN-KEYWORD, ymo-bell.steamcontent.com
-DOMAIN-KEYWORD, yvr-shaw.steamcontent.com
-DOMAIN-KEYWORD, ywg-shaw.steamcontent.com
-DOMAIN-KEYWORD, yyc-shaw.steamcontent.com
-DOMAIN-KEYWORD, yyc-tsvy.steamcontent.com
-DOMAIN-KEYWORD, yyz-bell.steamcontent.com
-DOMAIN-KEYWORD, yyz-tsvy.steamcontent.com
+AND, ((DOMAIN-KEYWORD, cache), (DOMAIN-SUFFIX, steamcontent.com))
+
+# DOMAIN-KEYWORD, -akl-tpwr.steamcontent.com
+# DOMAIN-KEYWORD, -akl-vgnz.steamcontent.com
+# DOMAIN-KEYWORD, -ala-kzkt.steamcontent.com
+# DOMAIN-KEYWORD, -ams1.steamcontent.com
+# DOMAIN-KEYWORD, -atl1.steamcontent.com
+# DOMAIN-KEYWORD, -bkk-jast.steamcontent.com
+# DOMAIN-KEYWORD, -bkk-true.steamcontent.com
+# DOMAIN-KEYWORD, -bne-aubb.steamcontent.com
+# DOMAIN-KEYWORD, -bom1.steamcontent.com
+# DOMAIN-KEYWORD, -bud-retn.steamcontent.com
+# DOMAIN-KEYWORD, -cfc-acol.steamcontent.com
+# DOMAIN-KEYWORD, -dfw1.steamcontent.com
+# DOMAIN-KEYWORD, -dsa-ask4.steamcontent.com
+# DOMAIN-KEYWORD, -dxb1.steamcontent.com
+# DOMAIN-KEYWORD, -eze1.steamcontent.com
+# DOMAIN-KEYWORD, -fra1.steamcontent.com
+# DOMAIN-KEYWORD, -fra2.steamcontent.com
+# DOMAIN-KEYWORD, -got-cmhm.steamcontent.com
+# DOMAIN-KEYWORD, -gru1.steamcontent.com
+# DOMAIN-KEYWORD, -gsv-retn.steamcontent.com
+# DOMAIN-KEYWORD, -hel-retn.steamcontent.com
+# DOMAIN-KEYWORD, -hkg1.steamcontent.com
+# DOMAIN-KEYWORD, -hrk-retn.steamcontent.com
+# DOMAIN-KEYWORD, -iad1.steamcontent.com
+# DOMAIN-KEYWORD, -iev-datl.steamcontent.com
+# DOMAIN-KEYWORD, -jnb1.steamcontent.com
+# DOMAIN-KEYWORD, -lax1.steamcontent.com
+# DOMAIN-KEYWORD, -lhr1.steamcontent.com
+# DOMAIN-KEYWORD, -lim1.steamcontent.com
+# DOMAIN-KEYWORD, -maa1.steamcontent.com
+# DOMAIN-KEYWORD, -mad1.steamcontent.com
+# DOMAIN-KEYWORD, -man1.steamcontent.com
+# DOMAIN-KEYWORD, -mel-aubb.steamcontent.com
+# DOMAIN-KEYWORD, -mel-edgx.steamcontent.com
+# DOMAIN-KEYWORD, -mfm-cdtm.steamcontent.com
+# DOMAIN-KEYWORD, -mmx-cmhm.steamcontent.com
+# DOMAIN-KEYWORD, -ods-retn.steamcontent.com
+# DOMAIN-KEYWORD, -okc1.steamcontent.com
+# DOMAIN-KEYWORD, -ord1.steamcontent.com
+# DOMAIN-KEYWORD, -par1.steamcontent.com
+# DOMAIN-KEYWORD, -per-edgx.steamcontent.com
+# DOMAIN-KEYWORD, -per-nxhp.steamcontent.com
+# DOMAIN-KEYWORD, -rix-retn.steamcontent.com
+# DOMAIN-KEYWORD, -scl1.steamcontent.com
+# DOMAIN-KEYWORD, -sea1.steamcontent.com
+# DOMAIN-KEYWORD, -seo-hwng.steamcontent.com
+# DOMAIN-KEYWORD, -seo1.steamcontent.com
+# DOMAIN-KEYWORD, -sgp1.steamcontent.com
+# DOMAIN-KEYWORD, -sof-retn.steamcontent.com
+# DOMAIN-KEYWORD, -sto1.steamcontent.com
+# DOMAIN-KEYWORD, -sto2.steamcontent.com
+# DOMAIN-KEYWORD, -svo-retn.steamcontent.com
+# DOMAIN-KEYWORD, -syd1.steamcontent.com
+# DOMAIN-KEYWORD, -tyo1.steamcontent.com
+# DOMAIN-KEYWORD, -tyo2.steamcontent.com
+# DOMAIN-KEYWORD, -uln-untl.steamcontent.com
+# DOMAIN-KEYWORD, -vie1.steamcontent.com
+# DOMAIN-KEYWORD, -vno-bite.steamcontent.com
+# DOMAIN-KEYWORD, -waw-extl.steamcontent.com
+# DOMAIN-KEYWORD, -waw1.steamcontent.com
+# DOMAIN-KEYWORD, -ymo-bell.steamcontent.com
+# DOMAIN-KEYWORD, -yvr-shaw.steamcontent.com
+# DOMAIN-KEYWORD, -ywg-shaw.steamcontent.com
+# DOMAIN-KEYWORD, -yyc-shaw.steamcontent.com
+# DOMAIN-KEYWORD, -yyc-tsvy.steamcontent.com
+# DOMAIN-KEYWORD, -yyz-bell.steamcontent.com
+# DOMAIN-KEYWORD, -yyz-tsvy.steamcontent.com
+# DOMAIN-KEYWORD, akl-tpwr.steamcontent.com
+# DOMAIN-KEYWORD, akl-vgnz.steamcontent.com
+# DOMAIN-KEYWORD, ala-kzkt.steamcontent.com
+# DOMAIN-KEYWORD, bkk-jast.steamcontent.com
+# DOMAIN-KEYWORD, bkk-true.steamcontent.com
+# DOMAIN-KEYWORD, bne-aubb.steamcontent.com
+# DOMAIN-KEYWORD, bud-retn.steamcontent.com
+# DOMAIN-KEYWORD, cfc-acol.steamcontent.com
+# DOMAIN-KEYWORD, got-cmhm.steamcontent.com
+# DOMAIN-KEYWORD, gsv-retn.steamcontent.com
+# DOMAIN-KEYWORD, hel-retn.steamcontent.com
+# DOMAIN-KEYWORD, hrk-retn.steamcontent.com
+# DOMAIN-KEYWORD, iev-datl.steamcontent.com
+# DOMAIN-KEYWORD, mel-aubb.steamcontent.com
+# DOMAIN-KEYWORD, mel-edgx.steamcontent.com
+# DOMAIN-KEYWORD, mfm-cdtm.steamcontent.com
+# DOMAIN-KEYWORD, mmx-cmhm.steamcontent.com
+# DOMAIN-KEYWORD, ods-retn.steamcontent.com
+# DOMAIN-KEYWORD, per-edgx.steamcontent.com
+# DOMAIN-KEYWORD, per-nxhp.steamcontent.com
+# DOMAIN-KEYWORD, rix-retn.steamcontent.com
+# DOMAIN-KEYWORD, seo-hwng.steamcontent.com
+# DOMAIN-KEYWORD, sof-retn.steamcontent.com
+# DOMAIN-KEYWORD, svo-retn.steamcontent.com
+# DOMAIN-KEYWORD, uln-untl.steamcontent.com
+# DOMAIN-KEYWORD, vno-bite.steamcontent.com
+# DOMAIN-KEYWORD, waw-extl.steamcontent.com
+# DOMAIN-KEYWORD, ymo-bell.steamcontent.com
+# DOMAIN-KEYWORD, yvr-shaw.steamcontent.com
+# DOMAIN-KEYWORD, ywg-shaw.steamcontent.com
+# DOMAIN-KEYWORD, yyc-shaw.steamcontent.com
+# DOMAIN-KEYWORD, yyc-tsvy.steamcontent.com
+# DOMAIN-KEYWORD, yyz-bell.steamcontent.com
+# DOMAIN-KEYWORD, yyz-tsvy.steamcontent.com
 
 # DOMAIN, cache1-lax1.steamcontent.com
 # DOMAIN, cache2-lax1.steamcontent.com
