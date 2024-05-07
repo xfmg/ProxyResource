@@ -26,7 +26,7 @@ DOMAIN, is.snssdk.com, REJECT
 DOMAIN, log5-applog.fqnovel.com, REJECT
 # DOMAIN, mon11-misc.fqnovel.com, REJECT
 DOMAIN, mssdk.volces.com, REJECT
-DOMAIN, mssdk.zijieapi.com, REJECT
+# DOMAIN, mssdk.zijieapi.com, REJECT
 # DOMAIN, polaris.zijieapi.com, REJECT
 DOMAIN, rtlog5-applog.fqnovel.com, REJECT
 # DOMAIN, timon.zijieapi.com, REJECT
