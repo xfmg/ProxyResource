@@ -1,5 +1,5 @@
 #!name = 番茄小说去广告
-#!desc = 移除番茄小说开屏广告，移除文章底部和章末广告，移除悬浮部件。
+#!desc = 移除番茄小说开屏广告，移除文章底部和章末广告，移除悬浮部件和底栏多余的福利标签。
 #!openUrl = 
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
@@ -40,23 +40,6 @@ DOMAIN, ug.snssdk.com, REJECT
 DOMAIN, vcs.zijieapi.com, REJECT
 DOMAIN, webcast-open.douyin.com, REJECT
 DOMAIN, zlink.ugsdk.cn, REJECT
-# DOMAIN, api5-normal.fqnovel.com, REJECT
-# DOMAIN, i.snssdk.com, REJECT
-# DOMAIN, lf3-reading.fqnovelpic.com, REJECT
-# DOMAIN, p3-aio.ecombdimg.com, REJECT
-# DOMAIN, p3-developer-sign.bytemaimg.com, REJECT
-# DOMAIN, p3-novel-sign.byteimg.com, REJECT
-# DOMAIN, p3-novel.byteimg.com, REJECT
-# DOMAIN, p3-reading-sign.fqnovelpic.com, REJECT
-# DOMAIN, p3-sign.douyinpic.com, REJECT
-# DOMAIN, p3.douyinpic.com, REJECT
-# DOMAIN, p6-novel-sign.byteimg.com, REJECT
-# DOMAIN, p6-novel.byteimg.com, REJECT
-# DOMAIN, p6-webcast.douyinpic.com, REJECT
-# DOMAIN, p9-aio.ecombdimg.com, REJECT
-# DOMAIN, p9-developer-sign.bytemaimg.com, REJECT
-# DOMAIN, p9-novel-sign.byteimg.com, REJECT
-# DOMAIN, p9-reading-sign.fqnovelpic.com, REJECT
 
 [Rewrite]
 ^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
