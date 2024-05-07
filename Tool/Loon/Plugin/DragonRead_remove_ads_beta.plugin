@@ -33,31 +33,11 @@ DOMAIN, reading.snssdk.com, REJECT
 DOMAIN, rtlog5-applog.fqnovel.com, REJECT
 DOMAIN, security.snssdk.com, REJECT
 DOMAIN, timon.zijieapi.com, REJECT
-# DOMAIN, tnc3-aliec2.snssdk.com, REJECT
-# DOMAIN, tnc3-alisc1.snssdk.com, REJECT
-# DOMAIN, tnc3-bjlgy.snssdk.com, REJECT
 DOMAIN, toutiao-frontier.snssdk.com, REJECT
 DOMAIN, ug.snssdk.com, REJECT
 DOMAIN, vcs.zijieapi.com, REJECT
 DOMAIN, webcast-open.douyin.com, REJECT
 DOMAIN, zlink.ugsdk.cn, REJECT
-# DOMAIN, api5-normal.fqnovel.com, REJECT
-# DOMAIN, i.snssdk.com, REJECT
-# DOMAIN, lf3-reading.fqnovelpic.com, REJECT
-# DOMAIN, p3-aio.ecombdimg.com, REJECT
-# DOMAIN, p3-developer-sign.bytemaimg.com, REJECT
-# DOMAIN, p3-novel-sign.byteimg.com, REJECT
-# DOMAIN, p3-novel.byteimg.com, REJECT
-# DOMAIN, p3-reading-sign.fqnovelpic.com, REJECT
-# DOMAIN, p3-sign.douyinpic.com, REJECT
-# DOMAIN, p3.douyinpic.com, REJECT
-# DOMAIN, p6-novel-sign.byteimg.com, REJECT
-# DOMAIN, p6-novel.byteimg.com, REJECT
-# DOMAIN, p6-webcast.douyinpic.com, REJECT
-# DOMAIN, p9-aio.ecombdimg.com, REJECT
-# DOMAIN, p9-developer-sign.bytemaimg.com, REJECT
-# DOMAIN, p9-novel-sign.byteimg.com, REJECT
-# DOMAIN, p9-reading-sign.fqnovelpic.com, REJECT
 
 [Rewrite]
 ^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
