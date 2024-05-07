@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DragonRead.png
-#!date = 2024-05-07 15:31:20
+#!date = 2024-05-07 15:42:02
 
 [Rule]
 URL-REGEX, ^http:\/\/sf3-be-pack\.pglstatp-toutiao\.com\/obj\/ad-app-package\/, REJECT
@@ -21,10 +21,10 @@ DOMAIN, effect.snssdk.com, REJECT
 DOMAIN, feedback-c.zijieapi.com, REJECT
 DOMAIN, ichannel.snssdk.com, REJECT
 DOMAIN, is.snssdk.com, REJECT
-DOMAIN, lf-webcast-gr-sourcecdn.bytegecko.com, REJECT
-DOMAIN, lf3-reading.fqnovelstatic.com, REJECT
+# DOMAIN, lf-webcast-gr-sourcecdn.bytegecko.com, REJECT
+# DOMAIN, lf3-reading.fqnovelstatic.com, REJECT
 DOMAIN, log5-applog.fqnovel.com, REJECT
-DOMAIN, mon11-misc.fqnovel.com, REJECT
+# DOMAIN, mon11-misc.fqnovel.com, REJECT
 DOMAIN, mssdk.volces.com, REJECT
 DOMAIN, mssdk.zijieapi.com, REJECT
 DOMAIN, polaris.zijieapi.com, REJECT
