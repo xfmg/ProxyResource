@@ -16,7 +16,7 @@ DOMAIN, p3-ad-sign.byteimg.com, REJECT
 [Rewrite]
 ^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
 # 域名解析
-^https:\/\/tnc3-alisc1\.zijieapi\.com\/get_domains\/
+^https:\/\/tnc3-alisc1\.zijieapi\.com\/get_domains\/ reject
 
 [Mitm]
 hostname = sf3-fe-tos.pglstatp-toutiao.com, tnc3-alisc1.zijieapi.com
