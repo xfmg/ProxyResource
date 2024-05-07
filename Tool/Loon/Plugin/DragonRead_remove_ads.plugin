@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DragonRead.png
-#!date = 2024-05-07 12:41:20
+#!date = 2024-05-07 12:48:39
 
 [Rule]
 URL-REGEX, ^http:\/\/sf3-be-pack\.pglstatp-toutiao\.com\/obj\/ad-app-package\/, REJECT
@@ -19,7 +19,6 @@ DOMAIN, dig.bdurl.net, REJECT
 DOMAIN, dig.zjurl.cn, REJECT
 DOMAIN, effect.snssdk.com, REJECT
 DOMAIN, feedback-c.zijieapi.com, REJECT
-DOMAIN, i.snssdk.com, REJECT
 DOMAIN, ichannel.snssdk.com, REJECT
 DOMAIN, is.snssdk.com, REJECT
 DOMAIN, lf-webcast-gr-sourcecdn.bytegecko.com, REJECT
@@ -42,6 +41,7 @@ DOMAIN, vcs.zijieapi.com, REJECT
 DOMAIN, webcast-open.douyin.com, REJECT
 DOMAIN, zlink.ugsdk.cn, REJECT
 # DOMAIN, api5-normal.fqnovel.com, REJECT
+# DOMAIN, i.snssdk.com, REJECT
 # DOMAIN, lf3-reading.fqnovelpic.com, REJECT
 # DOMAIN, p3-aio.ecombdimg.com, REJECT
 # DOMAIN, p3-developer-sign.bytemaimg.com, REJECT
