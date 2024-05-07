@@ -4,14 +4,21 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DragonRead.png
-#!date = 2024-05-07 08:57:01
+#!date = 2024-05-07 09:41:56
 
 [Rule]
 URL-REGEX, ^http:\/\/sf3-be-pack\.pglstatp-toutiao\.com\/obj\/ad-app-package\/, REJECT
 DOMAIN, ads3-normal-lq.zijieapi.com, REJECT
 DOMAIN, ads5-normal-lq.zijieapi.com, REJECT
 DOMAIN, ads5-normal.zijieapi.com, REJECT
+DOMAIN, dig.bdurl.net, REJECT
 DOMAIN, p3-ad-sign.byteimg.com, REJECT
+DOMAIN, pangolin-sdk-toutiao-b.com, REJECT
+DOMAIN, pangolin-sdk-toutiao.com, REJECT
+DOMAIN, pangolin-sdk-toutiao1.com, REJECT
+DOMAIN, tnc3-bjlgy.snssdk.com, REJECT
+DOMAIN, toutiao-frontier.snssdk.com, REJECT
+DOMAIN, ug.snssdk.com, REJECT
 
 [Rewrite]
 ^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject

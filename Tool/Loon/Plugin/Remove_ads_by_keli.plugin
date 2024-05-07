@@ -19,6 +19,15 @@ DOMAIN-KEYWORD, pangolin-sdk-toutiao, REJECT
 DOMAIN-KEYWORD, pglstatp-toutiao, REJECT
 DOMAIN-KEYWORD, video-cn.snssdk.com, REJECT
 
+# 穿山甲
+DOMAIN, i.snssdk.com, REJECT
+DOMAIN, is.snssdk.com, REJECT
+DOMAIN, pangolin.snssdk.com, REJECT
+DOMAIN, extlog.snssdk.com, REJECT
+DOMAIN, sf3-ttcdn-tos.pstatp.com, REJECT
+DOMAIN, bds.snssdk.com, REJECT
+DOMAIN, dig.bdurl.net, REJECT
+
 # 快手联盟 - 广告服务商
 DOMAIN, open.e.kuaishou.com, REJECT
 
