@@ -4,7 +4,7 @@
 #!author = app2smile
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Tieba.png
-#!date = 2024-04-19 17:00:44
+#!date = 2024-04-12 15:56:18
 
 [Rule]
 DOMAIN, 180.76.76.200, REJECT
