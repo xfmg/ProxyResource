@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DragonRead.png
-#!date = 2024-05-09 21:24:06
+#!date = 2024-05-10 13:49:09
 
 [Rule]
 URL-REGEX, ^http:\/\/sf3-be-pack\.pglstatp-toutiao\.com\/obj\/ad-app-package\/, REJECT
@@ -20,12 +20,11 @@ DOMAIN, rtlog5-applog.fqnovel.com, REJECT
 
 [Rewrite]
 ^https:\/\/sf3-fe-tos\.pglstatp-toutiao\.com\/obj\/ad-pattern\/ reject
-^https:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/ reject
-^https:\/\/api-access\.pangolin-sdk-toutiao1\.com\/api\/ad\/ reject
+https:\/\/api-access\.pangolin-sdk-toutiao(\d|-b)?\.com\/api\/ad\/ reject
 ^https:\/\/lf-cdn-tos\.bytescm\.com\/obj\/static\/ad\/ reject
 
 # 域名解析
 ^https:\/\/tnc3-alisc1\.zijieapi\.com\/get_domains\/ reject
 
 [Mitm]
-hostname = sf3-fe-tos.pglstatp-toutiao.com, tnc3-alisc1.zijieapi.com, api-access.pangolin-sdk-toutiao.com, api-access.pangolin-sdk-toutiao1.com, lf-cdn-tos.bytescm.com
+hostname = sf3-fe-tos.pglstatp-toutiao.com, tnc3-alisc1.zijieapi.com, api-access.pangolin-sdk-toutiao.com, api-access.pangolin-sdk-toutiao*.com, lf-cdn-tos.bytescm.com
