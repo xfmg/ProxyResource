@@ -27,4 +27,4 @@ DOMAIN, rtlog5-applog.fqnovel.com, REJECT
 ^https:\/\/tnc3-alisc1\.zijieapi\.com\/get_domains\/ reject
 
 [Mitm]
-hostname = sf3-fe-tos.pglstatp-toutiao.com, tnc3-alisc1.zijieapi.com, api-access.pangolin-sdk-toutiao.com, api-access.pangolin-sdk-toutiao*.com, lf-cdn-tos.bytescm.com
+hostname = sf3-fe-tos.pglstatp-toutiao.com, tnc3-alisc1.zijieapi.com, api-access.pangolin-sdk-toutiao?.com, lf-cdn-tos.bytescm.com
