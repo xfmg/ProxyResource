@@ -1,5 +1,5 @@
 #!name = 七猫小说去广告
-#!desc = 过滤七猫小说广告，受限于七猫小说自身对MitM和VPN状态的检测，部分页面广告无法移除。
+#!desc = 移除大部分七猫小说广告，但受限于七猫小说自身对MitM和VPN状态的检测，部分页面广告无法移除。
 #!openUrl = 
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
