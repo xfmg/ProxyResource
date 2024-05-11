@@ -6,5 +6,5 @@ banner.forEach(function (bannerData) {
         bannerData[prop] = "";
     }
 });
-console.log(json);
+// console.log(json);
 $done({ body: JSON.stringify(json) });
