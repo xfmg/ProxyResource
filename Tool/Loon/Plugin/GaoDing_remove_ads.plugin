@@ -15,7 +15,7 @@ https:\/\/qiye\.gaoding\.com\/api\/v3\/oc\/delivery-pits\/template-page-dialog\/
 
 [Script]
 # 移除首页轮播图
-http-response ^https:\/\/qiye\.gaoding\.com\/api\/v3\/oc\/exhibitions\/template\/resources$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/WexinMiniPrograms/GaoDing/GaoDing_remove_ads.js, requires-body = true, tag = 移除首页轮播图
+http-response ^https:\/\/qiye\.gaoding\.com\/api\/v3\/oc\/exhibitions\/template\/resources$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/GaoDing/GaoDing_remove_ads.js, requires-body = true, tag = 移除首页轮播图
 
 [Mitm]
 hostname = qiye.gaoding.com
