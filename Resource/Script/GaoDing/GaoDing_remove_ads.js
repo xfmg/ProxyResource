@@ -2,4 +2,5 @@
 var json = JSON.parse($response.body);
 var banner = json.pits[0];
 banner.delivery_materials = "";
+console.log(data);
 $done({ body: JSON.stringify(json) });
