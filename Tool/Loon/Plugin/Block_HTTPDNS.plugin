@@ -4,7 +4,7 @@
 #!author = VirgilClyne 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
-#!date = 2024-05-12 21:02:01
+#!date = 2024-05-12 21:11:06
 
 [Rule]
 # YY语音
@@ -22,9 +22,10 @@ IP-CIDR6, 2402:4e00:1900:1700:0:9554:1ad9:c3a/128, REJECT, no-resolve
 IP-CIDR6, 240e:928:1400:10::25/128, REJECT, no-resolve
 
 # QQ音乐
+DOMAIN, httpdns.kg.qq.com, REJECT
 URL-REGEX, ^http:\/\/182\.256\.116\.116\/d, REJECT
 
-# Bilibili
+# 哔哩哔哩
 DOMAIN, httpdns.bilivideo.com, REJECT
 # KEY_EXT_P2P_HTTPDNS_BILI_IP
 URL-REGEX, ^http:\/\/47\.101\.175\.206\/resolve, REJECT
