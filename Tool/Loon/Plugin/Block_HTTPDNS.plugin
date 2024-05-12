@@ -4,13 +4,14 @@
 #!author = VirgilClyne 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/HTTPDNS.png
-#!date = 2024-05-12 20:05:17
+#!date = 2024-05-12 21:02:01
 
 [Rule]
 # YY语音
 DOMAIN, yyapp-httpdns.gslb.yy.com, REJECT // YY语音
 
 # 微信
+DOMAIN, dns.weixin.com.cn, REJECT
 DOMAIN, dns.weixin.qq.com, REJECT
 DOMAIN, dns.weixin.qq.com.cn, REJECT
 IP-CIDR, 42.187.182.106/32, REJECT, no-resolve
