@@ -9,7 +9,6 @@
 [Rule]
 DOMAIN, cdn-ad.wtzw.com, REJECT
 DOMAIN, cdn-new-ad.wtzw.com, REJECT
-DOMAIN, ipi.shuzilm.cn, DIRECT // 放行请求，避免提示网络异常。
 DOMAIN-SUFFIX, gdt.qq.com, REJECT
 
 [Rewrite]
