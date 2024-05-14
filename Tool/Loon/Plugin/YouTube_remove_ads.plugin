@@ -12,8 +12,8 @@
 #select = 启用调试模式, true, false
 
 [Rule]
-AND, ((DOMAIN-SUFFIX, googlevideo.com), (OR, ((PROTOCOL, QUIC), (AND, ((PROTOCOL, UDP), (DEST-PORT, 443)))))), REJECT
-AND, ((DOMAIN, youtubei.googleapis.com), (OR, ((PROTOCOL, QUIC), (AND, ((PROTOCOL, UDP), (DEST-PORT, 443)))))), REJECT
+AND, ((DOMAIN-SUFFIX, googlevideo.com),  (PROTOCOL, QUIC)), REJECT
+AND, ((DOMAIN-SUFFIX, googlevideo.com),  (PROTOCOL, QUIC)), REJECT
 
 [Rewrite]
 # 使用reject-dict方法以减少开销
