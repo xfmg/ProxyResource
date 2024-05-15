@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-05-15 16:50:49
+#!date = 2024-05-15 17:04:27
 
 [Rule]
 # 广告联盟放行
@@ -21,7 +21,6 @@ AND, ((DOMAIN-KEYWORD, log-api.pangolin-sdk-toutiao), (DOMAIN-SUFFIX, .com)), RE
 DOMAIN, toblog.ctobsnssdk.com, REJECT
 DOMAIN, mssdk-bu.bytedance.com, REJECT
 DOMAIN-KEYWORD, -be-pack-sign.pglstatp-toutiao.com, REJECT
-DOMAIN-KEYWORD, -sign.douyinpic.com, REJECT
 
 # 快手联盟 - 广告服务商
 DOMAIN, open.e.kuaishou.com, REJECT
