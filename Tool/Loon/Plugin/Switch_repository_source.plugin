@@ -7,6 +7,10 @@
 #!select = 仓库源, Bitbucket - 四网直连, GitLab - 电信联通直连, GitHub - 访问不畅
 #!date = 2024-04-21 02:37:51
 
+[Rule]
+DOMAIN-SUFFIX, gitlab.com, DIRECT
+DOMAIN-SUFFIX, bitbucket.org, DIRECT
+
 [Script]
 http-request ^https:\/\/raw\.githubusercontent\.com\/luestr\/ProxyResource\/main\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = GitHub换源
 http-request ^https:\/\/gitlab\.com\/lodepuly\/vpn_tool\/-\/raw\/master\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Switch_repository_source/Switch_repository_source.js, tag = GitLab换源
