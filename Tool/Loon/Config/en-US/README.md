@@ -14,15 +14,24 @@ Applicable Version: Latest version on App Store
 
 #### You should back up your current configuration file before importing: click [Configuration] → [Export] → [Save to "Files"]
 
-[Click to import minimal configuration file](https://www.nsloon.com/openloon/import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Config/Loon_Simple_Sample_Configuration_By_iKeLee.conf) - Recommended for beginners
 
+### Inventory of Configuration Files
 
-[Click to import advanced configuration file](https://www.nsloon.com/openloon/import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Config/Loon_Sample_Configuration_By_iKeLee.conf) - Only applicable to users who want to bypass the Great Firewall through a router
+[Auto-Select config](loon://import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Config/Loon_Auto-Select_Configuration_By_iKeLee.conf) - This configuration file empowers you with automatic selection of the node boasting the lowest latency, eliminating the need for manual intervention. The entire process unfolds seamlessly and autonomously. 
 
+[Advanced config](loon://import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Config/Loon_Advanced_Configuration_By_iKeLee.conf) - This configuration file empowers you with automatic selection of the node exhibiting the lowest latency, eliminating the need for manual intervention. The entire process unfolds seamlessly and autonomously. When connecting to a router equipped with a transparent proxy, your Loon will establish a connection via the "DIRECT" strategy, leveraging your router to access restricted websites. Conversely, when utilizing other networks, Loon will facilitate access to these websites through its own proxy. This intelligent approach prevents the redundant proxy scenario that can arise when connecting to a router already employing a transparent proxy. 
+
+[Manual node selection config](loon://import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Config/Loon_Selection_Configuration_By_iKeLee.conf) - This configuration file requires you to manually select your desired node. It will not automatically switch nodes in the event of a proxy server failure, necessitating your intervention to choose a functioning alternative. 
+
+[Simple config](loon://import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Config/Loon_Simple_Configuration_By_iKeLee.conf) - This configuration file is designed for simplicity, featuring a single policy group. Its straightforward nature allows for effortless setup and immediate usability. 
+
+[Basic config](loon://import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Config/Loon_Basic_Configuration_By_iKeLee.conf) - This configuration file is a barebones foundation, devoid of any policy groups. Its purpose is twofold: to serve as a baseline for troubleshooting software issues and as a starting point for building your own customized configuration files. 
+
+[tvOS config](loon://import?sub=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Config/Loon_tvOS_Configuration_By_iKeLee.conf) - This configuration file is specifically designed for tvOS and includes a mix of policy groups. Some of these groups automatically select the optimal node for you, while others give you the freedom to choose your preferred node manually. 
 
 ### Usage Instructions
 
-1. After importing the configuration, please [switch to automatic traffic splitting](https://www.nsloon.com/openloon/flowmodel=filter) and [switch the proxy mode to TUN Only](https://www.nsloon.com/openloon/proxymode=tun).
+1. After importing the configuration, please [switch to automatic flow mode](https://www.nsloon.com/openloon/flowmodel=filter).
 
 2. Go to the [Configuration] interface and turn on the switches for [Script], [Rewrite], and [MitM].
 
