@@ -10,9 +10,9 @@ Applicable Version: Latest version on App Store
 
 ### Importing Configuration
 
-#### Clicking the link below will immediately start importing the configuration file and ask if you really want to import it. Please confirm before importing.
+##### Clicking the link below will immediately start importing the configuration file and ask if you really want to import it. Please confirm before importing.
 
-#### You should back up your current configuration file before importing: click [Configuration] → [Export] → [Save to "Files"]
+##### You should back up your current configuration file before importing: click [Configuration] → [Export] → [Save to "Files"]
 
 
 ### Inventory of Configuration Files
