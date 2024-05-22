@@ -1,4 +1,4 @@
-# 2024-05-22 22:13:54
+# 2024-05-22 22:17:48
 # ChatGPT
 AND, ((DOMAIN-KEYWORD, chatgpt-async-webps-prod-eastus-), (DOMAIN-KEYWORD, .webpubsub.azure.com))
 DOMAIN, chat.openai.com.cdn.cloudflare.net
@@ -23,10 +23,10 @@ DOMAIN, www.bing.com
 # Gemini
 DOMAIN, bard.google.com
 DOMAIN, gemini.google.com
-DOMAIN, aistudio.google.com // 网页相关
 DOMAIN, ai.google.dev // 网页相关
-DOMAIN, makersuite.google.com // 网页相关
+DOMAIN, aistudio.google.com // 网页相关
 DOMAIN, alkalimakersuite-pa.clients6.google.com // 网页相关
+DOMAIN, makersuite.google.com // 网页相关
 
 # Claude
 DOMAIN-SUFFIX, anthropic.com
