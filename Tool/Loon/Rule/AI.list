@@ -24,6 +24,8 @@ DOMAIN, www.bing.com
 DOMAIN, bard.google.com
 DOMAIN, gemini.google.com
 DOMAIN, aistudio.google.com // 网页相关
+DOMAIN, ai.google.dev // 网页相关
+DOMAIN, makersuite.google.com // 网页相关
 
 # Claude
 DOMAIN-SUFFIX, anthropic.com
