@@ -15,8 +15,8 @@ DOMAIN, gwp.xiaojukeji.com, REJECT
 [Script]
 http-response ^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DiDi/DiDi_remove_ads.js, requires-body = true, tag = 移除广告
 http-response ^https:\/\/daijia\.kuaidadi\.com\/gateway script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DiDi/DiDi_remove_ads.js, requires-body = true, tag = 移除广告
-http-response ^https:\/\/freight\.xiaojukeji\.com\/gateway script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DiDi/DiDi_remove_ads.js, requires-body = true, tag = 移除广告
 http-response ^https:\/\/daijia\.kuaidadi\.com:443\/gateway script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DiDi/DiDi_remove_ads.js, requires-body = true, tag = 移除广告
+http-response ^https:\/\/freight\.xiaojukeji\.com\/gateway script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DiDi/DiDi_remove_ads.js, requires-body = true, tag = 移除广告
 http-response ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/xpget script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DiDi/DiDi_remove_ads.js, requires-body = true, tag = 移除广告
 http-response ^https:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DiDi/DiDi_remove_ads.js, requires-body = true, tag = 移除广告
 http-response ^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DiDi/DiDi_remove_ads.js, requires-body = true, tag = 移除广告
