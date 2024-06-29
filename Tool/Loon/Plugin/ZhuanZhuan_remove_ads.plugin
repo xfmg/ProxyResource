@@ -1,0 +1,30 @@
+#!name = 转转去广告
+#!desc = 移除开屏广告、应用内悬浮窗，精简我的页面。
+#!openUrl = 
+#!author = 可莉🅥
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/ZhuanZhuan.png
+#!date = 2024-06-30 00:48:45
+
+[Rewrite]
+# 开屏广告
+^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzlogic\/getOpenScreen reject
+
+# 悬浮窗
+^https:\/\/lego\.zhuanzhuan\.com\/v1\/coke-real reject
+
+# 我的页面 - 发布闲置赚钱
+^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzusercenter\/myprofilevariouscards reject-dict
+
+# 我的页面 - 精选好货
+^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/getchoicegoodsinfos reject-dict
+
+[Script]
+# 移除悬浮窗
+http-request ^https:\/\/app\.zhuanzhuan\.com\/zz\/v2\/zzinfoshow\/getfeedflowinfo script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/ZhuanZhuan/ZhuanZhuan_remove_ads.js, tag = 移除悬浮窗
+
+# 精简我的页面
+http-request ^https:\/\/app\.zhuanzhuan\.com\/zz\/transfer\/getmyprofilev3 script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/ZhuanZhuan/ZhuanZhuan_remove_ads.js, tag = 精简我的页面
+
+[Mitm]
+hostname = app.zhuanzhuan.com
