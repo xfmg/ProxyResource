@@ -29,7 +29,7 @@ IP-CIDR6, 2405:1480:1000:3::20/128, REJECT, no-resolve
 # 首页 - 领券悬浮红包
 ^https:\/\/mall\.meituan\.com\/api\/c\/homepage\/bubble\/operate\/info reject-dict
 # 分类 - 横幅推广
-^https:\/\/mall\.meituan\.com\/api\/c\/jigsaw\/code\/category-banner-500\/ reject-dict
+^https:\/\/mall\.meituan\.com\/api\/c\/jigsaw\/code\/category-banner-\d+\/ reject-dict
 # 购物车 - 您可能想买
 ^https:\/\/mall\.meituan\.com\/api\/c\/poi\/\d+\/order\/recommend\/v\d reject-dict
 # 我的页面 - 轮播图
