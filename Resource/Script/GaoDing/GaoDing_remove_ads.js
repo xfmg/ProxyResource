@@ -15,11 +15,11 @@ if ($request.url.includes("/oc/exhibitions/template/resources")) {
 }
 
 // 检查 URL 路径是否包含 /oc/exhibitions/app_mine/resources
-if ($request.url.includes("/oc/exhibitions/app_mine/resources")) {
-    // 移除 pits[2]
-    if (json.pits && json.pits[2]) {
-        json.pits[2] = {};
-    }
-}
+// if ($request.url.includes("/oc/exhibitions/app_mine/resources")) {
+//     // 移除 pits[2]
+//     if (json.pits && json.pits[2]) {
+//         json.pits[2] = {};
+//     }
+// }
 
 $done({ body: JSON.stringify(json) });
