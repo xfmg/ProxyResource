@@ -1,5 +1,10 @@
-// 2024-07-05 21:19:40
+// 2024-07-06 11:22:53
 var json = JSON.parse($response.body);
+
+// 删除签到内容
+if (json.user.user_growth) {
+    delete json.user.user_growth;
+}
 
 // 删除金融内容
 if (json.finance_tab) {
@@ -19,6 +24,36 @@ if (json.banner) {
 }
 if (json.duxiaoman_entry) {
     delete json.duxiaoman_entry;
+}
+
+
+if (json.custom_grid[12]) {
+    delete json.custom_grid[12];
+}
+
+// 精简常用功能
+if (json.custom_grid[4]) {
+    delete json.custom_grid[4];
+}
+
+if (json.custom_grid[5]) {
+    delete json.custom_grid[5];
+}
+
+if (json.custom_grid[6]) {
+    delete json.custom_grid[6];
+}
+
+if (json.custom_grid[10]) {
+    delete json.custom_grid[10];
+}
+
+if (json.custom_grid[11]) {
+    delete json.custom_grid[11];
+}
+
+if (json.custom_grid[12]) {
+    delete json.custom_grid[12];
 }
 
 // 删除小程序列表
