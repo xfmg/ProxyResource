@@ -2,8 +2,8 @@
 var json = JSON.parse($response.body);
 
 // 移除首页轮播图
-if (json.pits && json.pits[0]) {
-    delete json.pits[0];
+if (json.pits && json.pits[0].delivery_materials) {
+    delete json.pits[0].delivery_materials;
 }
 
 // console.log(json);
