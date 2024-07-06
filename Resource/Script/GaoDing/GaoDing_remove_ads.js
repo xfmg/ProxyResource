@@ -16,8 +16,8 @@ if ($request.url.includes('/exhibitions/template/resources')) {
 } else if ($request.url.includes('/exhibitions/app_mine/resources')) {
     var json = JSON.parse($response.body);
 
-    if (json.finance_tab) {
-        delete json.finance_tab;
+    if (json.pits[2]) {
+        delete json.pits[2];
     }
     $done({ body: JSON.stringify(json) });
 } else {
