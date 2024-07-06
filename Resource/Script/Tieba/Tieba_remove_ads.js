@@ -1,4 +1,5 @@
-// 2024-07-06 11:42:03
+// 2024-07-06 11:48:20
+
 const url = $request.url;
 let obj;
 try {
@@ -9,6 +10,11 @@ try {
     return;
 }
 
+if (url.includes("/sidebar/home")) {
+    delete obj.vip_banner;
+    delete obj.tools;
+    }
+    
 if (url.includes("/user/profile")) {
     delete obj.vip_banner; // 会员
     delete obj.finance_tab; // 金融
@@ -43,3 +49,4 @@ if (url.includes("/livefeed/feed")) {
 }
 
 $done({body: JSON.stringify(obj)});
+
