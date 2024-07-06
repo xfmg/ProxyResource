@@ -27,10 +27,6 @@ if (json.duxiaoman_entry) {
 }
 
 
-if (json.custom_grid[12]) {
-    delete json.custom_grid[12];
-}
-
 // 精简常用功能
 // if (json.custom_grid[4]) {
 //     delete json.custom_grid[4];
