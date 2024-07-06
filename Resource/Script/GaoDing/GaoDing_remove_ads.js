@@ -1,14 +1,17 @@
-// 2024-07-06 20:44:51
-    var json = JSON.parse($response.body);
+// 2024-07-06 22:16:46
+var json = JSON.parse($response.body);
 
-    var indicesToDelete = [0, 1, 2];
+// 移除首页轮播图
+for (var prop in json.pits[0]) {
+    json.pits[0][prop] = "";
+}
 
-    indicesToDelete.forEach(function (index) {
-        if (json.pits[index]) {
-            for (var prop in json.pits[index]) {
-                delete json.pits[index][prop];
-            }
-        }
-    });
+// 移除我的页面轮播图
+var deliveryMaterials = json.pits[2].delivery_materials;
+deliveryMaterials.forEach(function (material) {
+    for (var prop in material) {
+        material[prop] = "";
+    }
+});
 
-    $done({ body: JSON.stringify(json) });
+$done({ body: JSON.stringify(json) });
