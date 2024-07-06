@@ -1,4 +1,4 @@
-// 2024-07-06 11:48:20
+// 2024-07-06 12:01:26
 
 const url = $request.url;
 let obj;
@@ -10,11 +10,13 @@ try {
     return;
 }
 
+// 清理侧拉抽屉
 if (url.includes("/sidebar/home")) {
     delete obj.vip_banner;
     delete obj.tools;
     }
-    
+
+// 清理会员横幅、金融板块、小程序
 if (url.includes("/user/profile")) {
     delete obj.vip_banner; // 会员
     delete obj.finance_tab; // 金融
