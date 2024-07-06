@@ -1,9 +1,9 @@
-// 2024-07-06 11:22:53
+// 2024-07-06 11:30:17
 var json = JSON.parse($response.body);
 
 // 删除签到内容
-if (json.user.user_growth) {
-    delete json.user.user_growth;
+if (json.user.user_growth.task_info[1]) {
+    delete json.user.user_growth.task_info[1];
 }
 
 // 删除金融内容
