@@ -32,29 +32,29 @@ if (json.custom_grid[12]) {
 }
 
 // 精简常用功能
-if (json.custom_grid[4]) {
-    delete json.custom_grid[4];
-}
+// if (json.custom_grid[4]) {
+//     delete json.custom_grid[4];
+// }
 
-if (json.custom_grid[5]) {
-    delete json.custom_grid[5];
-}
+// if (json.custom_grid[5]) {
+//     delete json.custom_grid[5];
+// }
 
-if (json.custom_grid[6]) {
-    delete json.custom_grid[6];
-}
+// if (json.custom_grid[6]) {
+//     delete json.custom_grid[6];
+// }
 
-if (json.custom_grid[10]) {
-    delete json.custom_grid[10];
-}
+// if (json.custom_grid[10]) {
+//     delete json.custom_grid[10];
+// }
 
-if (json.custom_grid[11]) {
-    delete json.custom_grid[11];
-}
+// if (json.custom_grid[11]) {
+//     delete json.custom_grid[11];
+// }
 
-if (json.custom_grid[12]) {
-    delete json.custom_grid[12];
-}
+// if (json.custom_grid[12]) {
+//     delete json.custom_grid[12];
+// }
 
 // 删除小程序列表
 if (json.recom_naws_list) {
