@@ -7,7 +7,7 @@
 #!date = 2024-07-09 17:35:00
 
 [Rewrite]
-^https:\/\/api\.ys7\.com\/api\/ads\/v2 reject
+# ^https:\/\/api\.ys7\.com\/api\/ads\/v2 reject
 # ^https:\/\/api\.ys7\.com\/v3\/config\/service\/entrance\/bannerInfo reject-dict
 
 [Script]
