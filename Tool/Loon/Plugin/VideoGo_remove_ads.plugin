@@ -4,11 +4,10 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/VideoGo.png
-#!date = 2024-07-09 17:35:00
-
+#!date = 2024-07-09 21:51:43
 [Rewrite]
-# ^https:\/\/api\.ys7\.com\/api\/ads\/v2 reject
-# ^https:\/\/api\.ys7\.com\/v3\/config\/service\/entrance\/bannerInfo reject-dict
+^https:\/\/api\.ys7\.com\/api\/ads\/v2 reject
+^https:\/\/api\.ys7\.com\/v3\/config\/service\/entrance\/bannerInfo reject-dict
 
 [Script]
 http-response ^https:\/\/api\.ys7\.com\/v3\/valueadded\/operation\/config\/master\/station script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/VideoGo/VideoGo_remove_ads.js, requires-body = true, tag = 我的页面去广告
