@@ -8,7 +8,7 @@
 
 [Rewrite]
 ^https:\/\/api\.ys7\.com\/api\/ads\/v2 reject
-^https:\/\/api\.ys7\.com\/v3\/config\/service\/entrance\/bannerInfo reject-dict
+# ^https:\/\/api\.ys7\.com\/v3\/config\/service\/entrance\/bannerInfo reject-dict
 
 [Script]
 http-response ^https:\/\/api\.ys7\.com\/v3\/valueadded\/operation\/config\/master\/station script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/VideoGo/VideoGo_remove_ads.js, requires-body = true, tag = 我的页面去广告
