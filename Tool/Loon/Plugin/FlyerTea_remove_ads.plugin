@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/FlyerTea.png
-#!date = 2024-07-10 10:38:28
+#!date = 2024-07-10 10:39:11
 
 [Rewrite]
 # 全局广告配置
@@ -12,7 +12,7 @@
 # 我的页面 - 弹窗
 ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=vip_coupon reject-dict
 # 我的页面 - 悬浮窗
-^https:\/\/ptf\.flyertrip\.com\/static\/img\/common\/ic_plate_mine_button\.png reject
+^https:\/\/ptf\.flyertrip\.com\/static\/img\/common\/ic_plate_mine_button\.png reject-img
 
 [Script]
 # 板块广告
