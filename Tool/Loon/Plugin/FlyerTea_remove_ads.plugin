@@ -6,6 +6,9 @@
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/FlyerTea.png
 #!date = 2024-07-10 08:30:54
 
+[Rewrite]
+^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=advis reject
+
 [Script]
 http-response ^https?:\/\/www\.flyert\.com(\.cn)?\/.*plugin script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/FlyerTea/FlyerTea_remove_ads.js, requires-body = true, tag = 飞客去广告
 
