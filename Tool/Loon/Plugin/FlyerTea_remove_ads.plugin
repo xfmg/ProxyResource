@@ -4,13 +4,15 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/FlyerTea.png
-#!date = 2024-07-10 10:16:49
+#!date = 2024-07-10 10:30:34
 
 [Rewrite]
 # 全局广告配置
 ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=advis reject
 # 我的页面 - 弹窗
 ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=vip_coupon reject-dict
+# 我的页面 - 悬浮窗
+^https:\/\/ptf\.flyertrip\.com\/static\/img\/common\/ic_plate_mine_button\.png reject
 
 [Script]
 # 板块广告
