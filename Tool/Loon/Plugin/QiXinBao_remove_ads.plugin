@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/QiXinBao.png
-#!date = 2024-07-10 15:47:15
+#!date = 2024-07-10 15:49:42
 
 [Rewrite]
 # 首页 - 搜索栏热搜词
@@ -35,8 +35,8 @@
 ^https:\/\/qxb-minicode-pic-osscache\.qixin\.com\/web\/ reject
 
 [Script]
-# 首页 - 热门企业
-http-response ^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/homePageRecommend\/recommendCard\d+ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/QiXinBao/QiXinBao_remove_ads.js, requires-body = true, tag = 移除热门企业列表
+# 首页 - 个性化推荐
+http-response ^https:\/\/appc-v6\.qixin\.com\/v4\/enterprise\/homePageRecommend\/recommendCard\d+ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/QiXinBao/QiXinBao_remove_ads.js, requires-body = true, tag = 移除个性化推荐信息流
 
 [Mitm]
 hostname = appc.qixin.com, appc-v6.qixin.com, qxb-minicode-pic-osscache.qixin.com
