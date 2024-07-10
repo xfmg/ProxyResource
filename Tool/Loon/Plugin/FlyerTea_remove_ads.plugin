@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/FlyerTea.png
-#!date = 2024-07-10 08:30:54
+#!date = 2024-07-10 10:16:49
 
 [Rewrite]
 # 全局广告配置
@@ -14,11 +14,11 @@
 
 [Script]
 # 板块广告
-^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?version=5 script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/FlyerTea/FlyerTea_remove_ads.js, requires-body = true, tag = 移除板块广告
+http-response ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?version=5 script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/FlyerTea/FlyerTea_remove_ads.js, requires-body = true, tag = 移除板块广告
 # 我的页面 - 新用户推广横幅
 http-response ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=basicdata&type=app_onoff script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/FlyerTea/FlyerTea_remove_ads.js, requires-body = true, tag = 清理我的页面
 # 签到弹窗广告
-^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=plugin&id=k_misign:sign script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/FlyerTea/FlyerTea_remove_ads.js, requires-body = true, tag = 移除签到弹窗广告
+http-response ^https:\/\/www\.flyert\.com\.cn\/api\/mobile\/index\.php\?module=plugin&id=k_misign:sign script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/FlyerTea/FlyerTea_remove_ads.js, requires-body = true, tag = 移除签到弹窗广告
 
 [Mitm]
 hostname = www.flyert.com.cn
