@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Snowball.png
-#!date = 2024-07-11 09:48:46
+#!date = 2024-07-11 10:10:38
 
 [Rewrite]
 # 开屏广告
@@ -32,4 +32,4 @@
 ^https:\/\/api\.xueqiu\.com\/livestream\/structure\/live\/hotCard\.json reject-dict
 
 [Mitm]
-hostname = api.xueqiu.com, open.xueqiu.com, stock.xueqiu.com
+hostname = api.xueqiu.com, open.xueqiu.com, stock.xueqiu.com, 39.106.123.113, 47.75.231.220, 47.89.2.206, 47.93.55.132, 101.201.62.21, 101.201.62.22
