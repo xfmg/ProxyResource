@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/KingdeeMyMoney.png
-#!date = 2024-07-12 01:50:50
+#!date = 2024-07-12 02:00:55
 
 [Rewrite]
 # 开屏广告
@@ -19,12 +19,14 @@
 # 神象云账本 - 顶部服务、客服入口
 # https://yun.feidee.net/cab-query-ws/v1/comet/artifact/store?path=/cul/screen/Home&ca=897293034467459072
 
-# 社区 - 置顶
-^https:\/\/community\.feidee\.com\/api\/v1\/home\/top reject
+# 社区入口
+^https:\/\/api\.feidee\.net\/v1\/configs\/client\/configs reject
 
 # 其他广告 - 暂无有效广告数据
-^https:\/\/api\.feidee\.net\/v1\/configs\/client\/configs reject
 ^https:\/\/tg\.feidee\.com\/vis-ad-engine-ws\/api\/show reject-dict
 
+# 我的页面 - 免广告会员
+^https:\/\/yun\.feidee\.net\/cab-periodic-activity-ws\/terminal\/v1\/members\/status reject-dict
+
 [Mitm]
-hostname = tg.feidee.com, yunmk.feidee.net, community.feidee.com, api.feidee.net
+hostname = tg.feidee.com, yunmk.feidee.net, community.feidee.com, api.feidee.net, yun.feidee.net
