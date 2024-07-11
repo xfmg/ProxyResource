@@ -16,7 +16,7 @@ URL-REGEX, ^http:\/\/mps\.95508\.com\/mps\/icppweb\/images\/mps\/migration\/mpsp
 # 广发银行 - 国寿联盟悬浮组件
 ^https:\/\/unionsr\.chinalifeonline\.com\.cn\/gslm\/upload\/ reject-200
 # 中信银行 - 开屏广告 @jFrecht
-^https:\/\/imcs\.citicbank\.com\/cloud\/([a-fA-F0-9]{32})\.(jpg|png)\?width=(1125|1242|750|563|1400|1863)&height=(2436|2688|1624|1218|3031|4032) REJECT
+^https:\/\/imcs\.citicbank\.com\/cloud\/([a-fA-F0-9]{32})\.(jpg|png)\?width=(1125|1242|750|563|1400|1863)&height=(2436|2688|1624|1218|3031|4032) reject
 
 
 [Mitm]
