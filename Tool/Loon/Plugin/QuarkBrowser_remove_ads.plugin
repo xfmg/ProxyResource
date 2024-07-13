@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/QuarkBrowser.png
-#!date = 2024-07-14 02:44:26
+#!date = 2024-07-14 02:54:55
 
 [Rewrite]
 # 小说底部文案广告
@@ -13,7 +13,7 @@
 
 [Script]
 # 精简我的页面
-http-response ^https:\/\/conf-m-ssl\.QuarkBrowser\.com\/external\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/QuarkBrowser/QuarkBrowser_remove_ads.js, requires-body = true, tag = 精简我的页面
+http-response ^https:\/\/open-cms-api\.quark\.cn\/open-cms script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/QuarkBrowser/QuarkBrowser_remove_ads.js, requires-body = true, tag = 精简我的页面
 
 [Mitm]
-hostname = huichuan.sm.cn, stars.shuqireader.com, onf-m-ssl.QuarkBrowser.com
+hostname = huichuan.sm.cn, stars.shuqireader.com, open-cms-api.quark.cn
