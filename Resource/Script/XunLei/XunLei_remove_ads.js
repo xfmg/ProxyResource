@@ -21,7 +21,7 @@ if (json.values && json.values.me_config && json.values.me_config.entrance_list)
     });
 }
 
-// 删除云盘横幅
+// 删除我的页面横幅
 if (json.values && json.values.me_config && json.values.me_config.banner_service_list) {
     delete json.values.me_config.banner_service_list;
 }
