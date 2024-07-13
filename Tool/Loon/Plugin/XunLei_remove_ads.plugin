@@ -1,10 +1,10 @@
 #!name = 迅雷去广告
-#!desc = 移除开屏广告、信息流广告和广告轮播图。
+#!desc = 移除开屏广告、首页横幅广告，精简我的页面。
 #!openUrl = https://apps.apple.com/app/id1503466530
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/XunLei.png
-#!date = 2024-07-14 01:34:14
+#!date = 2024-07-14 01:36:13
 
 [Rule]
 # 字节跳动广告
