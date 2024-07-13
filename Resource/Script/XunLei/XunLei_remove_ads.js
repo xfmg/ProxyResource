@@ -1,10 +1,10 @@
-// 2024-07-14 01:46:23
+// 2024-07-14 01:49:13
 var json = JSON.parse($response.body);
 
 // 删除我的云笔记、迅雷浏览器、迅雷TV、金融专区、迅雷快鸟
-if (json.values && json.values.me_config && json.values.me_config.common_service_list && Array.isArray(json.values.me_config.common_service_list)) {
-    var indicesToDelete = [0, 1, 2, 3, 4];
-    indicesToDelete.forEach(function(index) {
+if (json.values && json.values.me_config && json.values.me_config.common_service_list) {
+    var commonServiceIndexes = [0, 1, 2, 3, 4];
+    commonServiceIndexes.forEach(function(index) {
         if (json.values.me_config.common_service_list[index]) {
             delete json.values.me_config.common_service_list[index];
         }
@@ -12,8 +12,13 @@ if (json.values && json.values.me_config && json.values.me_config.common_service
 }
 
 // 删除迅雷小说
-if (json.values && json.values.me_config && json.values.me_config.entrance_list && Array.isArray(json.values.me_config.entrance_list) && json.values.me_config.entrance_list[6]) {
-    delete json.values.me_config.entrance_list[6];
+if (json.values && json.values.me_config && json.values.me_config.entrance_list) {
+    var entranceIndexes = [6, 7];
+    entranceIndexes.forEach(function(index) {
+        if (json.values.me_config.entrance_list[index]) {
+            delete json.values.me_config.entrance_list[index];
+        }
+    });
 }
 
 // 删除云盘横幅
