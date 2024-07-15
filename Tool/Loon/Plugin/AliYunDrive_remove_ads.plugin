@@ -4,7 +4,7 @@
 #!author = RuCu6
 #!homepage = https://gitlab.com/lodepuly/vpn_tool//tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/AliYunDrive.png
-#!date = 2024-07-15 22:22:00
+#!date = 2024-07-15 22:28:47
 
 [Rule]
 IP-CIDR, 203.107.1.1/24, REJECT, no-resolve

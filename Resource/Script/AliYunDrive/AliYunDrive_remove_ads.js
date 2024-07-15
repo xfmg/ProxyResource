@@ -1,7 +1,7 @@
 /*
 引用地址 https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/adrive.js
 */
-// 2024-07-15 21:30
+// 2024-07-15 22:28:47
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -29,7 +29,7 @@ if (url.includes("/v1/users/onboard_list")) {
   const item = [
     // "album", // 相册
     "banners", // 顶部奖励
-    "coreFeatures", // 横版图标
+    // "coreFeatures", // 横版图标
     "introduceAlipan", // 认识阿里云盘
     "mainBackup", // 手机备份
     "minorBackup", // 备份设备列表
