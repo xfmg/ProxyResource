@@ -5,7 +5,11 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/AutoHome.png
-#!date = 2024-07-17 04:37:16
+#!date = 2024-07-17 04:54:35
+
+[Rule]
+# 拦截HTTPDNS
+IP-CIDR, 119.29.29.98/32, REJECT, no-resolve
 
 [Rewrite]
 # 我的页面 - 广告横幅
