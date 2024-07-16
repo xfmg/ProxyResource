@@ -1,9 +1,9 @@
-// 2024-07-17 05:18:54
+// 2024-07-17 06:18:41
 let url = $request.url;
 let obj = JSON.parse($response.body);
 
 // 删除社区广场 - 广告轮播图
-if (/^\/club_v\d\.\d\.\d\/club\/index\/businessv\d+$/.test(url)) {
+if (/\/club_v\d\.\d\.\d\/club\/index\/businessv\d+$/.test(url)) {
     delete obj.result.bannerlist;
 }
 
@@ -42,7 +42,7 @@ function removeItemsWithKeywords(data) {
     }
 }
 
-if (/^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/((usercenter\/getservicecards)|(carcard\/(mycardv7|allcard)))/.test(url)) {
+if (/\/platform\/carserver\/((usercenter\/getservicecards)|(carcard\/(mycardv\d+|allcard)))/.test(url)) {
     removeItemsWithKeywords(obj);
 }
 
