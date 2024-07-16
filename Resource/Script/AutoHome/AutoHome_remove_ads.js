@@ -1,4 +1,4 @@
-// 2024-07-17 07:42:19
+// 2024-07-17 07:46:55
 let url = $request.url;
 let obj = JSON.parse($response.body);
 
@@ -16,7 +16,7 @@ if (url.includes("/carstreaming/selectcarportal/reclist")) {
 function removeItemsWithKeywordsForLive(data) {
     if (Array.isArray(data)) {
         data.forEach((item, index) => {
-            if (item.text && ["直播中"].some(keyword => item.text.includes(keyword))) {
+            if (item.text && ["直播中", "报价中"].some(keyword => item.text.includes(keyword))) {
                 data.splice(index, 1);
             }
         });
