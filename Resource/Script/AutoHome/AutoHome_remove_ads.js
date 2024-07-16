@@ -1,5 +1,5 @@
-// 2024-07-17 06:18:41
-let url = $request.url;
+// 2024-07-17 06:21:03
+let url = $response.url;
 let obj = JSON.parse($response.body);
 
 // 删除社区广场 - 广告轮播图
