@@ -1,9 +1,9 @@
-// 2024-07-17 06:29:32
+// 2024-07-17 06:39:26
 let url = $response.url;
 let obj = JSON.parse($response.body);
 
 // 删除社区广场 - 广告轮播图
-if (/\/club_v\d+\.\d+\.\d+\/club\/index\/businessv\d+$/.test(url)) {
+if (/\/club_v\d+\.\d+\.\d+\/club\/index\/businessv\d+/.test(url)) {
     delete obj.result.bannerlist;
 }
 
