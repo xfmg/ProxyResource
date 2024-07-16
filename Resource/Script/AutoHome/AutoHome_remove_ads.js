@@ -1,9 +1,25 @@
-// 2024-07-17 06:39:26
+// 2024-07-17 06:43:16
 let url = $response.url;
-let obj = JSON.parse($response.body);
+
+// 检查 url 是否为 undefined
+if (typeof url === 'undefined') {
+    console.error("URL is undefined");
+    $done({ body: $response.body });
+    return;
+}
+
+let obj;
+
+try {
+    obj = JSON.parse($response.body);
+} catch (e) {
+    console.error("Failed to parse JSON:", e);
+    $done({ body: $response.body });
+    return;
+}
 
 // 删除社区广场 - 广告轮播图
-if (/\/club_v\d+\.\d+\.\d+\/club\/index\/businessv\d+/.test(url)) {
+if (/\/club_v\d+\.\d+\.\d+\/club\/index\/businessv\d+$/.test(url)) {
     delete obj.result.bannerlist;
 }
 
