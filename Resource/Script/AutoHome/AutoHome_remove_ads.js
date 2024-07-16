@@ -1,4 +1,4 @@
-// 2024-07-17 06:21:03
+// 2024-07-17 06:24:36
 let url = $response.url;
 let obj = JSON.parse($response.body);
 
@@ -8,12 +8,8 @@ if (/\/club_v\d\.\d\.\d\/club\/index\/businessv\d+$/.test(url)) {
 }
 
 // 删除选车 - 直播浮窗
-if (url.includes("/carstreaming/selectcarportal/reclist")) {
+if (url.includes("/carstreaming/selectcarportal/reclist") || url.includes("/carstreaming/selectcarportal/seriestopwithtagscard")) {
     delete obj.result.liveinfo;
-}
-
-// 删除选车 - 直播浮窗
-if (url.includes("/carstreaming/selectcarportal/seriestopwithtagscard")) {
     delete obj.result.toplist[1];
 }
 
