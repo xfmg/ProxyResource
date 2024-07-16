@@ -1,4 +1,4 @@
-// 2024-07-16 22:40:36
+// 2024-07-16 23:04:11
 let obj = JSON.parse($response.body);
 
 // 删除广告参数
@@ -11,7 +11,10 @@ const pathsToDelete = [
     "data.AD_SCREEN_WAKEUP_TIME",
     "data.REWARD_AD_CUTOUT_NUM",
     "data.AD_HOME_ENTER_POP_COUNT",
-    "data.AD_MENU_SELECTIONS"
+    "data.AD_MENU_SELECTIONS", // 广告反馈
+    "data.ME_TAB.ANNOUNCEMENT", // 清朗·网络戾气整治”专项行动
+    "data.ME_TAB.MEMBERSHIP", // 我的页面横幅
+    "data.ME_TAB.MEMBERSHIP2" // 我的页面横幅
 ];
 
 // 遍历并删除指定路径
