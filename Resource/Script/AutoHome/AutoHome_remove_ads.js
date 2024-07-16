@@ -1,22 +1,6 @@
-// 2024-07-17 07:03:59
+// 2024-07-17 07:10:08
 let url = $response.url;
-
-// 检查 url 是否为 undefined
-if (typeof url === 'undefined') {
-    console.error("URL is undefined");
-    $done({ body: $response.body });
-    return;
-}
-
-let obj;
-
-try {
-    obj = JSON.parse($response.body);
-} catch (e) {
-    console.error("Failed to parse JSON:", e);
-    $done({ body: $response.body });
-    return;
-}
+let obj = JSON.parse($response.body);
 
 // 删除社区广场 - 广告轮播图
 if (/\/club_v\d+(?:\.\d+){2}\/club\/index\/businessv\d+/.test(url)) {
