@@ -1,9 +1,9 @@
-// 2024-07-17 06:24:36
+// 2024-07-17 06:29:32
 let url = $response.url;
 let obj = JSON.parse($response.body);
 
 // 删除社区广场 - 广告轮播图
-if (/\/club_v\d\.\d\.\d\/club\/index\/businessv\d+$/.test(url)) {
+if (/\/club_v\d+\.\d+\.\d+\/club\/index\/businessv\d+$/.test(url)) {
     delete obj.result.bannerlist;
 }
 
@@ -14,7 +14,7 @@ if (url.includes("/carstreaming/selectcarportal/reclist") || url.includes("/cars
 }
 
 // 删除二手车 - 竖版轮播图
-if (url.includes("/apic/v3/gethomepagefeed")) {
+if (/apic\/v\d+\/gethomepagefeed/.test(url)) {
     delete obj.result.otherlist[0]; 
 }
 
