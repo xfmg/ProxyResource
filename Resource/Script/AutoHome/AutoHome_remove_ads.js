@@ -1,4 +1,4 @@
-// 2024-07-17 06:43:16
+// 2024-07-17 07:03:59
 let url = $response.url;
 
 // 检查 url 是否为 undefined
@@ -19,7 +19,7 @@ try {
 }
 
 // 删除社区广场 - 广告轮播图
-if (/\/club_v\d+\.\d+\.\d+\/club\/index\/businessv\d+$/.test(url)) {
+if (/\/club_v\d+(?:\.\d+){2}\/club\/index\/businessv\d+/.test(url)) {
     delete obj.result.bannerlist;
 }
 
@@ -35,7 +35,7 @@ if (/apic\/v\d+\/gethomepagefeed/.test(url)) {
 }
 
 // 删除我的页面 - 移除添加我的爱车领券
-if (url.includes("/platform/carserver/carcard/mycardv7")) {
+if (/\/platform\/carserver\/carcard\/mycard\d+/.test(url)) {
     delete obj.result.nocartext;
 }
 
