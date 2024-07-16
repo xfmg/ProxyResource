@@ -1,6 +1,11 @@
-// 2024-07-17 07:46:55
+// 2024-07-17 07:54:19
 let url = $request.url;
 let obj = JSON.parse($response.body);
+
+// 删除首页 - 左上角以旧换新
+if (/\/news_v\d+(?:\.\d+){2}\/news\/homenavigation/.test(url)) {
+    delete obj.result.leftops;
+}
 
 // 删除社区广场 - 广告轮播图
 if (/\/club_v\d+(?:\.\d+){2}\/club\/index\/businessv\d+/.test(url)) {
