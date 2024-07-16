@@ -13,6 +13,8 @@ DOMAIN, sdk.1rtb.net, REJECT
 [Rewrite]
 # 信息流广告
 ^https:\/\/(www|api)\.duitang\.com\/napi\/(ad|ads)\/ reject-dict
+# 关注推荐
+^https:\/\/www\.duitang\.com\/napi\/vienna\/graphic\/svip\/channel\/home\/ reject-dict
 
 [Script]
 # 清理配置文件
