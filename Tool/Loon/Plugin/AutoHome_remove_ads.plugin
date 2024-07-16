@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/AutoHome.png
-#!date = 2024-07-17 04:54:35
+#!date = 2024-07-17 05:19:01
 
 [Rule]
 # 拦截HTTPDNS
@@ -60,8 +60,8 @@ IP-CIDR, 119.29.29.98/32, REJECT, no-resolve
 
 
 [Script]
-# 我的页面 - 精选服务
-http-response ^https:\/\/mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/getservicecards script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/AutoHome/AutoHome_remove_ads.js, requires-body = true, tag = 精简我的页面信息流广告
+# 我的页面 - 精选服务、车主服务
+http-response ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/((usercenter\/getservicecards)|(carcard\/(mycardv7|allcard))) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/AutoHome/AutoHome_remove_ads.js, requires-body = true, tag = 精简我的页面
 
 # 社区广场 - 广告轮播图
 http-response ^https:\/\/a\.athm\.cn\/club\.app\.autohome\.com\.cn\/club_v\d\.\d\.\d\/club\/index\/businessv\d+ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/AutoHome/AutoHome_remove_ads.js, requires-body = true, tag = 社区广场去广告
@@ -74,9 +74,6 @@ http-response ^https:\/\/a\.athm\.cn\/cars\.app\.autohome\.com\.cn\/carstreaming
 
 # 二手车 - 竖版轮播图
 http-response ^https:\/\/a\.athm\.cn\/apiautoappusc\.che168\.com\/apic\/v3\/gethomepagefeed script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/AutoHome/AutoHome_remove_ads.js, requires-body = true, tag = 移除二手车竖版轮播图
-
-# 我的页面 - 精简车主服务
-http-response ^https:\/\/a\.athm\.cn\/mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/(mycardv7|allcard) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/AutoHome/AutoHome_remove_ads.js, requires-body = true, tag = 精简我的页面
 
 [Mitm]
 hostname = mobile.app.autohome.com.cn, pcmx.autohome.com.cn, maam.pingan.com.cn, adproxy.autohome.com.cn, ews.app.autohome.com.cn, dealer.m.autohome.com.cn, a.athm.cn, autoapi.autohome.com.cn

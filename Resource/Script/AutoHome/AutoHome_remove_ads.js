@@ -1,4 +1,4 @@
-// 2024-07-17 04:38:54
+// 2024-07-17 05:18:54
 let url = $request.url;
 let obj = JSON.parse($response.body);
 
@@ -42,7 +42,7 @@ function removeItemsWithKeywords(data) {
     }
 }
 
-if (url.includes("/platform/carserver/carcard/allcard")) {
+if (/^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/((usercenter\/getservicecards)|(carcard\/(mycardv7|allcard)))/.test(url)) {
     removeItemsWithKeywords(obj);
 }
 
