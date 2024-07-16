@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/AutoHome.png
-#!date = 2024-07-17 05:19:01
+#!date = 2024-07-17 05:34:12
 
 [Rule]
 # 拦截HTTPDNS
@@ -13,23 +13,23 @@ IP-CIDR, 119.29.29.98/32, REJECT, no-resolve
 
 [Rewrite]
 # 我的页面 - 广告横幅
-^https:\/\/mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/findEquitysV5 reject-dict
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/findEquitysV5 reject-dict
 
 # 我的页面 - 我的车库
-^https:\/\/mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/mycardv6 reject-dict
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/mycardv6 reject-dict
 
 # 我的页面 - 福利中心超级低价
 ^https:\/\/autoapi\.autohome\.com\.cn\/ypttd\/yjc\/web\/mkgt\/act\/seckillInfo reject-dict
 
 # 我的页面 - 热门活动
-^https:\/\/mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/cards\? reject-dict
-^https:\/\/a\.athm\.cn\/mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/gethotactcards reject-dict
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/cards\? reject-dict
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/gethotactcards reject-dict
 
 # 我的页面 - 特惠洗车、到站加油
-^https:\/\/mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/extendedcards reject-dict
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/extendedcards reject-dict
 
 # 我的页面 - 加油站列表
-^https:\/\/a\.athm\.cn\/mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/getoillist reject-dict
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/getoillist reject-dict
 
 # 开屏广告
 ^https:\/\/pcmx\.autohome\.com\.cn\/queryCreativeList reject-dict
