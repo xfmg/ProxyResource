@@ -4,7 +4,7 @@
 #!author = 可莉🅥
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/JiaKaoBaoDian.png
-#!date = 2024-07-16 19:08:12
+#!date = 2024-07-16 19:20:47
 
 [Rewrite]
 # 广告横幅
@@ -19,6 +19,9 @@
 ^https:\/\/mcbd\.maiche\.com\/api\/open\/v3\/user\/get-popup-window\.htm reject-dict
 # 我的页面 - 精选服务
 ^https:\/\/jiakao-misc\.kakamobi\.cn\/api\/open\/my-tab-config\/selection-list\.htm reject-dict
+# 我的页面 - 横幅
+^https:\/\/jiakao-misc\.kakamobi\.cn\/api\/open\/my-tab-config\/banner-list\.htm reject-dict
+^https:\/\/squirrel\.kakamobi\.cn\/api\/open\/recommend-goods\/get-my-page-banner\.htm
 
 [Mitm]
-hostname = jiaxiao-awd.kakamobi.cn, cheyouquan.kakamobi.com, swallow.kakamobi.cn, monkey.kakamobi.cn, mcbd.maiche.com
+hostname = jiaxiao-awd.kakamobi.cn, cheyouquan.kakamobi.com, swallow.kakamobi.cn, monkey.kakamobi.cn, mcbd.maiche.com, jiakao-misc.kakamobi.cn, squirrel.kakamobi.cn
