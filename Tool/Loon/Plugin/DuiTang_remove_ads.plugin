@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DuiTang.png
-#!date = 2024-07-17 00:51:32
+#!date = 2024-07-17 01:08:28
 
 [Rule]
 DOMAIN, sdk.1rtb.net, REJECT
@@ -92,7 +92,7 @@ DOMAIN, toblog.ctobsnssdk.com, REJECT
 ^https:\/\/(www|api)\.duitang\.com\/napi\/(ad|ads)\/ reject-dict
 # 关注推荐
 ^https:\/\/www\.duitang\.com\/napi\/vienna\/graphic\/svip\/channel\/home\/ reject-dict
-^https:\/\/api\.duitang\.com\/napi\/infra\/settings\/
+^https:\/\/api\.duitang\.com\/napi\/infra\/settings\/ reject-dict
 
 # 拼多多广告平台
 ^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ reject
