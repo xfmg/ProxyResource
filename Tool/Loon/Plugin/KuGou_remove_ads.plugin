@@ -62,7 +62,7 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 ^https:\/\/gateway\.kugou\.com\/ocean\/v6\/sound\/banner reject-dict
 
 # 热搜主播
-^https:\/\/gzacshow\.kugou\.com\/mfanxing-home\/cdn\/room\/index\/list_v2 reject
+^https:\/\/gzacshow\.kugou\.com\/mfanxing-home\/cdn\/room\/index\/list_v2 reject-dict
 
 
 [Script]
