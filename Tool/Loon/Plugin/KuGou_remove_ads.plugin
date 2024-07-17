@@ -15,10 +15,12 @@ DOMAIN, adstats.tencentmusic.com, REJECT
 
 [Rewrite]
 ^https:\/\/gateway\.kugou\.com\/ads\.gateway reject-dict
+^https:\/\/fx\.service\.kugou\.com\/mfx-kugoulive\/ad\/ reject-dict
+^https:\/\/gatewayretry\.kugou\.com\/adp\/ad\/ reject-dict
 
 [Script]
 # 精简顶部标签
 http-response ^https:\/\/gateway\.kugou\.com\/ocean\/v\d\/tab\/list_v\d script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/KuGou/KuGou_remove_ads.js, requires-body = true, tag = 精简顶部标签
 
 [Mitm]
-hostname = gateway.kugou.com
+hostname = gateway.kugou.com, fx.service.kugou.com
