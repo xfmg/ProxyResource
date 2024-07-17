@@ -1,4 +1,4 @@
-// 2024-07-17 10:39:22
+// 2024-07-17 10:48:11
 let url = $request.url;
 try {
     let obj = JSON.parse($response.body);
@@ -65,6 +65,7 @@ try {
         obj = removeItemsWithKeywords(obj, "车主贷");
     }
 
+    console.log(JSON.stringify(obj))
     $done({ body: JSON.stringify(obj) });
 } catch (e) {
     console.error(e);
