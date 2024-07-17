@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/KuGou.png
-#!date = 2024-07-18 00:04:31
+#!date = 2024-07-18 01:18:17
 
 [Rule]
 DOMAIN, ads.service.kugou.com, REJECT
@@ -67,15 +67,20 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 # 热搜主播
 ^https:\/\/gzacshow\.kugou\.com\/mfanxing-home\/cdn\/room\/index\/list_v2 reject-dict
 
+# 直播推荐 - 主播修仙中
+^https:\/\/gzacshow\.kugou\.com\/mfx-rt-show\/cdn\/mo\/show\/headline reject-dict
+
+# 歌房弹窗
+^https:\/\/m1fxgroup\.kugou\.com\/fxsing\/yqc\/alongInfo\/getUserAlongInfo reject-dict
+
 # 酷狗商城 - 文字广告
 ^https:\/\/hwstore\.kugou\.com\/v1\/get_store_data reject-dict
 # 唱片店 - 文字广告
 ^https:\/\/ep\.kugou\.com\/v3\/album_shop\/get_entrance_info reject-dict
-
 
 [Script]
 # 精简顶部标签
 http-response ^https:\/\/gateway\.kugou\.com\/ocean\/v\d\/tab\/list_v\d script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/KuGou/KuGou_remove_ads.js, requires-body = true, tag = 精简顶部标签
 
 [Mitm]
-hostname = gateway.kugou.com, fx.service.kugou.com, hwstore.kugou.com, ep.kugou.com, gatewayretry.kugou.com, log.stat.kugou.com
+hostname = gateway.kugou.com, fx.service.kugou.com, hwstore.kugou.com, ep.kugou.com, gatewayretry.kugou.com, log.stat.kugou.com, gzacshow.kugou.com, m1fxgroup.kugou.com
