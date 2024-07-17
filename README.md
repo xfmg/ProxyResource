@@ -104,13 +104,13 @@
 **套餐介绍**
 
 按月购买
-Lite 流量 50G 月付 22
-Base 流量 300G 月付 42
-Plus 流量 1024G 月付 120
+> Lite 流量 50G 月付 22
+> Base 流量 300G 月付 42
+> Plus 流量 1024G 月付 120
 
 按量购买
-500GB 流量不限时 400RMB
-1024GB 流量不限时 700RMB
+> 500GB 流量不限时 400RMB
+> 1024GB 流量不限时 700RMB
 
 **购买方式**
 点击[此处](https://www.easy2023.com/#/register?code=sH2tNXOa)购买，输入永久不限时专属优惠码 `ikelee` 即可获得九折优惠。
