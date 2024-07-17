@@ -5,12 +5,16 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/KuGou.png
-#!date = 2024-07-17 20:14:11
+#!date = 2024-07-17 20:20:56
 
 [Rule]
 DOMAIN, ads.service.kugou.com, REJECT
+DOMAIN, adstats.tencentmusic.com, REJECT
+DOMAIN, adsmind.gdtimg.com, REJECT
+DOMAIN, adstats.tencentmusic.com, REJECT
 
 [Rewrite]
+^https:\/\/gateway\.kugou\.com\/ads\.gateway reject-dict
 
 [Script]
 # 精简顶部标签
