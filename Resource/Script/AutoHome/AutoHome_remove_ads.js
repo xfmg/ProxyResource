@@ -1,4 +1,4 @@
-// 2024-07-17 09:16:53
+// 2024-07-17 09:57:21
 let url = $request.url;
 try {
     let obj = JSON.parse($response.body);
@@ -22,7 +22,13 @@ try {
     function removeItemsWithKeywords(data, keywords) {
         if (Array.isArray(data)) {
             data = data.filter(item => {
-                return !item.text || !keywords.some(keyword => item.text.includes(keyword));
+                // return !item.text || !keywords.some(keyword => item.text.includes(keyword));
+                for (var key in item) {
+                  if (item[key] === keywords) {
+                    return false; // 过滤掉这个项
+                  }
+                }
+                return true;
             });
         } else if (typeof data === 'object') {
             for (let key in data) {
