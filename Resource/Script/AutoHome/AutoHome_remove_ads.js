@@ -1,4 +1,5 @@
-// 2024-07-17 10:07:02
+// 2024-07-17 10:27:49
+
 let url = $request.url;
 try {
     let obj = JSON.parse($response.body);
@@ -40,6 +41,7 @@ try {
         return data;
     }
 
+    // 选车 - 新车报价页面直播内容
     if (url.includes("/carstreaming/selectcarportal/seriestopwithtagscard")) {
         obj = removeItemsWithKeywords(obj, ["直播中", "报价中"]);
     }
@@ -50,11 +52,11 @@ try {
     }
 
     // 删除我的页面 - 移除添加我的爱车领券
-    if (/\/platform\/carserver\/carcard\/mycard\d+/.test(url)) {
+    if (/\/platform\/carserver\/carcard\/mycardv\d+/.test(url)) {
         delete obj.result.nocartext;
     }
 
-    // 遍历关键词删除所属对象
+    // 删除我的页面 - 精选服务、车主服务
     if (/\/platform\/carserver\/((usercenter\/getservicecards)|(carcard\/(mycardv\d+|allcard)))/.test(url)) {
         obj = removeItemsWithKeywords(obj, ["低息借钱", "分期购车", "车主贷"]);
     }
