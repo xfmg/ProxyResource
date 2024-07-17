@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/AutoHome.png
-#!date = 2024-07-17 17:31:22
+#!date = 2024-07-17 17:48:33
 
 [Rule]
 # 拦截HTTPDNS
@@ -20,6 +20,9 @@ DOMAIN, adproxy.autohome.com.cn, REJECT
 
 # 我的页面 - 我的车库
 ^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/carcard\/mycardv6 reject-dict
+
+# 我的页面 - 去问问
+^https:\/\/(a\.athm\.cn\/)?mobile\.app\.autohome\.com\.cn\/platform\/carserver\/usercenter\/chat\/gse\/recquery reject-dict
 
 # 我的页面 - 福利中心超级低价
 ^https:\/\/autoapi\.autohome\.com\.cn\/ypttd\/yjc\/web\/mkgt\/act\/seckillInfo reject-dict
