@@ -13,6 +13,7 @@ DOMAIN, adstats.tencentmusic.com, REJECT
 DOMAIN, adsmind.gdtimg.com, REJECT
 DOMAIN, adstats.tencentmusic.com, REJECT
 DOMAIN, adserviceretry.kugou.com, REJECT
+DOMAIN, adserviceretry.kglink.cn， REJECT
 
 # 腾讯优量汇 - 广告服务商
 DOMAIN, ios.bugly.qq.com, REJECT
@@ -47,6 +48,22 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 ^https:\/\/gateway\.kugou\.com\/mstc\/musicsymbol\/v1\/system\/profile reject-dict
 # 首页 - 签到弹窗
 # ^http:\/\/ads\.service\.kugou\.com\/v2\/mobile_window reject-dict
+# 搜索填充词
+^https:\/\/gateway\.kugou\.com\/searchnofocus\/v1\/search_no_focus_word reject-dict
+# 播放页顶部气泡
+^https:\/\/gateway\.kugou\.com\/adp\/bubble\/v1\/song_play reject-dict
+
+# 歌曲评论 - 与歌手有关的回答
+^https:\/\/gateway\.kugou\.com\/singerdiscuss\/v1\/entrance\/comment reject-dict
+
+^https:\/\/gateway\.kugou\.com\/r\/v1\/general\/putin\/midad reject-dict
+
+# 各类横幅推广
+^https:\/\/gateway\.kugou\.com\/ocean\/v6\/sound\/banner reject-dict
+
+# 热搜主播
+^https:\/\/gzacshow\.kugou\.com\/mfanxing-home\/cdn\/room\/index\/list_v2 reject
+
 
 [Script]
 # 精简顶部标签
