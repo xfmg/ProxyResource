@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Kuwo.png
-#!date = 2024-07-18 02:40:08
+#!date = 2024-07-18 02:46:42
 
 [Rule]
 # 腾讯优量汇 - 广告服务商
@@ -36,6 +36,8 @@ URL-REGEX, ^http:\/\/wapi\.kuwo\.cn\/openapi\/v\d\/app\/pasterAdvert\/, REJECT-D
 # URL-REGEX, ^http:\/\/mobilead\.kuwo\.cn\/EcomResourceServer\/, REJECT-DICT
 # 精简我的页面侧边栏
 URL-REGEX, ^http:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/newMenuList\/menuListInfo, REJECT-DICT
+# 迷你播放器横幅
+URL-REGEX, ^http:\/\/vip\d\.kuwo\.cn\/vip\/v\d\/sysinfo\?op=getRePayAndDoPayBoxNew&useNewHeadShow, REJECT-DICT
 
 [Rewrite]
 # 我的页面横幅
