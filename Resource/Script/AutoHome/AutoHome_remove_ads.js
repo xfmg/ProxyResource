@@ -1,4 +1,4 @@
-// 2024-07-17 09:57:21
+// 2024-07-17 10:07:02
 let url = $request.url;
 try {
     let obj = JSON.parse($response.body);
@@ -24,7 +24,7 @@ try {
             data = data.filter(item => {
                 // return !item.text || !keywords.some(keyword => item.text.includes(keyword));
                 for (var key in item) {
-                  if (item[key] === keywords) {
+                  if (keywords.some(keyword => item[key] === keyword)) {
                     return false; // 过滤掉这个项
                   }
                 }
