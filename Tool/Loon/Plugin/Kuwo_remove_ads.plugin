@@ -5,13 +5,13 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Kuwo.png
-#!date = 2024-07-18 03:43:45
+#!date = 2024-07-18 03:52:12
 
 [Rule]
 # 拦截HTTPDNS
-DOMIAN, serveraddr.service.kugou.com, REJECT
-DOMIAN, twns.p2ptun.qq.com, REJECT
-DOMIAN, tp2p.kg.qq.com, REJECT
+DOMAIN, serveraddr.service.kugou.com, REJECT
+DOMAIN, twns.p2ptun.qq.com, REJECT
+DOMAIN, tp2p.kg.qq.com, REJECT
 URL-REGEX, ^http:\/\/ncomment\.kuwo\.cn\/com\.s, REJECT
 IP-CIDR, 81.71.61.216, REJECT
 
