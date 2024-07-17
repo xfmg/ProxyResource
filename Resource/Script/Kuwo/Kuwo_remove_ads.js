@@ -1,4 +1,4 @@
-// 2024-07-18 05:05:57
+// 2024-07-18 05:06:52
 const url = $request.url;
 const body = $response.body;
 
@@ -7,7 +7,7 @@ if (!body) $done({});
 let obj = JSON.parse(body);
 
 const pathRegex = /\/openapi\/v\d\/tingshu\/index\/radio/;
-const typesToRemoveChild = ["banner", "stripAdvert"]; // 删除听书页面轮播图和横幅广告
+const typesToRemoveChild = ["stripAdvert"]; // 删除横幅广告
 
 if (pathRegex.test(url)) {
     function removeChildIfTypeMatches(obj) {
