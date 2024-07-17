@@ -46,7 +46,7 @@ try {
 
     // 删除二手车 - 竖版轮播图
     if (/\/apic\/v\d+\/gethomepagefeed/.test(url)) {
-        console.log("删除车抵贷");
+        // console.log("删除车抵贷");
         obj = removeItemsWithKeywords(obj, "车抵贷");
     }
 
