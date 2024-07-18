@@ -16,6 +16,9 @@
 ^https:\/\/base\.mkzcdn\.com\/advert\/app\/task\/motivate\/v\d reject-dict
 ^https:\/\/base\.mkzcdn\.com\/advert\/app\/task\/motivate\/v\d reject-dict
 
+# 我的页面 - 邀请好友、客栈魔法屋
+^https:\/\/base\.mkzcdn\.com\/advert\/app\/user\/slide\d\/v\d\/ reject-dict
+
 [Script]
 # 配置修改
 http-response ^https:\/\/base\.mkzcdn\.com\/app\/config\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/MKZ/MKZ_remove_ads.js, requires-body = true, tag = 配置修改
