@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/KuaiKanComic.png
-#!date = 2024-07-18 23:49:48
+#!date = 2024-07-19 00:03:53
 
 [Rule]
 DOMAIN, ad.v3mh.com, REJECT
@@ -39,6 +39,10 @@ DOMAIN, ipv4.kkmh.com, REJECT
 
 # 我的页面
 ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/mine\/business_config reject-dict
+
+# 萌新礼
+^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/checkin\/api\/new_user\/tab_info$ reject-dict
+^https:\/\/h5\.kuaikanmanhua\.com\/game-h5\/new-user-welfare\/index\.html reject-200
 
 [Script]
 # 配置修改
