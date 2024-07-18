@@ -1,4 +1,4 @@
-// 2024-07-19 04:11:12
+// 2024-07-19 04:19:10
 const url = $request.url;
 const body = $response.body;
 
@@ -36,6 +36,20 @@ function removeObjectsWith(obj, key, targets) {
     return obj;
 }
 
+function processUnifiedFeed(obj) {
+    if (obj.data && obj.data.universalModels) {
+        obj.data.universalModels.forEach(model => {
+            if (model.loopBanner) {
+                delete model.loopBanner; // 社区 - 广场轮播图
+            }
+            if (model.post && model.post.promotions && model.post.promotions[0] && model.post.promotions[0].type === 4) {
+                delete model.post.promotions; // 社区 - 作者说 - 商品推广
+            }
+        });
+    }
+    return obj;
+}
+
 if (regexTabList.test(url)) {
     obj = removeObjectsWith(obj, 'title', targetTitles);
 }
@@ -56,16 +70,7 @@ if (url.includes("/ironman/comic/recommend")) {
 }
 
 if (regexUnifiedFeed.test(url)) {
-    if (obj.data && obj.data.universalModels) {
-        obj.data.universalModels.forEach(model => {
-            if (model.loopBanner) {
-                delete model.loopBanner; // 社区 - 广场轮播图
-            }
-            if (model.post && model.post.promotions && model.post.promotions[0] && model.post.promotions[0].type === 4) {
-                delete model.post.promotions[0]; // 社区 - 作者说 - 商品推广
-            }
-        });
-    }
+    obj = processUnifiedFeed(obj);
 }
 
 $done({ body: JSON.stringify(obj) });
