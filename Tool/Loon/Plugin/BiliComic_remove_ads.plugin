@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/BiliComic.png
-#!date = 2024-07-19 07:09:15
+#!date = 2024-07-19 07:22:22
 
 [Rule]
 # 拦截HTTPDNS
@@ -18,6 +18,7 @@ URL-REGEX, ^http:\/\/203\.107\.1\.33\/191607\/resolve\?, REJECT
 ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetBubbles reject-dict
 # 我的、搜索 - 横幅广告
 ^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/GetCommonBanner reject-dict
+^https:\/\/manga\.bilibili\.com\/twirp\/comic\.v\d\.Comic\/SearchBanner reject-dict
 # 我的 - 今日推荐阅读任务
 ^https:\/\/manga\.bilibili\.com\/twirp\/user\.v\d\.SeasonV\d\/GetSeasonInfo reject-dict
 # 书架 - 漫画 - 你可能喜欢

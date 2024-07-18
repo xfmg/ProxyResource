@@ -1,36 +1,24 @@
-// 2024-07-19 07:09:15
+// 2024-07-19 07:21:07
 const url = $request.url;
-const handlers = [
-    {
-        regex: /^\/twirp\/comic\.v\d\.Comic\/GetClassPageAllTabs$/,
-        filters: {
-            "home_type": "新人",
-            "home_feed": "商城"
-        }
-    },
-    {
-        regex: /^\/twirp\/user\.v\d\.User\/UCenterConf$/,
-        filters: {
-            "confs": "看漫免流量"
-        }
+
+const processResponse = (regex, filterFunc) => {
+    if (regex.test(url)) {
+        let obj = JSON.parse($response.body);
+        filterFunc(obj);
+        $done({ body: JSON.stringify(obj) });
+    } else {
+        $done({});
     }
-];
+};
 
-const handler = handlers.find(h => h.regex.test(url));
-if (handler) {
-    processResponse(handler.filters);
-} else {
-    $done({});
-}
+const filterNewcomerAndMall = obj => {
+    obj.data?.home_type?.filter(item => item.name !== "新人");
+    obj.data?.home_feed?.filter(item => item.name !== "商城");
+};
 
-function processResponse(filters) {
-    let obj = JSON.parse($response.body);
+const filterNoTraffic = obj => {
+    obj.data?.confs?.filter(item => item.title !== "看漫免流量");
+};
 
-    for (let key in filters) {
-        if (obj.data && obj.data[key]) {
-            obj.data[key] = obj.data[key].filter(item => item.name !== filters[key] && item.title !== filters[key]);
-        }
-    }
-
-    $done({ body: JSON.stringify(obj) });
-}
+processResponse(/^\/twirp\/comic\.v\d\.Comic\/GetClassPageAllTabs$/, filterNewcomerAndMall);
+processResponse(/^\/twirp\/user\.v\d\.User\/UCenterConf$/, filterNoTraffic);
