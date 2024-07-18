@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DubbingShow.png
-#!date = 2024-07-18 17:28:08
+#!date = 2024-07-18 17:49:33
 
 [Rule]
 # 腾讯优量汇 - 广告服务商
@@ -32,22 +32,18 @@ DOMAIN, tmeadcomm.y.qq.com, REJECT
 # 首页 - 底部弹窗
 ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Film\/GetConfigValue reject-dict
 
-# 首页 - 推荐 - 语聊弹窗
-^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Live\/GetExitRecommendLive reject-dict
-^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Live\/GetRecommendLive reject-dict
-
-# 首页 - 推荐 - 关注推荐
-^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Friend\/GetRecommendUsers reject-dict
-
-# 首页 - 推荐 - 推荐群聊
-^https:\/\/iosapi\.peiyinxiu\.com\/api\/Union\/HomeData reject-dict
-
-# 关注推荐
-^https:\/\/iosapi\.peiyinxiu\.com\/api\/live\/FollowList reject-dict
-
 [Script]
-# 移除语聊横幅
+# 首页 - 推荐 - 语聊横幅
 http-response ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/live\/LiveList script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DubbingShow/DubbingShow_remove_ads.js, requires-body = true, tag = 移除语聊横幅
+
+# 首页 - 推荐 - 语聊关注推荐
+http-response ^https:\/\/iosapi\.peiyinxiu\.com\/api\/live\/FollowList script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DubbingShow/DubbingShow_remove_ads.js, requires-body = true, tag = 移除语聊横幅
+
+# 首页 - 关注推荐
+http-response ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Friend\/GetRecommendUsers script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DubbingShow/DubbingShow_remove_ads.js, requires-body = true, tag = 移除语聊横幅
+
+# 消息 - 群聊推荐
+http-response ^https:\/\/iosapi\.peiyinxiu\.com\/api\/Union\/HomeData script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DubbingShow/DubbingShow_remove_ads.js, requires-body = true, tag = 移除语聊横幅
 
 [Mitm]
 hostname = iosapi.peiyinxiu.com
