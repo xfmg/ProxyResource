@@ -137,7 +137,7 @@ DOMAIN-SUFFIX, jpush.io, REJECT
 ^https:\/\/(cdn-)?pay\.kkmh\.com\/v\d\/vip\/platform_base\/popups_display$ reject-dict
 
 # 社区 - 关注推荐
-^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/home\/recommend_users reject-dict
+# ^https:\/\/(cdn-)?social\.kkmh\.com\/v\d\/graph\/home\/recommend_users reject-dict
 
 # 福利中心、悬浮部件
 ^https:\/\/cdn-api\.kkmh\.com\/v2\/checkin\/task_center\/get_by_task_type reject-dict
