@@ -30,7 +30,7 @@ DOMAIN, tmeadcomm.y.qq.com, REJECT
 
 [Rewrite]
 # 首页 - 底部弹窗
-^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Film\/GetConfigValue reject-dict
+# ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Film\/GetConfigValue reject-dict
 
 [Script]
 # 首页 - 推荐 - 语聊横幅
