@@ -1,4 +1,4 @@
-// 2024-07-19 04:05:37
+// 2024-07-19 04:11:12
 const url = $request.url;
 const body = $response.body;
 
@@ -57,16 +57,6 @@ if (url.includes("/ironman/comic/recommend")) {
 
 if (regexUnifiedFeed.test(url)) {
     if (obj.data && obj.data.universalModels) {
-        obj.data.universalModels = obj.data.universalModels.filter(model => {
-            if (model.recommendUsers) {
-                delete model.recommendUsers; // 关注推荐
-            }
-            if (model.action && model.action.type === 29) {
-                return false; // 关注信息流
-            }
-            return true;
-        });
-
         obj.data.universalModels.forEach(model => {
             if (model.loopBanner) {
                 delete model.loopBanner; // 社区 - 广场轮播图
