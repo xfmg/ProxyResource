@@ -40,7 +40,7 @@ function processUnifiedFeed(obj) {
     if (obj.data && obj.data.universalModels) {
         obj.data.universalModels.forEach(model => {
             if (model.loopBanner) {
-                // delete model.loopBanner; // 社区 - 广场轮播图
+                delete model.loopBanner; // 社区 - 广场轮播图
             }
             if (model.post && model.post.promotions && model.post.promotions[0] && model.post.promotions[0].type === 4) {
                 delete model.post.promotions; // 社区 - 作者说 - 商品推广
@@ -59,15 +59,15 @@ if (regexConfigs.test(url)) {
 }
 
 // 修改广告参数
-if (url.includes("/ironman/comic/recommend")) {
-    const keysToDelete = [
-        "operation_float_ball",
-        "topic_goods",
-        "total_coupon",
-        "share_comics_page_lottery"
-    ];
-    keysToDelete.forEach(key => delete obj.data[key]);
-}
+// if (url.includes("/ironman/comic/recommend")) {
+//     const keysToDelete = [
+//         "operation_float_ball",
+//         "topic_goods",
+//         "total_coupon",
+//         "share_comics_page_lottery"
+//     ];
+//     keysToDelete.forEach(key => delete obj.data[key]);
+// }
 
 if (regexUnifiedFeed.test(url)) {
     obj = processUnifiedFeed(obj);
