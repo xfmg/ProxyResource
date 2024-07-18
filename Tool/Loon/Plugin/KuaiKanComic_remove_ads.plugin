@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/KuaiKanComic.png
-#!date = 2024-07-18 23:39:28
+#!date = 2024-07-18 23:49:48
 
 [Rule]
 DOMAIN, ad.v3mh.com, REJECT
@@ -14,14 +14,14 @@ DOMAIN, ipv4.kkmh.com, REJECT
 
 [Rewrite]
 # 广告配置
-^https:\/\/api\.kkmh\.com\/v\d\/ad\/ reject-dict
+^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ad\/ reject-dict
 
 # 首页弹窗
 ^https:\/\/h5\.kuaikanmanhua\.com\/user\/scene\/api\/new_user\/sign_in\/list reject-dict
 
 # 活动广告
-^https:\/\/api\.kkmh\.com\/v\d\/business\/activities\/get reject-dict
-^https:\/\/api\.kkmh\.com\/v\d\/business\/mine\/business_config reject-dict
+^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/activities\/get reject-dict
+^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/mine\/business_config reject-dict
 
 # 游戏 - 活动配置
 ^https:\/\/topic\.kkmh\.com\/gamecard\/v\d\/activityModule\/userSignInInfo\?activitySignInConfigId reject-dict
@@ -32,7 +32,7 @@ DOMAIN, ipv4.kkmh.com, REJECT
 ^https:\/\/pay\.kkmh\.com\/v\d\/kb\/comic_page_banner\/detail reject-dict
 
 # 推广气泡
-^https:\/\/api\.kkmh\.com\/v\d\/business\/fake_push\/info reject-dict
+^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/business\/fake_push\/info reject-dict
 
 # 商城周边 - 弹窗
 ^https:\/\/shop\.kkmh\.com\/mbff\/popup_administration\/page_management_popup_administration$ reject-dict
@@ -42,7 +42,10 @@ DOMAIN, ipv4.kkmh.com, REJECT
 
 [Script]
 # 配置修改
-http-response ^https:\/\/api\.kkmh\.com\/v\d\/ironman\/comic\/recommend script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/KuaiKanComic/KuaiKanComic_remove_ads.js, requires-body = true, tag = 配置修改
+http-response ^https:\/\/(cdn-)?api\.kkmh\.com\/v\d\/ironman\/comic\/recommend script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/KuaiKanComic/KuaiKanComic_remove_ads.js, requires-body = true, tag = 配置修改
 
 [Mitm]
 hostname = api.kkmh.com, topic.kkmh.com, h5.kuaikanmanhua.com, pay.kkmh.co, shop.kkmh.com, cdn-api.kkmh.com
+
+
+https://cdn-api.kkmh.com/v1/business/activities/get?gender=1&is_new_device=true
