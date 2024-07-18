@@ -42,7 +42,7 @@ DOMAIN, ipv4.kkmh.com, REJECT
 
 [Script]
 # 配置修改
-# http-response ^https:\/\/api\.kkmh\.com\/v\d\/ironman\/comic\/recommend script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/KuaiKanComic/KuaiKanComic_remove_ads.js, requires-body = true, tag = 配置修改
+http-response ^https:\/\/api\.kkmh\.com\/v\d\/ironman\/comic\/recommend script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/KuaiKanComic/KuaiKanComic_remove_ads.js, requires-body = true, tag = 配置修改
 
 [Mitm]
 hostname = api.kkmh.com, topic.kkmh.com, h5.kuaikanmanhua.com, pay.kkmh.co, shop.kkmh.com, cdn-api.kkmh.com
