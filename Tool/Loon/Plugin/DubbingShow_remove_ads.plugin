@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/DubbingShow.png
-#!date = 2024-07-18 17:49:33
+#!date = 2024-07-18 17:58:17
 
 [Rule]
 # 腾讯优量汇 - 广告服务商
@@ -28,11 +28,10 @@ DOMAIN-SUFFIX, gdt.qq.com, REJECT
 # c2.gdt.qq.com, REJECT
 DOMAIN, tmeadcomm.y.qq.com, REJECT
 
-[Rewrite]
-# 首页 - 底部弹窗
-# ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Film\/GetConfigValue reject-dict
-
 [Script]
+# 首页 - 底部弹窗
+http-response ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/Film\/GetConfigValue script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DubbingShow/DubbingShow_remove_ads.js, requires-body = true, tag = 移除语聊横幅
+
 # 首页 - 推荐 - 语聊横幅
 http-response ^https:\/\/iosapi\.peiyinxiu\.com\/Api\/live\/LiveList script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/DubbingShow/DubbingShow_remove_ads.js, requires-body = true, tag = 移除语聊横幅
 
