@@ -43,7 +43,7 @@ function processUnifiedFeed(obj) {
                 delete model.loopBanner; // 社区 - 广场轮播图
             }
             if (model.post && model.post.promotions && model.post.promotions[0] && model.post.promotions[0].type === 4) {
-                delete model.post.promotions; // 社区 - 作者说 - 商品推广
+                // delete model.post.promotions; // 社区 - 作者说 - 商品推广
             }
         });
     }
