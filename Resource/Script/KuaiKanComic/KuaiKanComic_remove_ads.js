@@ -17,7 +17,7 @@ const regexConfigs = /\/v\d\/graph\/homepage\/comicVideo\/v\d\/configs/; // 社�
 const regexUnifiedFeed = /\/v\d\/graph\/unified_feed$/; // 社区 - 广场轮播图、作者说 - 商品推广
 
 const targetTitles = ["KK评委", "2024新漫报到", "VIP"]; // 首页 - 热门 - 顶部标签
-// const targetDescs = ["超级漫画节", "在kk当评委", "屈臣氏·KKCOS大赏", "KK朋友圈", "KK运势"]; // 社区 - 发现 - 顶部标签
+const targetDescs = ["超级漫画节", "在kk当评委", "屈臣氏·KKCOS大赏", "KK朋友圈", "KK运势"]; // 社区 - 发现 - 顶部标签
 
 function removeObjectsWith(obj, key, targets) {
     if (Array.isArray(obj)) {
