@@ -1,4 +1,4 @@
-// 2024-07-19 07:21:07
+// 2024-07-19 07:37:16
 const url = $request.url;
 
 const processResponse = (regex, filterFunc) => {
@@ -12,13 +12,13 @@ const processResponse = (regex, filterFunc) => {
 };
 
 const filterNewcomerAndMall = obj => {
-    obj.data?.home_type?.filter(item => item.name !== "新人");
-    obj.data?.home_feed?.filter(item => item.name !== "商城");
+    obj.data?.home_type?.filter(item => item.name !== "新人", "新作"); // 首页标签
+    obj.data?.home_feed?.filter(item => item.name !== "商城"); // 首页标签
 };
 
 const filterNoTraffic = obj => {
-    obj.data?.confs?.filter(item => item.title !== "看漫免流量");
+    obj.data?.confs?.filter(item => item.title !== "漫画商城", "超漫俱乐部", "看漫免流量"); // 我的页面
 };
 
-processResponse(/^\/twirp\/comic\.v\d\.Comic\/GetClassPageAllTabs$/, filterNewcomerAndMall);
-processResponse(/^\/twirp\/user\.v\d\.User\/UCenterConf$/, filterNoTraffic);
+processResponse(/\/twirp\/comic\.v\d\.Comic\/GetClassPageAllTabs/, filterNewcomerAndMall);
+processResponse(/\/twirp\/user\.v\d\.User\/UCenterConf/, filterNoTraffic);
