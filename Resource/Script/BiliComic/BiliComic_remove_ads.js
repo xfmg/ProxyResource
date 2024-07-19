@@ -1,4 +1,4 @@
-// 2024-07-19 07:55:52
+// 2024-07-19 08:08:11
 const url = $request.url;
 
 const processResponse = (regex, filterFunc) => {
@@ -12,12 +12,18 @@ const processResponse = (regex, filterFunc) => {
 };
 
 const filterNewcomerAndMall = obj => {
-    obj.data?.home_type?.filter(item => item.name !== "新人" && item.name !== "新作"); // 首页标签
-    obj.data?.home_feed?.filter(item => item.name !== "商城"); // 首页标签
+    if (obj.data && obj.data.home_type) {
+        obj.data.home_type = obj.data.home_type.filter(item => item.name !== "新人" && item.name !== "新作"); // 首页标签
+    }
+    if (obj.data && obj.data.home_feed) {
+        obj.data.home_feed = obj.data.home_feed.filter(item => item.name !== "商城"); // 首页标签
+    }
 };
 
 const filterNoTraffic = obj => {
-    obj.data?.confs?.filter(item => item.title !== "漫画商城" && item.title !== "超漫俱乐部" && item.title !== "看漫免流量"); // 我的页面
+    if (obj.data && obj.data.confs) {
+        obj.data.confs = obj.data.confs.filter(item => item.title !== "漫画商城" && item.title !== "超漫俱乐部" && item.title !== "看漫免流量"); // 我的页面
+    }
 };
 
 const filterNovelBanners = obj => {
