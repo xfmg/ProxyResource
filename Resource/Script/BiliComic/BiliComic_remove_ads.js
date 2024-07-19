@@ -35,6 +35,6 @@ const filterNoTraffic = obj => {
 
 processResponse(/\/twirp\/comic\.v\d\.Comic\/GetClassPageAllTabs/, filterNewcomerAndMall);
 processResponse(/\/twirp\/user\.v\d\.User\/UCenterConf/, filterNoTraffic);
-processResponse(/\/twirp\/novel\.v\d\.Home\/Home/, filterNovelBanners);
+// processResponse(/\/twirp\/novel\.v\d\.Home\/Home/, filterNovelBanners);
 
 $done(newBody);
