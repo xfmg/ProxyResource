@@ -1,13 +1,15 @@
 // 2024-07-19 08:08:11
 const url = $request.url;
+var newBody = {}
+console.log(url)
 
 const processResponse = (regex, filterFunc) => {
     if (regex.test(url)) {
         let obj = JSON.parse($response.body);
+        console.log($response.body)
         filterFunc(obj);
-        $done({ body: JSON.stringify(obj) });
-    } else {
-        $done({});
+        console.log(JSON.stringify(obj))
+        newBody = { body: JSON.stringify(obj) }
     }
 };
 
@@ -35,3 +37,5 @@ const filterNovelBanners = obj => {
 processResponse(/\/twirp\/comic\.v\d\.Comic\/GetClassPageAllTabs/, filterNewcomerAndMall);
 processResponse(/\/twirp\/user\.v\d\.User\/UCenterConf/, filterNoTraffic);
 processResponse(/\/twirp\/novel\.v\d\.Home\/Home/, filterNovelBanners);
+
+$done(newBody);
