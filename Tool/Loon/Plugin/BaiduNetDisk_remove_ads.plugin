@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/BaiduNetDisk.png
-#!date = 2024-02-19 20:05:55
+#!date = 2024-07-20 10:10:42
 
 [Rule]
 IP-CIDR, 180.76.76.112/32, REJECT, no-resolve
@@ -18,6 +18,12 @@ IP-CIDR, 180.76.76.200/32, REJECT, no-resolve
 ^https:\/\/pan\.baidu\.com\/api\/taskscore\/tasklist reject-dict
 # 弹窗配置
 ^https:\/\/pan\.baidu\.com\/act\/api\/activityentry reject-dict
+# 信息流广告
+^https:\/\/pan\.baidu\.com\/act\/api\/activityentry reject-dict
+# 我的 - 游戏中心
+^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user\?method=gamecenter reject-dict
+# 我的页面 - 其他推广
+^https:\/\/pan\.baidu\.com\/act\/v2\/welfare\/list reject-dict
 
 [Mitm]
 hostname = pan.baidu.com
