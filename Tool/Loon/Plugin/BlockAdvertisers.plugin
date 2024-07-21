@@ -5,15 +5,16 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Website_icon/120px/TencentAd.png
-#!date = 2024-07-21 13:09:38
+#!date = 2024-07-21 14:47:31
 
 [Rule]
 # 字节跳动广告
+# AND, ((DOMAIN-KEYWORD, p), (DOMAIN-KEYWORD, -sign.douyinpic.com)), REJECT
 AND, ((DOMAIN-KEYWORD, -ad-), (DOMAIN-SUFFIX, byteimg.com)), REJECT
 AND, ((DOMAIN-KEYWORD, -sign-), (DOMAIN-SUFFIX, tiktokcdn.com)), REJECT
 AND, ((DOMAIN-KEYWORD, -ttam-), (DOMAIN-SUFFIX, ibyteimg.com)), REJECT
 AND, ((DOMAIN-KEYWORD, ssdk-), (DOMAIN-SUFFIX, pangle.io)), REJECT
-AND, ((DOMAIN-KEYWORD, p), (DOMAIN-KEYWORD, -sign.douyinpic.com)), REJECT
+AND, ((DOMAIN-KEYWORD, pangolin), (DOMAIN-SUFFIX, sgsnssdk.com)), REJECT
 AND, ((DOMAIN-KEYWORD, v), (DOMAIN-KEYWORD, -be-pack.pglstatp-toutiao.com)), REJECT
 AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -cdn-tos.bytescm.com)), REJECT
 AND, ((DOMAIN-KEYWORD, if), (DOMAIN-KEYWORD, -analytics.bytescm.com)), REJECT
@@ -30,7 +31,6 @@ DOMAIN, toblog.ctobsnssdk.com, REJECT
 DOMAIN, mssdk.volces.com, REJECT
 DOMAIN, pangolin.snssdk.com, REJECT
 DOMAIN, ssdk-sg.pangle.io, REJECT
-DOMAIN, mssdk.volces.com, REJECT
 DOMAIN, gromore.pangolin-sdk-toutiao.com, REJECT
 DOMAIN-KEYWORD, -ad-sign.byteimg.com, REJECT
 DOMAIN-KEYWORD, -be-pack-sign.pglstatp-toutiao.com, REJECT
