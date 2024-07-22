@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-07-22 20:49:43
+#!date = 2024-07-22 21:04:41
 
 [Rule]
 # Outlook
@@ -144,8 +144,7 @@ URL-REGEX, ^http:\/\/p\.kuaidi100\.com\/advertisement\/, REJECT-DICT
 # 首页左上角福利中心
 ^https:\/\/dict\.youdao\.com\/dictusertask\/system reject-dict
 
-# 中国移动去开屏
-^https:\/\/res\.app\.coc\.10086\.cn\/qwhdcdn_cmcc-cs_cn\/prd-mgcenter\/\w+\.(jpg|png|webp) reject
+# 中国移动
 ^https:\/\/apm\.app\.coc\.10086\.cn\/biz-orange\/\w+\/advertisingClickNew\/printLog reject
 
 # 广东移动去开屏
