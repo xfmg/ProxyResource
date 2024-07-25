@@ -1,5 +1,5 @@
 payload:
-  # 2024-07-08 12:57:55
+  # 2024-07-25 14:56:45
   # ChatGPT
   - AND,((DOMAIN-KEYWORD,chatgpt-async-webps-prod-eastus-),(DOMAIN-SUFFIX,webpubsub.azure.com))
   - DOMAIN,chat.openai.com.cdn.cloudflare.net
@@ -41,9 +41,14 @@ payload:
   - DOMAIN-SUFFIX,grazie.ai
   - DOMAIN-SUFFIX,grazie.aws.intellij.net
 
-  # Meta
+  # Meta AI
   - DOMAIN,imagine.meta.com
   - DOMAIN-SUFFIX,meta.ai
 
   # Perplexity
   - DOMAIN-SUFFIX,perplexity.ai
+
+  # Mistral AI
+  - DOMAIN,chat.mistral.ai
+  - DOMAIN,console.mistral.ai
+  - DOMAIN-SUFFIX,mistral.ai
