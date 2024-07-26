@@ -1,11 +1,11 @@
 #!name = Uki去广告
-#!desc = 移除开屏广告、应用内悬浮窗，各类横幅、信息流广告、我的页面广告。
+#!desc = 移除开屏广告、应用内悬浮窗，各类横幅、信息流广告、搜索填充词、我的页面广告。
 #!openUrl = https://apps.apple.com/app/id1298912284
 #!author = 可莉🅥
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Uki.png
-#!date = 2024-07-26 16:41:15
+#!date = 2024-07-26 16:55:40
 
 [Rule]
 # 字节跳动广告
@@ -128,6 +128,8 @@ DOMAIN-SUFFIX, adukwai.com, REJECT
 ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/advConf$ reject-dict
 # 私聊交友护航弹窗
 ^https:\/\/api\.chenlongtech\.cn\/v\d\/user\/checkQTSheInsurance$ reject-dict
+# 广场搜索填充词
+^https:\/\/api\.chenlongtech\.cn\/v1\/post\/fetchSearchRecommend$ reject-dict
 
 [Script]
 # 匹配卡横幅
