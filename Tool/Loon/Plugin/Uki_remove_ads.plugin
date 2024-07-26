@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Uki.png
-#!date = 2024-07-26 16:11:35
+#!date = 2024-07-26 16:41:15
 
 [Rule]
 # 字节跳动广告
@@ -126,6 +126,18 @@ DOMAIN-SUFFIX, adukwai.com, REJECT
 ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/allPopUpConfig$ reject-dict
 # 广告配置
 ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/advConf$ reject-dict
+# 私聊交友护航弹窗
+^https:\/\/api\.chenlongtech\.cn\/v\d\/user\/checkQTSheInsurance$ reject-dict
+
+[Script]
+# 匹配卡横幅
+http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/lover\/productList script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Uki/Uki_remove_ads.js, requires-body = true, tag = 移除匹配卡横幅
+
+# 密友横幅
+http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/friends\/closeFriend\/home script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Uki/Uki_remove_ads.js, requires-body = true, tag = 移除密友横幅
+
+# 娱乐页面横幅和悬浮窗配置
+http-response ^https:\/\/api\.chenlongtech\.cn\/v\d\/party\/config$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/Uki/Uki_remove_ads.js, requires-body = true, tag = 移除娱乐页面横幅和悬浮窗配置
 
 [Mitm]
 hostname = api.chenlongtech.cn, 203.107.1.1, 203.107.1.33, 203.107.1.66, 203.107.1.67, 203.107.1.97, 2401:b180:2000:30::1c, 2401:b180:2000:20::10
