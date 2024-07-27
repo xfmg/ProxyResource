@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Website_icon/120px/TencentAd.png
-#!date = 2024-07-27 20:19:48
+#!date = 2024-07-27 20:39:48
 
 [Rule]
 # 字节跳动广告
@@ -154,7 +154,6 @@ DOMAIN, tmeadcomm.y.qq.com, REJECT
 DOMAIN, tpns.qq.com, REJECT
 DOMAIN, v.gdt.qq.com, REJECT
 DOMAIN, v2.gdt.qq.com, REJECT
-DOMAIN, vv.video.qq.com, REJECT
 DOMAIN, win.gdt.qq.com, REJECT
 DOMAIN, wup.imtt.qq.com, REJECT
 DOMAIN, tpstelemetry.tencent.com, REJECT
