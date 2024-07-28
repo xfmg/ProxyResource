@@ -1,10 +1,14 @@
-// 2024-07-28 21:30:39
+// 2024-07-28 21:37:36
 const url = $request.url;
 let obj = JSON.parse($response.body);
 
 function removeAdsFromRecCont(data) {
     if (data && data.rec_cont) {
-        data.rec_cont.forEach(item => delete item.ad);
+        data.rec_cont.forEach(item => {
+            if (item.hasOwnProperty("ad")) {
+                delete item.ad;
+            }
+        });
     }
 }
 
@@ -17,7 +21,7 @@ function removePendantAndEntrance(data) {
 
 function setKeysToZero(data, keys) {
     keys.forEach(key => {
-        if (data[key] !== undefined) {
+        if (data.hasOwnProperty(key)) {
             data[key] = 0;
         }
     });
@@ -33,7 +37,7 @@ if (url.includes("/japi/entrance/roomRes/nc/m/list")) {
     removePendantAndEntrance(obj.data);
 }
 
-if (url.includes("/venus/config/static/update")) {
+if (/^\/venus\/config\/static\/update\?aid=ios&client_sys=ios&keyCodeSet=flow_config/.test(url)) {
     const keysToZero = [
         "greatGodGameSitterSwitch", // 大神游戏陪玩
         "followMoreAnchorEntrance", // 关注更多主播入口
