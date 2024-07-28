@@ -37,7 +37,7 @@ if (url.includes("/japi/entrance/roomRes/nc/m/list")) {
     removePendantAndEntrance(obj.data);
 }
 
-if (/^\/venus\/config\/static\/update\?aid=ios&client_sys=ios&keyCodeSet=flow_config/.test(url)) {
+if (/\/venus\/config\/static\/update.+keyCodeSet=flow_config/.test(url)) {
     const keysToZero = [
         "greatGodGameSitterSwitch", // 大神游戏陪玩
         "followMoreAnchorEntrance", // 关注更多主播入口
