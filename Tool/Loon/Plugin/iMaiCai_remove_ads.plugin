@@ -9,14 +9,12 @@
 
 [Rule]
 # 广告下发
-AND, ((DEST-PORT, 443), (IP-ASN, 23724, no-resolve), (PROTOCOL, TCP)), REJECT
-AND, ((DEST-PORT, 80), (IP-ASN, 23724, no-resolve), (PROTOCOL, TCP)), REJECT
-# AND, ((DEST-PORT, 443), (IP-ASN, 4811, no-resolve), (PROTOCOL, TCP)), REJECT
-# AND, ((DEST-PORT, 443), (IP-ASN, 17621, no-resolve), (PROTOCOL, TCP)), REJECT
-# AND, ((DEST-PORT, 443), (IP-ASN, 59025, no-resolve), (PROTOCOL, TCP)), REJECT
-# AND, ((DEST-PORT, 443), (IP-ASN, 63619, no-resolve), (PROTOCOL, TCP)), REJECT
-# AND, ((DEST-PORT, 443), (IP-ASN, 141771, no-resolve), (PROTOCOL, TCP)), REJECT
-# AND, ((DEST-PORT, 443), (IP-ASN, 146781, no-resolve), (PROTOCOL, TCP)), REJECT
+AND, ((DEST-PORT, 443), (IP-ASN, 4811, no-resolve), (PROTOCOL, TCP)), REJECT
+AND, ((DEST-PORT, 443), (IP-ASN, 17621, no-resolve), (PROTOCOL, TCP)), REJECT
+AND, ((DEST-PORT, 443), (IP-ASN, 59025, no-resolve), (PROTOCOL, TCP)), REJECT
+AND, ((DEST-PORT, 443), (IP-ASN, 63619, no-resolve), (PROTOCOL, TCP)), REJECT
+AND, ((DEST-PORT, 443), (IP-ASN, 141771, no-resolve), (PROTOCOL, TCP)), REJECT
+AND, ((DEST-PORT, 443), (IP-ASN, 146781, no-resolve), (PROTOCOL, TCP)), REJECT
 
 [Rewrite]
 # 开屏广告
