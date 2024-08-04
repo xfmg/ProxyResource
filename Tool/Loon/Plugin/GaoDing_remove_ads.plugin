@@ -25,7 +25,7 @@
 
 [Script]
 # 移除功能入口角标
-http-response ^https:\/\/www\.gaoding\.com\/api\/v3\/oc\/exhibitions\/templates\/resources$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/GaoDing/GaoDing_remove_ads.js, requires-body = true, tag = 移除功能入口角标
+http-response ^https:\/\/www\.gaoding\.com\/api\/v3\/oc\/exhibitions\/(templates|all_editor_tools)\/resources$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/GaoDing/GaoDing_remove_ads.js, requires-body = true, tag = 移除功能入口角标
 
 [Mitm]
 hostname = www.gaoding.com
