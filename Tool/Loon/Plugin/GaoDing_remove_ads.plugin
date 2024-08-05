@@ -5,7 +5,7 @@
 #!keyword = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/GaoDing.png
-#!date = 2024-08-05 11:18:07
+#!date = 2024-08-05 11:35:41
 
 [Rewrite]
 # 开屏广告
@@ -25,10 +25,6 @@
 
 # 移除功能入口角标
 ^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/(templates|all_editor_tools)\/resources$ response-body-replace-regex "badge_img_url":".+", "badge_img_url":"",
-
-[Script]
-# 移除功能入口角标
-# http-response ^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/(templates|all_editor_tools)\/resources$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/GaoDing/GaoDing_remove_ads.js, requires-body = true, tag = 移除功能入口角标
 
 [Mitm]
 hostname = www.gaoding.com
