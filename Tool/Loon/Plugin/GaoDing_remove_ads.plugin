@@ -24,7 +24,7 @@
 ^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/app_mine\/resources$ response-body-json-del pits[2].delivery_materials
 
 # 移除功能入口角标
-^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/(templates|all_editor_tools)\/resources$ response-body-replace-regex "badge_img_url"\x20:\x20".+", "badge_img_url":"",
+^https:\/\/www\.gaoding\.com\/api\/v\d\/oc\/exhibitions\/(templates|all_editor_tools)\/resources$ response-body-replace-regex "badge_img_url":".+", "badge_img_url":"",
 
 [Script]
 # 移除功能入口角标
