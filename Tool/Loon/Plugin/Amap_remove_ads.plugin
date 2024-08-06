@@ -5,7 +5,7 @@
 #!keyword = 去广告, RuCu6, kokoryh
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Amap.png
-#!date = 2024-08-06 20:57:26
+#!date = 2024-08-06 21:08:57
 
 [Rule]
 # 移除广告下发请求
