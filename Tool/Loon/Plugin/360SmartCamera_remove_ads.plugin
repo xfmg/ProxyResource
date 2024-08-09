@@ -5,14 +5,18 @@
 #!tag = 去广告, 可莉
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/360SmartCamera.png
-#!date = 2024-07-09 16:48:24
+#!date = 2024-08-09 21:39:08
 
 [Rule]
 DOMAIN, ad.jia.360.cn, REJECT
 DOMAIN, ad.iot.360.cn, REJECT
 
-[Script]
-http-response ^https:\/\/jia\.360\.cn\/conf\/v1\.json script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/360SmartCamera/360SmartCamera_remove_ads.js, requires-body = true, tag = 360摄像机去广告
+[Rewrite]
+# 删除 - 我的页面推广语、底栏商城入口、广告配置
+^https:\/\/jia\.360\.cn\/conf\/v1\.json response-body-json-del activity tab_conf["tab_360Mall"] ad_conf
+
+# [Script]
+# http-response ^https:\/\/jia\.360\.cn\/conf\/v1\.json script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/360SmartCamera/360SmartCamera_remove_ads.js, requires-body = true, tag = 360摄像机去广告
   
 [Mitm]
 hostname = jia.360.cn
