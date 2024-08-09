@@ -3,9 +3,12 @@
 #!openUrl = https://apps.apple.com/app/id958068931
 #!author = 可莉🅥
 #!tag = 去广告, 可莉
+#!system = iOS
+#!system_version = 
+#!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/360SmartCamera.png
-#!date = 2024-08-09 22:14:25
+#!date = 2024-08-09 22:17:30
 
 [Rule]
 DOMAIN, ad.jia.360.cn, REJECT
@@ -13,7 +16,7 @@ DOMAIN, ad.iot.360.cn, REJECT
 
 [Rewrite]
 # 删除 - 底栏商城入口、首页视频教程、广告配置、我的页面推广语
-^https:\/\/jia\.360\.cn\/conf\/v1\.json response-body-json-del active_for_ad tab_conf mytab2 vlog_demo demo_conf ad_conf activity video_cloud_banner get_new_device_activity get_new_device_activity_copy topBannerServiceConfig mytab2 sign_conf video_cloud_card
+^https:\/\/jia\.360\.cn\/conf\/v1\.json response-body-json-del tab_conf ad_conf activity
 
 # [Script]
 # http-response ^https:\/\/jia\.360\.cn\/conf\/v1\.json script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/360SmartCamera/360SmartCamera_remove_ads.js, requires-body = true, tag = 360摄像机去广告
