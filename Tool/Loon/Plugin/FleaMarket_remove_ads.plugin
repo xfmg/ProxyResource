@@ -1,0 +1,26 @@
+#!name = 闲鱼去广告
+#!desc = 移除开屏广告、宝贝信息流广告，精简我的页面。
+#!openUrl = https://apps.apple.com/app/id1002355194
+#!author = 可莉🅥
+#!tag = 去广告, 可莉
+#!system = iOS
+#!system_version = 
+#!loon_version = 3.2.1(372)
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/FleaMarket.png
+#!date = 2024-08-10 22:39:56
+
+[Rule]
+# 拦截广告下发
+AND, ((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-AGENT, %E9%97%B2%E9%B1%BC*)), REJECT
+
+[Rewrite]
+# 闲鱼首页顶部标签
+^https:\/\/acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.home\.whale\.modulet reject-dict
+
+[Script]
+# 宝贝信息流广告
+http-response ^https:\/\/g-acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/FleaMarket/FleaMarket_remove_ads.js, requires-body = true, tag = 移除宝贝信息流广告
+
+[Mitm]
+hostname = acs.m.goofish.com, g-acs.m.goofish.com
