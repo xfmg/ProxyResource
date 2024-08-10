@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/PinDuoDuo.png
-#!date = 2024-08-11 02:37:21
+#!date = 2024-08-11 02:43:12
 
 [Rule]
 # 拦截HTTPDNS
@@ -22,7 +22,7 @@ URL-REGEX, ^http:\/\/114\.110\.96\.26\/d, REJECT
 URL-REGEX, ^http:\/\/114\.110\.97\.30\/d, REJECT
 URL-REGEX, ^http:\/\/114\.110\.97\.97\/d, REJECT
 URL-REGEX, ^http:\/\/121\.5\.84\.85\/d, REJECT
-URL-REGEX, 2402:4e00:1411:201:0:9964:ba21:5a41\/d, REJECT
+URL-REGEX, ^http:\/\/\[2402:4e00:1411:201:0:9964:ba21:5a41\]\/d, REJECT
 
 DOMAIN, titan.pinduoduo.com, REJECT
 DOMAIN, apm-a.pinduoduo.com, REJECT
