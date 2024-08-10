@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/FleaMarket.png
-#!date = 2024-08-10 23:08:25
+#!date = 2024-08-10 23:17:14
 
 [Rule]
 # 拦截广告下发
@@ -20,7 +20,7 @@ AND, ((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-A
 
 [Script]
 # 宝贝信息流广告
-http-response ^https:\/\/g-acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/FleaMarket/FleaMarket_remove_ads.js, requires-body = true, tag = 移除宝贝信息流广告
+http-response ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idlehome\.home\.nextfresh\/ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/FleaMarket/FleaMarket_remove_ads.js, requires-body = true, tag = 移除宝贝信息流广告
 
 [Mitm]
 hostname = acs.m.goofish.com, g-acs.m.goofish.com
