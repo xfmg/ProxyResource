@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/FleaMarket.png
-#!date = 2024-08-10 23:58:50
+#!date = 2024-08-11 00:14:31
 
 [Rule]
 # 拦截广告下发
@@ -23,10 +23,6 @@ AND, ((URL-REGEX, ^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch), (USER-A
 
 # 首页闲鱼币入口、底部发布球
 ^https:\/\/(g-)?acs\.m\.goofish\.com\/gw\/mtop\.taobao\.idle\.user\.strategy\.list\/ response-body-json-del data
-
-# 我的页面横幅
-^https:\/\/dinamicx\.alibabausercontent\.com\/pub\/fish_my_banner_card reject
-^https:\/\/dinamicx\.alibabausercontent\.com\/pub\/fish_home_feeds_pager_banner reject
 
 [Script]
 # 宝贝信息流广告
