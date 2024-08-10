@@ -5,7 +5,7 @@
 const isLoon = typeof $loon !== "undefined";
 let url = $request.url,
   i = JSON.parse($response.body),
-  FeedTypes = [10023], //直播tip
+  FeedTypes = [10023], // 直播tip
   banner = true,
   tops = true,
   bannerAd = true;
@@ -44,16 +44,25 @@ if (/api\/douyin\/GetLiveInfo/.test(url)) {
       }
     }
   }
-  banner && FeedTypes.push(10002); //轮播
-  tops && FeedTypes.push(10003); //置顶
+  banner && FeedTypes.push(10002); // 轮播
+  tops && FeedTypes.push(10003); // 置顶
   i.data.list = i.data.list.filter((i) => {
     return (
       !FeedTypes.includes(i.feedType) &&
       !i.feedContent.smallTags?.[0]?.text?.includes("广告")
     );
   });
+
+  // 新增部分：删除 feedType 为 10004 的数组项
+  i.data.list = i.data.list.filter(item => {
+    if (item.feedType === 10004) {
+      return false; // 删除该数组项
+    }
+    return true; // 保留该数组项
+  });
 }
+
 $done({ body: JSON.stringify(i) });
 
 // prettier-ignore
-function getin() {return Object.fromEntries($argument.split("&").map((i) => i.split("=")).map(([k, v]) => [k, decodeURIComponent(v)]));}
+function getin() { return Object.fromEntries($argument.split("&").map((i) => i.split("=")).map(([k, v]) => [k, decodeURIComponent(v)])); }
