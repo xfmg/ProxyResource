@@ -1,5 +1,5 @@
 #!name = 闲鱼去广告
-#!desc = 移除开屏广告、商品信息流广告、我的页面推广横幅。
+#!desc = 移除开屏广告、商品信息流广告、搜索栏填充词、我的页面推广横幅。
 #!openUrl = https://apps.apple.com/app/id1002355194
 #!author = 可莉🅥
 #!tag = 去广告, 可莉
@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/FleaMarket.png
-#!date = 2024-08-11 00:22:24
+#!date = 2024-08-11 00:27:40
 
 [Rule]
 # 拦截广告下发
