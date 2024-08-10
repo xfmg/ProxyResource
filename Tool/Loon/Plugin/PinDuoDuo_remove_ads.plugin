@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/PinDuoDuo.png
-#!date = 2024-08-11 01:20:52
+#!date = 2024-08-11 02:02:38
 
 [Rule]
 # 拦截HTTPDNS
@@ -31,6 +31,8 @@ DOMAIN, th-b.pinduoduo.com, REJECT
 DOMAIN, th.pinduoduo.com, REJECT
 
 [Rewrite]
+# 开屏广告
+^https:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash reject
 ^https:\/\/api\.pinduoduo\.com\/search_hotquery reject-dict
 ^https:\/\/api\.pinduoduo\.com\/api\/zaire_biz\/chat\/resource\/get_list_data reject-dict
 ^https:\/\/api\.pinduoduo\.com\/api\/caterham\/v3\/query\/new_chat_group reject-dict
@@ -47,4 +49,4 @@ http-response ^https:\/\/api\.pinduoduo\.com\/api\/alexa\/homepage\/hub script-p
 http-response ^https:\/\/api\.pinduoduo\.com\/api\/oak\/integration\/render script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/PinDuoDuo/PinDuoDuo_remove_ads.js, requires-body = true, tag = 拼多多去广告
 
 [Mitm]
-DOMAINname = api.pinduoduo.com
+DOMAINname = api.pinduoduo.com, api.yangkeduo.com
