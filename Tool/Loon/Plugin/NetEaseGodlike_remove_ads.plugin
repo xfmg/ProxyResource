@@ -1,0 +1,26 @@
+#!name = 网易大神去广告
+#!desc = 移除开屏广告、精简我的页面。
+#!openUrl = https://apps.apple.com/app/id1359055423
+#!author = 可莉🅥
+#!tag = 去广告, 可莉
+#!system = iOS
+#!system_version = 
+#!loon_version = 3.2.1(372)
+#!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
+#!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/NetEaseGodlike.png
+#!date = 2024-08-11 21:03:57
+
+[Rewrite]
+# 开屏广告
+^https:\/\/god\.gameyw\.netease\.com\/v1\/ad reject
+
+# 我的页面广告横幅
+^https:\/\/god\.gameyw\.netease\.com\/v1\/app\/static\/conf\/getByModuleNameList$ reject-dict
+
+[Script]
+# 移除悬浮窗
+# http-response ^https:\/\/app\.NetEaseGodlike\.com\/zz\/v2\/zzinfoshow\/getfeedflowinfo script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/NetEaseGodlike/NetEaseGodlike_remove_ads.js, requires-body = true, tag = 移除悬浮窗
+
+
+[Mitm]
+hostname = god.gameyw.netease.com
