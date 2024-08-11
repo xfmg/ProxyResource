@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/NetEaseGodlike.png
-#!date = 2024-08-11 21:38:59
+#!date = 2024-08-11 21:40:56
 
 [Rewrite]
 # 开屏广告
@@ -19,8 +19,6 @@
 
 # 我的页面 - 会员福利金
 # ^https:\/\/god-exp\.gameyw\.netease\.com\/v\d\/exp\/xy\/right-customize\/get-h5-all-type-list$ response-body-json-replace result[0].list[0].list[0] {} result[0].list[1].list[0] {} result[0].list[2].list[0] {} result[0].list[3].list[0] {} result[0].list[4].list[0] {} result[0].list[5].list[0] {}
-
-^https:\/\/god-exp\.gameyw\.netease\.com\/v\d\/exp\/xy\/right-customize\/get-h5-all-type-list$ request-body-replace-regex "appKey":"all" "appKey":"" "type":"CUSTOMIZE" "type":""
 
 [Script]
 # 移除悬浮窗
