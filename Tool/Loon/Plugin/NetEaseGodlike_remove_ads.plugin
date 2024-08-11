@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/NetEaseGodlike.png
-#!date = 2024-08-11 21:52:12
+#!date = 2024-08-11 21:53:30
 
 [Rewrite]
 # 开屏广告
@@ -18,12 +18,11 @@
 ^https:\/\/god\.gameyw\.netease\.com\/v\d\/app\/static\/conf\/getByModuleNameList$ reject-dict
 
 # 发现页面即游戏页面
-^https:\/\/god\.gameyw\.netease\.com\/v1\/app\/square\/facade request-body-json-del result
+^https:\/\/god\.gameyw\.netease\.com\/v1\/app\/square\/facade request-body-json-del result.square.itemList
 
 [Script]
 # 移除悬浮窗
 # http-response ^https:\/\/app\.NetEaseGodlike\.com\/zz\/v2\/zzinfoshow\/getfeedflowinfo script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/NetEaseGodlike/NetEaseGodlike_remove_ads.js, requires-body = true, tag = 移除悬浮窗
-
 
 [Mitm]
 hostname = god.gameyw.netease.com, god-exp.gameyw.netease.com
