@@ -1,5 +1,5 @@
 #!name = 猫耳FM去广告
-#!desc = 移除开屏广告、横幅广告、精简首页标签。
+#!desc = 移除开屏广告、横幅广告、精简首页标签，移除青少年模式弹窗。
 #!openUrl = https://apps.apple.com/app/id1148465254
 #!author = 可莉🅥
 #!tag = 去广告, 可莉
@@ -8,11 +8,14 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/CatEarFM.png
-#!date = 2024-08-12 20:48:20
+#!date = 2024-08-12 21:00:18
 
 [Rewrite]
 # 开屏广告
 ^https:\/\/app\.missevan\.com\/site\/launch\? reject
+
+# 热门搜索词
+^https:\/\/app\.missevan\.com\/discovery\/hot-search$ reject-dict
 
 # 首页 - 推荐 - 热门搜索词、轮播图推广
 # ^https:\/\/app\.missevan\.com\/site\/get-top$ response-body-json-del info.search_words info.banners info.extra_banners
@@ -22,6 +25,9 @@
 
 # 首页 - 声音恋人 - 轮播图推广、热门搜索词
 ^https:\/\/app\.missevan\.com\/catalog\/sound-homepage\? response-body-json-del info.banners info.extra_banners info.hot_words
+
+# 青少年模式
+^https:\/\/app\.missevan\.com\/site\/config response-body-json-replace info.teenager_popup_mode 0
 
 [Script]
 # 首页标签
