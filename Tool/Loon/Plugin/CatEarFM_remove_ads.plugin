@@ -12,7 +12,7 @@
 
 [Rewrite]
 # 开屏广告
-^https:\/\/app\.missevan\.com\/site\/launch\? reject
+# ^https:\/\/app\.missevan\.com\/site\/launch\? reject
 
 # 首页 - 推荐 - 热门搜索词、轮播图推广
 ^https:\/\/app\.missevan\.com\/site\/get-top$ response-body-json-del info.search_words info.banners info.extra_banners
