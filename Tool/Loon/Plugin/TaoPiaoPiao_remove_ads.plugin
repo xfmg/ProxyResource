@@ -14,6 +14,9 @@
 # 开屏广告
 ^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryloadingbanner\/ reject-dict
 
+# 弹窗
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.life\.popup\.get\/ reject-dict
+
 [Script]
 # 移除悬浮窗
 # http-response ^https:\/\/app\.TaoPiaoPiao\.com\/zz\/v2\/zzinfoshow\/getfeedflowinfo script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TaoPiaoPiao/TaoPiaoPiao_remove_ads.js, requires-body = true, tag = 移除悬浮窗
