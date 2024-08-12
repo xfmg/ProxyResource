@@ -14,22 +14,19 @@
 # 开屏广告
 ^https:\/\/app\.missevan\.com\/site\/launch\? response-body-json-del info
 
-# 热门搜索词
-# ^https:\/\/app\.missevan\.com\/discovery\/hot-search$ response-body-json-del info
-
 # 首页 - 直播 - 热门 - 主播横幅推广
 ^https:\/\/fm\.missevan\.com\/api\/v2\/meta\/banner$ response-body-json-del info
 
-# 首页 - 推荐 - 热门搜索词、轮播图推广 [保留] info.search_words info.banners
+# 首页 - 推荐 - 热门搜索词、轮播图推广
 ^https:\/\/app\.missevan\.com\/site\/get-top$ response-body-json-del info.extra_banners
 
 # 首页 - 推荐 - 主播推荐列表
 ^https:\/\/fm\.missevan\.com\/api\/v2\/recommended\/top$ response-body-json-del info
 
-# 首页 - 广播剧 - 轮播图推广、热门搜索词 [保留] info.hot_words info.banners
+# 首页 - 广播剧 - 轮播图推广、热门搜索词
 ^https:\/\/app\.missevan\.com\/drama\/catalog-homepage\? response-body-json-del info.extra_banners
 
-# 首页 - 声音恋人 - 轮播图推广、热门搜索词 [保留] info.banners info.hot_words
+# 首页 - 声音恋人 - 轮播图推广、热门搜索词
 ^https:\/\/app\.missevan\.com\/catalog\/sound-homepage\? response-body-json-del info.extra_banners
 
 # 发现页面 - 直播间、广播剧、免流服务
