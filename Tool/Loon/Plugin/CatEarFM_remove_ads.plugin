@@ -8,17 +8,19 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/CatEarFM.png
-#!date = 2024-08-12 19:34:13
+#!date = 2024-08-12 20:20:56
 
 [Rewrite]
 # 开屏广告
-^https:\/\/app\.missevan\.com\/site\/launch reject-dict
-
-# 首页标签 - 直播、周边商城
-^https:\/\/app\.missevan\.com\/site\/icons\? response-body-json-del info.icons[0] info.icons[4]
+^https:\/\/app\.missevan\.com\/site\/launch reject
 
 # 热门搜索词、轮播图推广
-^https:\/\/app\.missevan\.com\/site\/get-top response-body-json-replace info.search_words [] info.banners [] info.extra_banners {} info.weeklydrama []
+# ^https:\/\/app\.missevan\.com\/site\/get-top response-body-json-replace info.search_words [] info.extra_banners {} info.weeklydrama []
+^https:\/\/app\.missevan\.com\/site\/get-top response-body-json-del info
+
+[Script]
+# 首页标签
+# http-response ^https:\/\/app\.missevan\.com\/site\/icons\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/ZhuanZhuan/ZhuanZhuan_remove_ads.js, requires-body = true, tag = 精简首页标签
 
 [Mitm]
 hostname = app.missevan.com
