@@ -15,8 +15,7 @@
 ^https:\/\/app\.missevan\.com\/site\/launch reject
 
 # 热门搜索词、轮播图推广
-# ^https:\/\/app\.missevan\.com\/site\/get-top response-body-json-replace info.search_words [] info.extra_banners {} info.weeklydrama []
-^https:\/\/app\.missevan\.com\/site\/get-top response-body-json-del info
+^https:\/\/app\.missevan\.com\/site\/get-top response-body-json-replace info.search_words [] info.extra_banners {} info.weeklydrama []
 
 [Script]
 # 首页标签
