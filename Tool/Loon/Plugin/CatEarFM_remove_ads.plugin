@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/CatEarFM.png
-#!date = 2024-08-12 22:48:43
+#!date = 2024-08-12 22:51:29
 
 [Rewrite]
 # 开屏广告
@@ -16,6 +16,9 @@
 
 # 热门搜索词
 # ^https:\/\/app\.missevan\.com\/discovery\/hot-search$ response-body-json-del info
+
+# 首页 - 直播 - 热门 - 主播横幅推广
+^https:\/\/fm\.missevan\.com\/api\/v2\/meta\/banner$ response-body-json-del info
 
 # 首页 - 推荐 - 热门搜索词、轮播图推广 [保留] info.search_words info.banners
 ^https:\/\/app\.missevan\.com\/site\/get-top$ response-body-json-del info.extra_banners
