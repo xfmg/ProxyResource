@@ -8,14 +8,14 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/CatEarFM.png
-#!date = 2024-08-12 21:00:18
+#!date = 2024-08-12 21:03:51
 
 [Rewrite]
 # 开屏广告
-^https:\/\/app\.missevan\.com\/site\/launch\? reject
+^https:\/\/app\.missevan\.com\/site\/launch\? response-body-json-del info
 
 # 热门搜索词
-^https:\/\/app\.missevan\.com\/discovery\/hot-search$ reject-dict
+^https:\/\/app\.missevan\.com\/discovery\/hot-search$ response-body-json-del info
 
 # 首页 - 推荐 - 热门搜索词、轮播图推广
 # ^https:\/\/app\.missevan\.com\/site\/get-top$ response-body-json-del info.search_words info.banners info.extra_banners
