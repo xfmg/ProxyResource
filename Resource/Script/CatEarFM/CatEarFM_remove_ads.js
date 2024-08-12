@@ -1,27 +1,25 @@
-// 2024-08-12 22:21:49
+// 2024-08-12 22:31:22
 const url = $request.url;
 if (!$response.body) $done({});
+
 let obj = JSON.parse($response.body);
 
-// 首页标签
-function filterIcons(icons) {
-    return icons.filter(icon => icon.title !== "直播" && icon.title !== "周边商城");
-}
-
-function filterInfo(info, titlesToRemove) {
-    return info.filter(item => !titlesToRemove.includes(item.title));
-}
-
-// 发现页面
-if (url.includes("/site/icons")) {
+function filterIcons(obj) {
     if (obj.info && obj.info.icons && Array.isArray(obj.info.icons)) {
-        obj.info.icons = filterIcons(obj.info.icons);
+        obj.info.icons = obj.info.icons.filter(icon => icon.title !== "直播" && icon.title !== "周边商城");
     }
-} else if (url.includes("/discovery/list")) {
-    const titlesToRemove = ["直播间", "广播剧", "免流服务"];
-    if (obj.info && Array.isArray(obj.info)) {
-        obj.info = filterInfo(obj.info, titlesToRemove);
+}
+
+function filterInfo(obj) {
+    const titlesToFilter = ["直播间", "广播剧", "免流服务"];
+    if (obj.info && obj.info.title) {
+        obj.info.title = obj.info.title.filter(title => !titlesToFilter.includes(title));
     }
+}
+
+if (url.includes("/site/icons")) {
+    filterIcons(obj);
+    filterInfo(obj);
 }
 
 $done({ body: JSON.stringify(obj) });
