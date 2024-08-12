@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Other_icon/120px/KeLee.png
-#!date = 2024-08-12 01:22:24
+#!date = 2024-08-12 19:31:49
 
 [Rule]
 # Outlook
@@ -119,9 +119,6 @@ DOMAIN, mallapi2.qinlinkeji.com, REJECT // 商城页面
 ^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getGameData\? reject-dict
 # QQ钱包公益广告
 ^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getFootData\? reject-dict
-
-# 猫耳FM - 开屏广告 app.missevan.com
-^https:\/\/app\.missevan\.com\/site\/launch\? reject
 
 # 和风天气 hfapp-service.qweather.net
 ^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? reject-dict
