@@ -8,11 +8,11 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/CatEarFM.png
-#!date = 2024-08-12 19:26:10
+#!date = 2024-08-12 19:28:41
 
 [Rewrite]
 # 开屏广告
-^https:\/\/app\.CatEarFM\.com\/zz\/v2\/zzlogic\/getOpenScreen reject
+^https:\/\/app\.missevan\.com\/site\/launch reject-dict
 
 # 首页标签 - 直播、周边商城
 ^https:\/\/app\.missevan\.com\/site\/icons\? response-body-json-del info.icons[0] info.icons[4]
