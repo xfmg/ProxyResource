@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/CatEarFM.png
-#!date = 2024-08-12 21:18:48
+#!date = 2024-08-12 22:21:49
 
 [Rewrite]
 # 开屏广告
@@ -38,6 +38,9 @@
 [Script]
 # 首页标签
 http-response ^https:\/\/app\.missevan\.com\/site\/icons\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/CatEarFM/CatEarFM_remove_ads.js, requires-body = true, tag = 精简首页标签
+
+# 发现页面
+http-response ^https:\/\/app\.missevan\.com\/discovery\/list$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/CatEarFM/CatEarFM_remove_ads.js, requires-body = true, tag = 精简发现页面
 
 [Mitm]
 hostname = app.missevan.com, fm.missevan.com
