@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(372)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/CatEarFM.png
-#!date = 2024-08-12 22:41:30
+#!date = 2024-08-12 22:44:33
 
 [Rewrite]
 # 开屏广告
@@ -30,7 +30,7 @@
 ^https:\/\/app\.missevan\.com\/catalog\/sound-homepage\? response-body-json-del info.extra_banners
 
 # 发现页面
-http-response ^https:\/\/app\.missevan\.com\/discovery\/list$ response-body-json-del info[0][0].title info[1][0].title info[4][0].title
+http-response ^https:\/\/app\.missevan\.com\/discovery\/list$ response-body-json-del info[0][0] info[1][0] info[4][0]
 
 # 播放器 - 主播推荐
 ^https:\/\/fm\.missevan\.com\/api\/v2\/chatroom\/sound\/recommend\? response-body-json-del info
