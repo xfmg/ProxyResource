@@ -15,10 +15,10 @@
 ^https:\/\/app\.missevan\.com\/site\/launch reject-dict
 
 # 首页标签 - 直播、周边商城
-^https:\/\/app\.missevan\.com\/site\/icons\? response-body-json-del info.icons[0] info.icons[4]
+# ^https:\/\/app\.missevan\.com\/site\/icons\? response-body-json-del info.icons[0] info.icons[4]
 
 # 热门搜索词、轮播图推广
-# ^https:\/\/app\.missevan\.com\/site\/get-top response-body-json-replace info.search_words [] info.banners [] info.extra_banners {} info.weeklydrama []
+^https:\/\/app\.missevan\.com\/site\/get-top response-body-json-replace info.search_words [] info.banners [] info.extra_banners {} info.weeklydrama []
 
 [Mitm]
 hostname = app.missevan.com
