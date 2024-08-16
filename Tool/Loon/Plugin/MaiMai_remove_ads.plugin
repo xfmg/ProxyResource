@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(732)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MaiMai.png
-#!date = 2024-08-17 01:48:25
+#!date = 2024-08-17 01:54:45
 
 [Rewrite]
 # 开屏广告、职位页面横幅
@@ -23,6 +23,7 @@
 [Script]
 # 移除信息流广告、推广卡片
 http-response ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/feed\/v\d\/(feed_detail_header|focus_feed)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/MaiMai/MaiMai_remove_ads.js, requires-body = true, tag = 移除信息流广告
+http-response ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/gossip\/v\d\/gossip_detail_comment\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/MaiMai/MaiMai_remove_ads.js, requires-body = true, tag = 移除信息流广告
 
 [Mitm]
 hostname = open.taou.com, h3.open.taou.com
