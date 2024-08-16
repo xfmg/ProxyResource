@@ -151,7 +151,7 @@ Plus 流量 1024G 月付 120
     <th>名称</th>
   </tr>
   <tr>
-    <td rowspan="91"><strong>去广告插件</strong></td>
+    <td rowspan="92"><strong>去广告插件</strong></td>
   <tr>
     <td>001</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/BlockAdvertisers.plugin">广告平台拦截器</a></td>
@@ -511,6 +511,10 @@ Plus 流量 1024G 月付 120
   <tr>
     <td>090</td>
     <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/XiaoCan_remove_ads.plugin">小蚕霸王餐去广告</a></td>
+  </tr>
+  <tr>
+    <td>091</td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/BooHee_remove_ads.plugin">薄荷健康去广告</a></td>
   </tr>
     <td></td>
     <td></td>
