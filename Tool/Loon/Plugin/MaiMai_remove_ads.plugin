@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(732)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MaiMai.png
-#!date = 2024-08-17 01:58:31
+#!date = 2024-08-17 02:11:31
 
 [Rewrite]
 # 开屏广告、职位页面横幅
@@ -19,6 +19,9 @@
 
 # 信息流推广卡片
 ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/go_gossip_darwin\/external\/v2\/query_flow_cards\? reject-dict
+
+# 帖子末尾 - 看过此贴的用户也在看
+^https:\/\/(h3\.)?open\.taou\.com\/maimai\/gossip\/v3\/gossip_detail_comment\? response-body-json-del feeds
 
 [Script]
 # 移除信息流广告、文章末尾推广卡片、评论区广告
