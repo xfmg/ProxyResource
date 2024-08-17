@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(732)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MaiMai.png
-#!date = 2024-08-17 23:35:34
+#!date = 2024-08-18 00:08:18
 
 [Rewrite]
 # 开屏广告、职位页面横幅
@@ -25,7 +25,7 @@
 
 [Script]
 # 信息流和文末推广小卡片推广
-http-response ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/feed\/v\d\/(feed_detail_header|focus_feed)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/MaiMai/MaiMai_remove_ads.js, requires-body = true, tag = 移除信息流和文末推广小卡片推广
+# http-response ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/feed\/v\d\/(feed_detail_header|focus_feed)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/MaiMai/MaiMai_remove_ads.js, requires-body = true, tag = 移除信息流和文末推广小卡片推广
 # 移除信息流和评论区大块广告
 http-response ^https:\/\/(h3\.)?open\.taou\.com\/maimai\/(gossip|feed)\/v\d\/(gossip_detail_comment|feed_detail_comment)\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/MaiMai/MaiMai_remove_ads.js, requires-body = true, tag = 移除信息流和评论区大块广告
 
