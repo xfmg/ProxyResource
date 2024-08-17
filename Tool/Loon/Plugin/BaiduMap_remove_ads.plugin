@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(732)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/BaiduMap.png
-#!date = 2024-08-18 01:23:12
+#!date = 2024-08-18 01:30:40
 
 [Rule]
 # 拦截HTTPDNS
@@ -20,8 +20,8 @@ IP-CIDR, 186.76.76.200/32, REJECT, no-resolve
 ^https:\/\/afd\.baidu\.com\/afd\/entry\?action=(update|query) reject-dict
 
 # 出行 - 推荐项目
-^https:\/\/newclient\.map\.baidu\.com\/feed\/govui\/rich_content reject-dict
-^https:\/\/newclient\.map\.baidu\.com\/client\/imap\/dl\/s\/UpdateInfo\.php\? reject-dict
+^https:\/\/newclient\.map\.baidu\.com\/feed\/govui\/rich_content response-body-json-del data
+# ^https:\/\/newclient\.map\.baidu\.com\/client\/imap\/dl\/s\/UpdateInfo\.php\? reject-dict
 
 # 出行 - 文字横幅
 ^https:\/\/newclient\.map\.baidu\.com\/client\/noticebar\/get\? reject-dict
