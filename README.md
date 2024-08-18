@@ -82,8 +82,8 @@
 ------
 #### 机场推荐
 
-<details>
-<summary>可莉的主力机场</summary>
+> [!TIP]
+> 可莉的主力机场
 
 **CornSS - 全 IEPL 专线机场**
 
@@ -118,7 +118,7 @@
 
 [@cornss_c](https://t.me/cornss_c)
 
-------
+
 
 **ENET - 全专线 IEPL/UDPN IPLC 专线机场**
 
