@@ -9,18 +9,22 @@
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/TestFlight.png
 #!input = APP_ID
-#!date = 2024-08-19 00:23:01
+#!date = 2024-08-19 00:28:36
 
 [Argument]
 获取账号令牌 = switch, true, false, tag = 插件控制, desc = 此开关控制插件是否捕获账户令牌
+应用ID捕获 = switch, true, false, tag = 插件控制, desc = 此开关控制插件是否捕获应用ID
+定时参数 = input, "*/1 * * * * *", tag = 任务参数, desc = 这里需要输入符合CRON表达式的参数
 
 [Rule]
 DOMAIN, testflight.apple.com, PROXY
 
 [Script]
-http-request ^https?:\/\/testflight\.apple\.com\/v3\/accounts\/.*\/apps$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TestFlight/TF_keys.js, tag = 获取账号令牌, enable={arg1}
-http-request ^https://testflight.apple.com/join/(.*) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TestFlight/TF_keys.js, tag = APP_ID获取
-cron "*/1 * * * * *" script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TestFlight/Auto_join_TF.js, tag = 自动加入TF, timeout = 180
+http-request ^https?:\/\/testflight\.apple\.com\/v3\/accounts\/.*\/apps$ script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TestFlight/TF_keys.js, tag = 获取账号令牌, enable={获取账号令牌}
+
+http-request ^https://testflight.apple.com/join/(.*) script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TestFlight/TF_keys.js, tag = 应用ID捕获, enable={应用ID捕获}
+
+cron {定时参数} script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/TestFlight/Auto_join_TF.js, tag = 自动加入TF, timeout = 180
 
 [Mitm]
 hostname = testflight.apple.com
