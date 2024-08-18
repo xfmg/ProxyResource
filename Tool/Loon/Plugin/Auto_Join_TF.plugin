@@ -12,9 +12,9 @@
 #!date = 2024-08-19 00:28:36
 
 [Argument]
-获取账号令牌 = switch, true, false, tag = 插件控制, desc = 此开关控制插件是否捕获账户令牌
-应用ID捕获 = switch, true, false, tag = 插件控制, desc = 此开关控制插件是否捕获应用ID
-定时参数 = input, "*/1 * * * * *", tag = 任务参数, desc = 这里需要输入符合CRON表达式的参数
+获取账号令牌 = switch, true, false, tag = 获取账号令牌, desc = 此开关控制插件是否捕获账户令牌
+应用ID捕获 = switch, true, false, tag = 应用ID捕获, desc = 此开关控制插件是否捕获应用ID
+定时参数 = input, "*/1 * * * * *", tag = 定时参数, desc = 这里需要输入符合CRON表达式的参数
 
 [Rule]
 DOMAIN, testflight.apple.com, PROXY
