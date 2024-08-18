@@ -80,12 +80,10 @@
 [Bitbucket 仓库](https://bitbucket.org/luestr/proxyresource) - 电信、联通、移动、广电均可直连访问
 
 ------
-
 #### 机场推荐
-> [!TIP]
-> 可莉的主力机场
 
-------
+<details>
+<summary>可莉的主力机场</summary>
 
 **CornSS - 全 IEPL 专线机场**
 
@@ -163,8 +161,7 @@ Plus 流量 1024G 月付 120
 
 **联系方式**
 官方群组 [@enet_group](https://t.me/enet_group)
-
-------
+</details>
 
 #### 插件列表
 
