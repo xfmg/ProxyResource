@@ -560,7 +560,7 @@ Plus 流量 1024G 月付 120
   </tr>
   <tr>
     <td>094</td>
-    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/MeiTu_remove_ads.plugin">网易有道词典去广告</a></td>
+    <td><a href="https://www.nsloon.com/openloon/import?plugin=https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Tool/Loon/Plugin/MeiTu_remove_ads.plugin">美图秀秀去广告</a></td>
   </tr>
     <td></td>
     <td></td>
