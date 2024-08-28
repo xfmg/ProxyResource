@@ -1,6 +1,6 @@
 #!name = 美图秀秀去广告
 #!desc = 移除开屏广告、横幅推广，精简我的页面。
-#!openUrl = https://apps.apple.com/app/id1002355194
+#!openUrl = https://apps.apple.com/app/id416048305
 #!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
 #!tag = 去广告
 #!system = 
@@ -8,8 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MeiTu.png
-#!date = 2024-08-28 10:19:01
-
+#!date = 2024-08-28 10:21:25
 [Rewrite]
 # 精简应用配置 - 福利严选beauty / 开屏广告data.splashControl
 ^https:\/\/api\.xiuxiu\.meitu\.com\/v1\/common\/config\.json response-body-json-del data.home_top_live data.splashControl
