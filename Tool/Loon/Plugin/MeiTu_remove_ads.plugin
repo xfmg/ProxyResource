@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MeiTu.png
-#!date = 2024-08-28 10:30:49
+#!date = 2024-08-28 10:44:51
 
 [Rewrite]
 # 精简应用配置 - 福利严选beauty / 开屏广告data.splashControl
@@ -17,6 +17,7 @@
 # 订阅弹窗
 ^https:\/\/(api|tool)\.xiuxiu\.meitu\.com\/v\d\/vip\/sub_popup\.json reject-dict
 ^https:\/\/(api|tool)\.xiuxiu\.meitu\.com\/\/v\d\/vip\/popup_show\.json reject-dict
+^https:\/\/api\.posters\.meitu\.com\/homepage\/leaflets\.json\? reject-dict
 
 # 首页轮播图
 # ^https:\/\/(api|tool)\.xiuxiu\.meitu\.com\/v\d\/tool\/common\/home_background\.json reject-dict
@@ -26,6 +27,8 @@
 
 # 设计室 - 顶部轮播图data.home_bg_banner / 右上角VIP图标data.vip
 ^https:\/\/api\.posters\.meitu\.com\/common\/init\.json response-body-json-del data.home_bg_banner data.vip
+# 设计室 - 顶部轮播图data.banner
+^https:\/\/api\.posters\.meitu\.com\/v\d\/home\/home\.json response-body-json-del data.banner
 
 # 精简我的页面 - 有奖调研data[0].items[10] / 借钱data[1].items[1] / 备用金data[1].items[2] / 茉颜data[2].items[1]
 ^https:\/\/(api|tool)\.xiuxiu\.meitu\.com\/v\d\/tool\/common\/home\.json response-body-json-del data[0].items[10] data[1].items[1] data[1].items[2] data[2].items[1]
