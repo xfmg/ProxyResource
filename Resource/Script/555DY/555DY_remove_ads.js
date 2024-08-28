@@ -9,7 +9,7 @@ if (url.includes("/api/v1/movie/index_recommend?")) {
     }
 
     for (let i in obj.data) {
-      obj.data[i] = obj.data[i].list.filter(item => item.type !== 3);
+      obj.data[i].list = obj.data[i].list.filter(item => item.type !== 3);
     }
 }
 
