@@ -45,7 +45,7 @@ URL-REGEX, ^http:\/\/[\d\.]+:8000\/v1\/resource\/\w{32}-1-SPLASH, REJECT-DICT
 # 移除视频链接跟踪参数
 (^https:\/\/(?:www|m)\.bilibili\.com\/video\/(?:BV\w{10}|av\d{9}))(\/?\?.*) 302 $1
 # 移除直播间链接跟踪参数
-(^https:\/\/live\.bilibili\.com\/\d+)((\?.*)) 302 $1
+(^https:\/\/live\.bilibili\.com\/\d+)(\/?\?.*) 302 $1
 
 [Script]
 # 移除播放页面视频列表广告
