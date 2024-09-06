@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/Website_icon/120px/TencentAd.png
-#!date = 2024-09-06 21:53:12
+#!date = 2024-09-06 22:17:20
 
 [Rule]
 # 字节跳动广告
@@ -278,4 +278,4 @@ DOMAIN, da.mosspf.com, REJECT
 [Script]
 
 [MitM]
-hostname = ether-pack.pangolin-sdk-toutiao.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com, api-access.pangolin-sdk-toutiao?.com, sf*-fe-tos.pglstatp-toutiao.com
+hostname = ether-pack.pangolin-sdk-toutiao.com, api-access.pangolin-sdk-toutiao?.com, sf*-fe-tos.pglstatp-toutiao.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com
