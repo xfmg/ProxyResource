@@ -8,10 +8,11 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Keep.png
-#!date = 2024-09-06 20:44:37
+#!date = 2024-09-06 20:48:23
 
 [Rule]
 # 拦截HTTPDNS
+DOMAIN, httpdns.n.netease.com, REJECT
 DOMAIN, httpdns.calorietech.com, REJECT
 
 # 拦截广告下发
@@ -28,7 +29,7 @@ DOMAIN, hc-ssp.sm.cn, REJECT
 ^https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v1\/ad reject-dict
 
 # 文章相关推荐
-^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/entryDetail reject-dict
+^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/entryDetail response-body-json-replace data {}
 
 [Script]
 # 首页 - 活动标签
