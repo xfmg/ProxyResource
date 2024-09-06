@@ -8,7 +8,11 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Keep.png
+<<<<<<< HEAD
 #!date = 2024-09-06 20:36:24
+=======
+#!date = 2024-09-06 20:34:39
+>>>>>>> origin/master
 
 [Rule]
 # 拦截HTTPDNS
@@ -22,7 +26,11 @@ DOMAIN, hc-ssp.sm.cn, REJECT
 ^https:\/\/api\.gotokeep\.com\/search\/v6\/default\/keyword\/list reject-dict
 
 # 关注 - 关注推荐
+<<<<<<< HEAD
 ^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/followPage response-body-json-replace data {}
+=======
+^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/followPage response-body-json-del data
+>>>>>>> origin/master
 
 # 信息流推广
 ^https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v1\/ad reject-dict
