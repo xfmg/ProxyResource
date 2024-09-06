@@ -1,5 +1,5 @@
 #!name = Keep去广告
-#!desc = 移除开屏广告、应用内广告和弹窗广告。
+#!desc = 移除开屏广告、应用内广告和弹窗广告。移除首页活动标签、关注推荐、文章相关推荐。
 #!openUrl = https://apps.apple.com/app/id952694580
 #!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
 #!tag = 去广告
