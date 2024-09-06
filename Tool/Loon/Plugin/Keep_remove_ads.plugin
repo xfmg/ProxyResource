@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/Keep.png
-#!date = 2024-09-06 20:36:24
+#!date = 2024-09-06 20:44:37
 
 [Rule]
 # 拦截HTTPDNS
@@ -26,6 +26,9 @@ DOMAIN, hc-ssp.sm.cn, REJECT
 
 # 信息流推广
 ^https:\/\/kad\.gotokeep\.com\/op-engine-webapp\/v1\/ad reject-dict
+
+# 文章相关推荐
+^https:\/\/api\.gotokeep\.com\/twins\/v4\/feed\/entryDetail reject-dict
 
 [Script]
 # 首页 - 活动标签
