@@ -8,7 +8,7 @@
 #!loon_version = 3.2.2(751)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/MeituMYXJ.png
-#!date = 2024-09-07 21:20:12
+#!date = 2024-09-07 22:12:50
 
 [Rule]
 # 广告下发
@@ -132,9 +132,6 @@ DOMAIN, da.mosspf.com, REJECT
 [Rewrite]
 # 首页轮播图
 ^https:\/\/api\.meiyan\.com\/operation\/home_banner\.json\? reject-dict
-
-# 清理配置
-^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\?
 
 # 弹窗和首页红点词
 ^https:\/\/api\.meiyan\.com\/operation\/get_config\.json\? response-body-json-del response.time_limit response.bubble
