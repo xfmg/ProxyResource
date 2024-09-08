@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/YY_Voice.png
-#!date = 2024-09-08 12:29:12
+#!date = 2024-09-08 12:30:25
 
 [Rule]
 # 拦截HTTPDNS
@@ -89,7 +89,7 @@ DOMAIN, sdk.beizi.biz, REJECT
 # ^https:\/\/yyapp-fastnet\.yy\.com\/dispatch\? reject-dict
 
 # 底栏 - 短剧
-^https:\/\/tab\.yy\.com\/tabs\? response-body-json-del data.tabs[0] data.tabs[1] data.tabsForSelect
+^https:\/\/tab\.yy\.com\/tabs\? response-body-json-del data.tabs[0] data.tabsForSelect
 
 # 关注 - 关注推荐
 ^https:\/\/yyapp-fastnet\.yy\.com\/dispatch\? response-body-json-del data[1]
