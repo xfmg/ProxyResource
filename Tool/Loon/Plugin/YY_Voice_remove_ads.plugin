@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/YY_Voice.png
-#!date = 2024-09-08 11:55:45
+#!date = 2024-09-08 12:03:12
 
 [Rule]
 # 拦截HTTPDNS
@@ -85,13 +85,13 @@ DOMAIN, sdk.beizi.biz, REJECT
 # 首页 - 弹窗
 ^https:\/\/yyapp-act-entrance\.yy\.com\/entrance\/list\? reject-dict
 
-[Script]
+# 关注 - 猜你喜欢
+^https:\/\/yyapp-fastnet\.yy\.com\/dispatch\? response-body-json-del data[1]
+
 # 底栏
-http-response ^https:\/\/tab\.yy\.com\/tabs\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YY_Voice/YY_Voice_remove_ads.js, requires-body = true, tag = 精简底栏
+^https:\/\/tab\.yy\.com\/tabs\? response-body-json-del data.tabs[0] data.tabs[1] data.tabsForSelect
 
-# 主播邀请弹窗
-http-response ^https:\/\/yyapp-fastnet\.yy\.com\/dispatch\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YY_Voice/YY_Voice_remove_ads.js, requires-body = true, tag = 移除主播邀请弹窗
-
+[Script]
 # 我的页面
 http-response ^https:\/\/personal-center\.yy\.com\/personalCenter\/list\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YY_Voice/YY_Voice_remove_ads.js, requires-body = true, tag = 精简我的页面
 
