@@ -86,7 +86,7 @@ DOMAIN, sdk.beizi.biz, REJECT
 ^https:\/\/yyapp-act-entrance\.yy\.com\/entrance\/list\? reject-dict
 
 # 底栏
-^https:\/\/tab\.yy\.com\/tabs\? response-body-json-del data.tabs[0] data.tabs[1] data.tabsForSelect
+^https:\/\/tab\.yy\.com\/tabs\? response-body-json-del data.tabs[0]
 
 # 关注 - 猜你喜欢
 ^https:\/\/yyapp-fastnet\.yy\.com\/dispatch\? response-body-json-del data[1]
