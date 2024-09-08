@@ -90,7 +90,7 @@ DOMAIN, sdk.beizi.biz, REJECT
 http-response ^https:\/\/tab\.yy\.com\/tabs\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YY_Voice/YY_Voice_remove_ads.js, requires-body = true, tag = 精简底栏
 
 # 主播邀请弹窗
-^https:\/\/yyapp-fastnet\.yy\.com\/dispatch\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YY_Voice/YY_Voice_remove_ads.js, requires-body = true, tag = 移除主播邀请弹窗
+http-response ^https:\/\/yyapp-fastnet\.yy\.com\/dispatch\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YY_Voice/YY_Voice_remove_ads.js, requires-body = true, tag = 移除主播邀请弹窗
 
 # 我的页面
 http-response ^https:\/\/personal-center\.yy\.com\/personalCenter\/list\? script-path = https://gitlab.com/lodepuly/vpn_tool/-/raw/master/Resource/Script/YY_Voice/YY_Voice_remove_ads.js, requires-body = true, tag = 精简我的页面
