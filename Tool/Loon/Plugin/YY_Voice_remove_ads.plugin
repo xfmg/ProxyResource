@@ -1,5 +1,5 @@
 #!name = YY去广告
-#!desc = 移除开屏广告、应用内弹窗，精简底栏和我的页面。
+#!desc = 移除开屏广告、应用内弹窗，精简底栏和我的页面。首次使用时首页可能会网络异常，多尝试几次即可恢复正常。
 #!openUrl = https://apps.apple.com/app/id427941017
 #!author = 可莉🅥[https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md]
 #!tag = 去广告
