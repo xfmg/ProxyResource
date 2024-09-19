@@ -8,11 +8,13 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/91160.png
-#!date = 2024-09-19 15:15:23
+#!date = 2024-09-19 15:24:19
 
 [Rule]
 # 放行请求
 URL-REGEX, ^https:\/\/patientgate\.91160\.com\/advert-api\/v1\/advert\/homepage_icon\?, DIRECT
+# 广告下发
+URL-REGEX, ^https:\/\/patientgate\.91160\.com\/advert-api\/, REJECT-DICT
 
 # 拦截HTTPDNS
 DOMAIN, httpdns.music.163.com, REJECT
@@ -111,13 +113,11 @@ DOMAIN-SUFFIX, getui.com, REJECT
 DOMAIN-SUFFIX, igexin.com, REJECT
 
 [Rewrite]
-# 放行请求
-^https:\/\/patientgate\.91160\.com\/advert-api\/v1\/advert\/homepage_icon\? direct
-# 广告下发
-^https:\/\/patientgate\.91160\.com\/advert-api\/ reject-dict
-
 # 我的页面 - 为您推荐
 ^https:\/\/patientgate\.91160\.com\/rec\/homepage\/open\/getUserGoodsList\? reject-dict
+
+# 我的页面
+https://oss2.91160.com/resources/material/material_20230712183908_13ddbf2002454cafbbc7d5a2a5cddd17.png
 
 # 首页 - 体检套餐推荐
 ^https:\/\/soapi\.91160\.com\/homepage-recommendation\/recommendation\/medical\/complex\? response-body-json-del data.checkupList
