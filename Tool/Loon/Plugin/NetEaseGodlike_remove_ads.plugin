@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/NetEaseGodlike.png
-#!date = 2024-09-20 02:03:52
+#!date = 2024-09-20 02:06:15
 
 [Rule]
 # 拦截HTTPDNS
@@ -34,7 +34,7 @@ IP-CIDR, 115.236.121.195/32, REJECT, no-resolve
 # ^https:\/\/god-act\.gameyw\.netease\.com\/v\d\/act\/pageConf\/commonAppConfig$ response-body-json-replace result.itemList[1].itemList[4].itemList[2].itemList[0].hidden ture
 
 # 我的页面 - 福利金当钱花
-^https:\/\/god-exp\.gameyw\.netease\.com\/v1\/exp\/xy\/right-customize\/get-h5-all-type-list$ response-body-json-del result[1]
+# ^https:\/\/god-exp\.gameyw\.netease\.com\/v1\/exp\/xy\/right-customize\/get-h5-all-type-list$ response-body-json-del result[1]
 
 # 底栏游戏入口
 ^https:\/\/app-conf\.ds\.163\.com\/v\d\/app\/base\/conf\/static\/start-config\? response-body-json-del result.updateConfig[2].itemList[94].itemList[2]
