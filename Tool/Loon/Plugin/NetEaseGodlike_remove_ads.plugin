@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/NetEaseGodlike.png
-#!date = 2024-09-20 01:43:38
+#!date = 2024-09-20 01:44:17
 
 [Rule]
 # 拦截HTTPDNS
@@ -37,7 +37,7 @@ IP-CIDR, 115.236.121.195/32, REJECT, no-resolve
 ^https:\/\/god\.gameyw\.netease\.com\/v1\/app\/square\/(facade|list\/v\d) response-body-json-del result
 
 # 底栏游戏入口
-^https:\/\/app-conf\.ds\.163\.com\/v\d\/app\/base\/conf\/static\/start-config\? response-body-json-del result.updateConfig[2].itemList[94].itemList[2]
+# ^https:\/\/app-conf\.ds\.163\.com\/v\d\/app\/base\/conf\/static\/start-config\? response-body-json-del result.updateConfig[2].itemList[94].itemList[2]
 
 [MitM]
 hostname = god.gameyw.netease.com, app-conf.ds.163.com, god-act.gameyw.netease.com
