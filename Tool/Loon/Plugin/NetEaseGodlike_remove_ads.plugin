@@ -33,9 +33,6 @@ IP-CIDR, 115.236.121.195/32, REJECT, no-resolve
 # 我的页面 - 近期游戏热点
 ^https:\/\/god-act\.gameyw\.netease\.com\/v\d\/act\/pageConf\/commonAppConfig$ response-body-json-replace result.itemList[1].itemList[4].itemList[2].itemList[0].hidden ture
 
-# 发现页面 - 即游戏页面
-# ^https:\/\/god\.gameyw\.netease\.com\/v1\/app\/square\/(facade|list\/v\d) response-body-json-del result
-
 # 底栏游戏入口
 ^https:\/\/app-conf\.ds\.163\.com\/v\d\/app\/base\/conf\/static\/start-config\? response-body-json-del result.updateConfig[2].itemList[94].itemList[2]
 
