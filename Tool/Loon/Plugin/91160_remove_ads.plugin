@@ -8,9 +8,12 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/91160.png
-#!date = 2024-09-19 15:01:30
+#!date = 2024-09-19 15:15:23
 
 [Rule]
+# 放行请求
+URL-REGEX, ^https:\/\/patientgate\.91160\.com\/advert-api\/v1\/advert\/homepage_icon\?, DIRECT
+
 # 拦截HTTPDNS
 DOMAIN, httpdns.music.163.com, REJECT
 DOMAIN, httpdns.n.netease.com, REJECT
@@ -108,6 +111,8 @@ DOMAIN-SUFFIX, getui.com, REJECT
 DOMAIN-SUFFIX, igexin.com, REJECT
 
 [Rewrite]
+# 放行请求
+^https:\/\/patientgate\.91160\.com\/advert-api\/v1\/advert\/homepage_icon\? direct
 # 广告下发
 ^https:\/\/patientgate\.91160\.com\/advert-api\/ reject-dict
 
