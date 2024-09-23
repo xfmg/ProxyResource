@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool/-/blob/master/README.md
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/KuaiDi100.png
-#!date = 2024-09-23 13:01:47
+#!date = 2024-09-23 13:17:28
 
 [Rule]
 # 字节跳动广告
@@ -188,8 +188,9 @@ DOMAIN-SUFFIX, lnk0.com, REJECT
 ^https?:\/\/p\.kuaidi100\.com\/apicenter\/xcx\.dox response-body-json-del data.secondMenuList
 
 # 弹窗和横幅推广
-^https?:\/\/p\.kuaidi100\.com\/advertisement\/ad\/app reject-dict
+^https?:\/\/p\.kuaidi100\.com\/advertisement\/ reject-dict
 ^https?:\/\/p\.kuaidi100\.com\/e-commerce\/act\/actInfo\? reject-dict
+^https?:\/\/p\.kuaidi100\.com\/apicenter\/card\.dox reject-dict
 
 # 字节跳动广告
 ^https:\/\/ether-pack\.pangolin-sdk-toutiao\.com\/union\/endcard\/ reject
