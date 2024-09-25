@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://getupnote.com/share/notes/zSn1ShBmzNYISKcTgjXE5oHMrNf2/34bf3aad-7872-497d-b239-198e27e8c84c
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/FC_Box.png
-#!date = 2024-09-25 11:59:37
+#!date = 2024-09-25 12:36:51
 
 [Rule]
 # 腾讯
@@ -102,6 +102,9 @@ DOMAIN, log.umsns.com, REJECT
 
 # 广告配置及横幅推广
 ^https:\/\/dsp\.fcbox\.com\/adSearch\/ reject-dict
+
+# 生活服务
+^https:\/\/consumer\.fcbox\.com\/hs-portal\/app\/config\/page\/home\/v2\? reject-dict
 
 # 订单页面 - 邀请开通会员横幅
 ^https:\/\/consumer\.fcbox\.com\/post\/suggestion\/query$ reject-dict
