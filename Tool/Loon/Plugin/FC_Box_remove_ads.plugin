@@ -8,7 +8,7 @@
 #!loon_version = 3.2.1(745)
 #!homepage = https://gitlab.com/lodepuly/vpn_tool//tree/master/Tool/Loon/Plugin
 #!icon = https://gitlab.com/lodepuly/iconlibrary/-/raw/main/App_icon/120px/FC_Box.png
-#!date = 2024-09-25 11:50:56
+#!date = 2024-09-25 11:59:37
 
 [Rule]
 # 腾讯
@@ -95,6 +95,7 @@ DOMAIN, log.umsns.com, REJECT
 [Rewrite]
 # 首页
 ^https:\/\/consumer\.fcbox\.com\/fcboxactivityweb\/api\/v\d\/clientPage\/modulesAggregated\? reject-dict
+^https:\/\/consumer\.fcbox\.com\/fcboxactivityweb\/api\/v\d\/clientPage\/jinGangFirst\?
 
 # 广告配置及横幅推广
 ^https:\/\/dsp\.fcbox\.com\/adSearch\/ reject-dict
