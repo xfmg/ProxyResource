@@ -93,9 +93,12 @@ DOMAIN, aaid.umeng.com, REJECT
 DOMAIN, log.umsns.com, REJECT
 
 [Rewrite]
-# 首页
+# 首页 - 各类服务推广
 ^https:\/\/consumer\.fcbox\.com\/fcboxactivityweb\/api\/v\d\/clientPage\/modulesAggregated\? reject-dict
 ^https:\/\/consumer\.fcbox\.com\/fcboxactivityweb\/api\/v\d\/clientPage\/jinGangFirst\?
+
+# 首页 - 丰巢商城
+^https:\/\/consumer\.fcbox\.com\/v2\/home\/mallInfo$ reject-dict
 
 # 广告配置及横幅推广
 ^https:\/\/dsp\.fcbox\.com\/adSearch\/ reject-dict
